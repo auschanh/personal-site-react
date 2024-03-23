@@ -63,14 +63,6 @@ nav.scrolled {
   }
 }
 
-h1 {
-  @apply underline decoration-rose-600 decoration-4 underline-offset-8;
-  @apply text-3xl font-bold;
-  /* font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold; */
-}
-
 h2 {
   @apply text-xl;
 }

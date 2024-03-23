@@ -9,7 +9,9 @@ const Education = () => {
         data-aos="fade-zoom-in"
         data-aos-duration="1000"
       >
-        <h1 className="dark:text-white">Education</h1>
+        <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          Education
+        </h1>
         <br />
         <br />
         <div className="section-desc flex max-sm:flex-col">

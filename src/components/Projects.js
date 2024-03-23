@@ -10,7 +10,9 @@ const Projects = () => {
           id="projects"
           className="section row-span-1 mt-10 sm:container max-sm:px-10"
         >
-          <h1 className="dark:text-white">Projects</h1>
+          <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+            Projects
+          </h1>
           <br />
           <br />
           <div className="section-desc">
