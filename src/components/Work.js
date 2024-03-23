@@ -1,5 +1,11 @@
 import React from "react";
 import opsLogo from "../assets/logos/ops-logo.png";
+import reactLogo from "../assets/icons/react-3.png";
+import typescriptLogo from "../assets/icons/typescript-official-svgrepo-com.svg";
+import sqlLogo from "../assets/icons/database.svg";
+import sqlLogoBlack from "../assets/icons/database-black.svg";
+import sharepointLogo from "../assets/icons/sharepoint.svg";
+import powerautomateLogo from "../assets/icons/icons8-microsoft-power-automate-2020.svg";
 
 const Work = () => {
   return (
@@ -114,7 +120,7 @@ const Work = () => {
                   className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
                 >
                   <img
-                    src="assets/icons/react-3.png"
+                    src={reactLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
                   <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
@@ -129,7 +135,7 @@ const Work = () => {
                   className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
                 >
                   <img
-                    src="assets/icons/typescript-official-svgrepo-com.svg"
+                    src={typescriptLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
                   <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
@@ -144,11 +150,11 @@ const Work = () => {
                   className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
                 >
                   <img
-                    src="assets/icons/database.svg"
+                    src={sqlLogo}
                     className="hidden aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 dark:flex sm:h-16 lg:h-20"
                   />
                   <img
-                    src="assets/icons/database-black.svg"
+                    src={sqlLogoBlack}
                     className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
                   />
                   <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
@@ -163,7 +169,7 @@ const Work = () => {
                   className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
                 >
                   <img
-                    src="assets/icons/sharepoint.svg"
+                    src={sharepointLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
                   <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
@@ -178,7 +184,7 @@ const Work = () => {
                   className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
                 >
                   <img
-                    src="assets/icons/icons8-microsoft-power-automate-2020.svg"
+                    src={powerautomateLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
                   <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
@@ -230,13 +236,14 @@ const Work = () => {
                   <p className="job-desc text-base dark:text-zinc-300">
                     Daily tasks included: solo closing the department on closing
                     days, stocking inventory and assisting customers. A lot of
-                    my interpersonal skills were developed here, such as
-                    <span className="font-bold dark:text-white">teamwork</span>,
+                    my interpersonal skills were developed here, such as{" "}
+                    <span className="font-bold dark:text-white">teamwork</span>,{" "}
                     <span className="font-bold dark:text-white">
                       initiative
                     </span>
                     , and
                     <span className="font-bold dark:text-white">
+                      {" "}
                       customer service
                     </span>
                     .

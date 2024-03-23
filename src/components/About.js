@@ -12,7 +12,7 @@ const About = () => {
           <div className="hero-right desc mt-5 flex basis-2/3 items-center justify-center text-center max-md:basis-full sm:ml-5">
             <div className="">
               <p className="text-4xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
-                Hi,
+                Hi,{" "}
                 <span className="text-teal-700 type-firstName dark:text-teal-300"></span>
               </p>
               <p className="text-lg font-bold dark:text-white sm:text-2xl">
