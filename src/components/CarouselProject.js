@@ -1,13 +1,14 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 
-export function CarouselProject({ images }) {
+export function CarouselProject({ images, arrowColor }) {
   return (
     <Carousel
       className="rounded-xl"
+      loop={true}
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
-          color="white"
+          style={{ color: arrowColor }}
           size="lg"
           onClick={handlePrev}
           className="!absolute left-4 top-2/4 -translate-y-2/4"
@@ -31,7 +32,7 @@ export function CarouselProject({ images }) {
       nextArrow={({ handleNext }) => (
         <IconButton
           variant="text"
-          color="white"
+          style={{ color: arrowColor }}
           size="lg"
           onClick={handleNext}
           className="!absolute !right-4 top-2/4 -translate-y-2/4"
@@ -53,15 +54,15 @@ export function CarouselProject({ images }) {
         </IconButton>
       )}
     >
-      {images.map((img, i) => {
+      {images.map((img, i) => (
         <img
           key={i}
           src={img}
           alt={`Photo ${i}`}
           loading="lazy"
-          className=" h-full w-full object-contain"
-        />;
-      })}
+          className="h-full w-full object-contain"
+        />
+      ))}
     </Carousel>
   );
 }
