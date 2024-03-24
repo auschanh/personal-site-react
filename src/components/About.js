@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import me from "../assets/DSC00108 CROP.png";
 import meJapan from "../assets/hobbies/MixTapeCover.jpg";
-import gamingImage from "../assets/hobbies/eldenring2.jpeg";
+import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
 import CarouselPhotos from "./CarouselPhotos";
 
@@ -13,6 +13,7 @@ import {
   DialogFooter,
   Carousel,
   IconButton,
+  Typography,
 } from "@material-tailwind/react";
 
 const About = () => {
@@ -185,21 +186,76 @@ const About = () => {
                   </IconButton>
                 )}
               >
-                <img
-                  src={meJapan}
-                  alt="Me in Japan"
-                  className="h-full w-full object-cover"
-                />
-                <img
-                  src={gamingImage}
-                  alt="Elden Ring Picture"
-                  className="h-full w-full object-cover"
-                />
-                <img
-                  src={hockeyImage}
-                  alt="Auston Matthews Maple Leafs Jersey"
-                  className="h-full w-full object-cover"
-                />
+                <div className="relative h-full w-full">
+                  <img
+                    src={meJapan}
+                    alt="Me in Japan"
+                    className="h-full w-full object-cover"
+                  />
+
+                  <div>
+                    <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
+                      <h5 class="text-xl">
+                        <span class="bg-black px-3 max-md:bg-opacity-80">
+                          Photography
+                        </span>
+                      </h5>
+                      <p class="hidden px-16 text-base md:block">
+                        <span class="bg-black bg-opacity-80 px-3">
+                          I'm still learning a lot about the photography world,
+                          but I hope to pick up a new camera soon.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative h-full w-full">
+                  <img
+                    src={gamingImage}
+                    alt="Elden Ring Picture"
+                    className="h-full w-full object-cover"
+                  />
+                  <div>
+                    <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
+                      <h5 class="text-xl">
+                        <span class="bg-black px-5 opacity-80">Gaming</span>
+                      </h5>
+                      <p class="hidden text-base md:block">
+                        I've been gaming since I could walk - my favourite
+                        genres include JRPGs and Souls-like games.
+                      </p>
+                      <p class="hidden text-base md:block">
+                        Recent Favourites: Elden Ring, Dark Souls 3, Persona 5
+                        Royal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative h-full w-full">
+                  <img
+                    src={hockeyImage}
+                    alt="Auston Matthews Maple Leafs Jersey"
+                    className="h-full w-full object-cover"
+                  />
+                  <div>
+                    <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
+                      <h5 class="text-xl">
+                        <span class="bg-black px-3 opacity-80">Hockey</span>
+                      </h5>
+                      <p class="hidden text-base md:block">
+                        <span class="bg-black px-4 py-1 opacity-80">
+                          I don't play anymore but follow very closely with the
+                          NHL.
+                        </span>
+                      </p>
+                      <p class="hidden text-base md:block">
+                        <span class="bg-black px-4 py-1 opacity-80">
+                          I am a big Toronto Maple Leafs fan! I know I know.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </Carousel>
             </div>
           </div>
@@ -211,15 +267,17 @@ const About = () => {
               📸 My Photos
             </Button>
           </div>
-          <Dialog
-            open={open}
-            handler={handleOpen}
-            className="fixed inset-0 m-auto items-center justify-center overflow-auto bg-slate-100"
-            size="xl"
-            padding={false}
-          >
-            <CarouselPhotos />
-          </Dialog>
+          <div className="dialog-container">
+            <Dialog
+              open={open}
+              handler={handleOpen}
+              className="fixed inset-0 m-auto items-center justify-center overflow-auto bg-slate-100"
+              size="xl"
+              padding={false}
+            >
+              <CarouselPhotos />
+            </Dialog>
+          </div>
         </div>
       </div>
     </div>

@@ -7,6 +7,12 @@
   @apply transition-colors duration-200;
 }
 
+.dialog-container {
+  height: 100%; /* Set the height to fill the entire dialog */
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family:
     system-ui,
@@ -139,12 +145,6 @@ h2 {
 }
 
 /* Ensure each carousel item takes full width */
-.carousel-item {
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
 
 /* Carousel needs this  */
 

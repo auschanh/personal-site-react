@@ -129,10 +129,18 @@ const images = [
 ];
 
 const CarouselPhotos = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleSlideChange = (index) => {
+    setCurrentImageIndex(index);
+    console.log("Current image index:", index);
+  };
+
   return (
     <Carousel
-      className="relative"
+      className="relative overflow-hidden"
       loop={true}
+      onChange={handleSlideChange}
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
@@ -183,12 +191,33 @@ const CarouselPhotos = () => {
       )}
     >
       {images.map((img, i) => (
-        <img
-          key={i}
-          src={img.path}
-          alt={`Photo ${i}`}
-          className="h-full w-full object-cover"
-        />
+        <div key={i}>
+          <div className="flex justify-between rounded-t-lg bg-white pt-1 font-bold">
+            <div className="pl-2">
+              <div className="text-black">
+                {currentImageIndex === i &&
+                  (img.misc == "" ? "\u00A0" : `📸 Credits: ${img.misc}`)}
+              </div>
+            </div>
+
+            <div className="absolute inset-x-0 overflow-hidden text-center text-black">
+              {img.title}
+            </div>
+
+            <div className="pr-2 text-black">
+              {currentImageIndex === i &&
+                (img.misc == "" ? "\u00A0" : "Edit: Me")}
+            </div>
+          </div>
+
+          <img
+            key={i}
+            src={img.path}
+            alt={`Photo ${i}`}
+            loading="lazy"
+            className=" h-full w-full object-contain"
+          />
+        </div>
       ))}
     </Carousel>
   );

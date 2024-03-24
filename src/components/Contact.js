@@ -84,7 +84,7 @@ const Contact = () => {
                   Subject
                 </label>
                 <input
-                  className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black focus:border-gray-500 focus:bg-white focus:outline-none"
+                  className="text-red mb-3 block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black focus:border-gray-500 focus:bg-white focus:outline-none"
                   id="subject"
                   name="subject"
                   type="text"
