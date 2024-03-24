@@ -1007,6 +1007,13 @@ input[type="range"]:active::-webkit-slider-thumb {
   outline-offset: 2px;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 .card figure {
   display: flex;
   align-items: center;
@@ -5437,6 +5444,10 @@ details.collapse summary::-webkit-details-marker {
 
 .content-center {
   align-content: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -10966,6 +10977,10 @@ btn:active:hover,
   text-underline-offset: 6px;
 }
 
+.hover\:underline-offset-2:hover {
+  text-underline-offset: 2px;
+}
+
 .hover\:\!opacity-90:hover {
   opacity: 0.9 !important;
 }
@@ -13499,6 +13514,10 @@ btn:active:hover,
   color: rgb(117 117 117 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:hover\:decoration-rose-600:hover) {
+  text-decoration-color: rgb(225 29 72);
+}
+
 :is(.dark .dark\:hover\:shadow-\[0_8px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.2\)\2c 0_4px_18px_0_rgba\(59\2c 113\2c 202\2c 0\.1\)\]:hover) {
   --tw-shadow: 0 8px 9px -4px rgba(59,113,202,0.2),0 4px 18px 0 rgba(59,113,202,0.1);
   --tw-shadow-colored: 0 8px 9px -4px var(--tw-shadow-color), 0 4px 18px 0 var(--tw-shadow-color);
@@ -13620,6 +13639,18 @@ btn:active:hover,
 
   .sm\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .sm\:flex {

@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import CarouselProject from "./CarouselProject";
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel, IconButton, Chip, Button } from "@material-tailwind/react";
 
 import {
   bookReviewAccReviews,
@@ -42,7 +42,69 @@ const Projects = () => {
           <div className="section-desc">
             <div className="mt-20">
               <ProjectCard
-                title={"Book Review Site"}
+                title={
+                  <a
+                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-rose-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://bookreviews-app.fly.dev/"
+                  >
+                    Book Review Website
+                  </a>
+                }
+                chips={
+                  <Chip
+                    color="blue"
+                    value="Website"
+                    size="sm"
+                    className="rounded-full"
+                  />
+                }
+                chipsFooter={[
+                  <Chip
+                    className="rounded-full"
+                    color="light-blue"
+                    value="Python"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="light-blue"
+                    value="Flask"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="cyan"
+                    value="Postgres (SQL)"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="pink"
+                    value="API"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="HTML"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="CSS"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                ]}
+                github="https://github.com/auschanh/Book-Reviews"
                 desc={
                   <div class="dark:text-zinc-300 max-sm:text-xs">
                     <p>
@@ -70,6 +132,16 @@ const Projects = () => {
             <div className="mt-20">
               <ProjectCard
                 title={"BlackJack Terminal Game"}
+                chipsFooter={
+                  <Chip
+                    className="rounded-full"
+                    color="light-blue"
+                    value="Java"
+                    size="sm"
+                    variant="outlined"
+                  />
+                }
+                github="https://github.com/auschanh/blackjack"
                 desc={
                   <div class="dark:text-zinc-300 max-sm:text-xs">
                     <p>
@@ -100,7 +172,61 @@ const Projects = () => {
             </div>
             <div className="mt-20">
               <ProjectCard
-                title={"JustOne Online"}
+                title={"Just One Online"}
+                github="https://github.com/auschanh/just_one"
+                chips={[
+                  <Chip
+                    className="rounded-full"
+                    key="1"
+                    color="pink"
+                    value="Work in Progress"
+                    size="sm"
+                  />,
+                  <Chip
+                    key="2"
+                    color="blue"
+                    value="Website"
+                    size="sm"
+                    className="rounded-full"
+                  />,
+                ]}
+                chipsFooter={[
+                  <Chip
+                    className="rounded-full"
+                    color="teal"
+                    value="React"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="light-blue"
+                    value="Tailwind"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="pink"
+                    value="API"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="HTML"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="CSS"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                ]}
                 desc={
                   <div class="dark:text-zinc-300 max-sm:text-xs">
                     <p>
