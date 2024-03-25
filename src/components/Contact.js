@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { Alert, Button } from "@material-tailwind/react";
 
 const Contact = () => {
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
+
+  const handleSubmit = (event) => {
+    setIsAlertOpen(true);
+    setTimeout(() => {
+      setIsAlertOpen(false);
+    }, 5000);
+  };
+
   return (
     <div id="contact" className="pb-12 pt-40 dark:bg-navy">
       <div className="contact sm:container max-sm:px-10">
@@ -12,7 +22,7 @@ const Contact = () => {
             data-aos="fade-zoom-in"
             data-aos-duration="1000"
           >
-            If you want to get in touch, email me at:
+            If you want to get in touch, email me at:{" "}
             <strong>auschanh@gmail.com</strong>
           </div>
           <div
@@ -28,6 +38,7 @@ const Contact = () => {
             className="mt-20 px-1 sm:px-20 xl:px-40"
             action="https://api.web3forms.com/submit"
             method="POST"
+            onSubmit={handleSubmit}
           >
             <div className="-mx-3 mb-6 flex flex-wrap">
               <div className="mb-6 w-full px-3 md:mb-0 md:w-1/2">
@@ -50,7 +61,7 @@ const Contact = () => {
                   Your Name
                 </label>
                 <input
-                  className="block w-full appearance-none rounded border  border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black focus:border-gray-500 focus:bg-white focus:outline-none"
+                  className="block w-full appearance-none rounded border border-gray-200  bg-indigo-100 px-4 py-3 leading-tight text-black placeholder-gray-500 focus:border-gray-500 focus:bg-white focus:outline-none"
                   id="name"
                   name="name"
                   type="text"
@@ -66,7 +77,7 @@ const Contact = () => {
                   Email Address
                 </label>
                 <input
-                  className="block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black focus:border-gray-500 focus:bg-white focus:outline-none"
+                  className="block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black placeholder-gray-500 focus:border-gray-500 focus:bg-white focus:outline-none"
                   id="email"
                   name="email"
                   type="text"
@@ -84,7 +95,7 @@ const Contact = () => {
                   Subject
                 </label>
                 <input
-                  className="text-red mb-3 block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black focus:border-gray-500 focus:bg-white focus:outline-none"
+                  className="text-red mb-3 block w-full appearance-none rounded border border-gray-200 bg-indigo-100 px-4 py-3 leading-tight text-black placeholder-gray-500 focus:border-gray-500 focus:bg-white focus:outline-none"
                   id="subject"
                   name="subject"
                   type="text"
@@ -113,17 +124,38 @@ const Contact = () => {
                 <div className="md:flex md:items-center">
                   <label className="block font-bold text-gray-500"> </label>
                 </div>
-                <button
-                  className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 font-bold text-white shadow hover:bg-teal-400 focus:outline-none"
+                <Button
                   type="submit"
-                  id="btn-contact"
+                  className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 text-sm font-bold text-white shadow hover:bg-teal-400 focus:outline-none"
                 >
                   Send Message
-                </button>
+                </Button>
               </div>
-              <div
+              {isAlertOpen && (
+                <Alert className="mt-3 justify-center bg-transparent">
+                  <div className="flex items-center justify-center gap-2 rounded-2xl border bg-dark-navy px-8 py-2 text-center  text-zinc-300">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 shrink-0 stroke-current"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span className="font-bold">
+                      Message Sent. I'll get back to you as soon as possible 🙂{" "}
+                    </span>
+                  </div>
+                </Alert>
+              )}
+
+              {/* <div
                 role="alert"
-                id="msg"
                 className="alert mt-3 justify-self-end bg-dark-navy text-center text-zinc-300"
               >
                 <svg
@@ -142,7 +174,7 @@ const Contact = () => {
                 <span className="font-bold">
                   Message Sent. I'll get back to you as soon as possible 🙂
                 </span>
-              </div>
+              </div> */}
             </div>
           </form>
         </div>

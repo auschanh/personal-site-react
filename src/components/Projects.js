@@ -27,8 +27,7 @@ const Projects = () => {
   return (
     <div>
       <div id="projects-jump"></div>
-      {console.log(bookReviewImages)}
-      {console.log(blackJackImages)}
+
       <div className="projects w-screen bg-slate-100 pb-40 pt-32 dark:bg-dark-navy">
         <div
           id="projects"

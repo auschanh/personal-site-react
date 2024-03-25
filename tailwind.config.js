@@ -28,6 +28,11 @@ module.exports = withMT({
         gray: {
           700: "rgb(55 65 81)",
         },
+        indigo: {
+          400: "rgb(129 140 248)",
+          600: "rgb(79 70 229)",
+          800: "rgb(55 48 163)",
+        },
       },
     },
     container: {

@@ -27,10 +27,10 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               id="toggleDarkLightModeBtn"
               onClick={toggleDarkMode}
             >
-              <i className="fa-regular fa-moon dark:hidden"></i>
-              <span className="dark:hidden">Dark</span>
-              <i className="fa-solid fa-lightbulb !hidden dark:!inline-block"></i>
-              <span className="hidden dark:inline-block">Light</span>
+              <i className="fa-regular fa-moon dark:hidden"></i>{" "}
+              <span className="dark:hidden"> Dark</span>
+              <i className="fa-solid fa-lightbulb !hidden dark:!inline-block"></i>{" "}
+              <span className="hidden dark:inline-block"> Light</span>
             </button>
           </div>
 

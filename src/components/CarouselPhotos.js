@@ -133,7 +133,6 @@ const CarouselPhotos = () => {
 
   const handleSlideChange = (index) => {
     setCurrentImageIndex(index);
-    console.log("Current image index:", index);
   };
 
   return (
