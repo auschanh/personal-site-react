@@ -22,20 +22,20 @@ export function ProjectCard({
       </CardHeader>
       <CardBody>
         <Typography variant="h4" className="mb-2 text-black dark:text-white">
-          <div className="flex items-center gap-2 text-2xl text-black dark:text-white max-sm:flex-col">
+          <div className="flex items-center gap-2 text-2xl text-black dark:text-white max-sm:flex-col max-sm:items-start">
             {title}
             {chips}
           </div>
         </Typography>
         <Typography className="text-xl">{desc}</Typography>
       </CardBody>
-      <CardFooter className="max-sm:grid-col-2 mt-1 flex flex-wrap items-start justify-end max-sm:grid max-sm:grid-flow-col">
+      <CardFooter className="max-sm:grid-col-2 flex flex-wrap items-start justify-between  max-sm:grid max-sm:grid-flow-col sm:mt-1">
         <div class="max-sm:col-span-1">
           <a href={github} target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-lg fa-github dark:text-white dark:hover:text-gray-600"></i>
+            <i class="fa-brands fa-lg fa-github mr-2 dark:text-white dark:hover:text-gray-600"></i>
           </a>
         </div>
-        <div class="ml-auto inline-flex items-center justify-end gap-2 max-sm:col-span-1">
+        <div class="ml-auto inline-flex flex-wrap items-center gap-2 max-sm:col-span-1 sm:justify-end">
           {chipsFooter}
         </div>
       </CardFooter>

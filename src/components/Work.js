@@ -14,7 +14,7 @@ const Work = () => {
       <div className="work bg-slate-100 py-40 dark:bg-dark-navy">
         <div
           id="work"
-          className="section row-span-1 mt-10 justify-items-center sm:container max-sm:px-10"
+          className="section sm:px-auto row-span-1 mt-10 justify-items-center px-10 sm:container"
         >
           <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
             Work Experiences
@@ -125,7 +125,7 @@ const Work = () => {
                     src={reactLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
                     React
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Work = () => {
                     src={typescriptLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
                     TypeScript
                   </div>
                 </div>
@@ -159,7 +159,7 @@ const Work = () => {
                     src={sqlLogoBlack}
                     className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
                     SQL
                   </div>
                 </div>
@@ -174,7 +174,7 @@ const Work = () => {
                     src={sharepointLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
                     SharePoint
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Work = () => {
                     src={powerautomateLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 max-sm:text-xs">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
                     <p>Power</p>
                     <p>Automate</p>
                   </div>

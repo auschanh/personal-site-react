@@ -37,7 +37,15 @@ module.exports = withMT({
     },
     container: {
       center: true,
-      // padding: "2rem"
+      // padding: "2rem",
+    },
+    screens: {
+      "max-xs": { max: "320px" },
+      "max-sm": { max: "640px" },
+      "max-md": { max: "768px" },
+      "max-lg": { max: "1024px" },
+      "max-xl": { max: "1280px" },
+      "max-2xl": { max: "1536px" },
     },
   },
   plugins: [

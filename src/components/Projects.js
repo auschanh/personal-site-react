@@ -31,7 +31,7 @@ const Projects = () => {
       <div className="projects w-screen bg-slate-100 pb-40 pt-32 dark:bg-dark-navy">
         <div
           id="projects"
-          className="section row-span-1 mt-10 sm:container max-sm:px-10"
+          className="section sm:px-auto row-span-1 mt-10 px-10 sm:container"
         >
           <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
             Projects
@@ -105,7 +105,7 @@ const Projects = () => {
                 ]}
                 github="https://github.com/auschanh/Book-Reviews"
                 desc={
-                  <div class="dark:text-zinc-300 max-sm:text-xs">
+                  <div class="text-xs dark:text-zinc-300 sm:text-xl">
                     <p>
                       A website with a small catalog of books to search from.
                       Users can share a written review and rating of books after
@@ -142,7 +142,7 @@ const Projects = () => {
                 }
                 github="https://github.com/auschanh/blackjack"
                 desc={
-                  <div class="dark:text-zinc-300 max-sm:text-xs">
+                  <div class="text-xs dark:text-zinc-300 sm:text-xl">
                     <p>
                       A small game of Blackjack, fully playable in the terminal.
                     </p>
@@ -227,7 +227,7 @@ const Projects = () => {
                   />,
                 ]}
                 desc={
-                  <div class="dark:text-zinc-300 max-sm:text-xs">
+                  <div class="text-xs dark:text-zinc-300 sm:text-xl">
                     <p>
                       An online version of the board game Just One. Includes{" "}
                       <span class="font-bold text-teal-300">sockets</span> for

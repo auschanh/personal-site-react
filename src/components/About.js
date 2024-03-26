@@ -22,19 +22,19 @@ const About = () => {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <div className="grid grid-flow-row justify-center  max-md:max-w-full">
+    <div className="grid grid-flow-row justify-center lg:max-w-full">
       <div className="w-screen bg-slate-100 py-10 pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
-          <div className="hero-left picture items-center justify-center max-md:basis-full lg:basis-1/3">
+          <div className="hero-left picture basis-full items-center justify-center lg:basis-1/3">
             <img
               src={me}
               alt="'me"
               className="rounded-xl border-2 border-black drop-shadow-xl dark:border-white"
             />
           </div>
-          <div className="hero-right desc mt-5 flex basis-2/3 items-center justify-center text-center max-md:basis-full sm:ml-5">
+          <div className="hero-right desc mt-5 flex basis-full items-center justify-center text-center sm:ml-5 md:basis-2/3">
             <div className="">
-              <p className="text-4xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
+              <p className="text-3xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
                 Hi,{" "}
                 <span className="text-teal-700 type-firstName dark:text-teal-300"></span>
               </p>
@@ -61,7 +61,7 @@ const About = () => {
       <div className="bg-white dark:bg-navy">
         <div
           id="about"
-          className="section about row-span-1 mb-20 mt-32 pb-16 text-black sm:container max-sm:px-10"
+          className="section about sm:px-auto row-span-1 mb-20 mt-32 px-10 pb-16 text-black sm:container"
         >
           <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
             About
@@ -271,8 +271,7 @@ const About = () => {
             <Dialog
               open={open}
               handler={handleOpen}
-              className="fixed inset-0 m-auto items-center justify-center overflow-auto bg-slate-100"
-              size="xl"
+              className="fixed inset-0 z-[998]  grid  w-screen  bg-transparent  "
               padding={false}
             >
               <CarouselPhotos />

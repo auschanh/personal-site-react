@@ -30,21 +30,6 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
-        {/* <?php include './sections/about.html';?>
-
-        <?php include './sections/work.html'?>
-
-        <?php include './sections/education.html'?>
-
-        <?php include './sections/projects.html'?>
-
-        <?php include './sections/contact.html'?>
-
-        <?php include './sections/footer.html'?>
-
-        <?php include './sections/modalProjects.html'?>
-
-        <?php include './sections/modalPhotos.html'?> */}
       </div>
     </div>
   );
