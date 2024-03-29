@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
 import resume from "../assets/Resume2024.pdf";
@@ -6,6 +6,31 @@ import resume from "../assets/Resume2024.pdf";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleBackdropClick = (e) => {
+      if (e.target.classList.contains("navbar-backdrop")) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+    document.addEventListener("click", handleBackdropClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+      document.removeEventListener("click", handleBackdropClick);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -78,7 +103,10 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               <div>
                 <button
                   className="navbar-burger flex items-center p-3 font-extrabold text-black dark:text-white sm:hidden"
-                  onClick={toggleMenu}
+                  onClick={(e) => {
+                    toggleMenu();
+                    e.stopPropagation();
+                  }}
                 >
                   <svg
                     className="block h-4 w-4 fill-current text-black dark:text-white"
@@ -135,6 +163,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
       </nav>
       <div
         className={`navbar-menu relative z-50 ${isMenuOpen ? "" : "hidden"}`}
+        ref={menuRef}
       >
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 dark:bg-white"></div>
         <nav className="fixed bottom-0 left-0 top-0 flex max-w-full flex-col overflow-y-auto border-r bg-white px-6 py-6 dark:bg-dark-navy dark:text-zinc-300">
