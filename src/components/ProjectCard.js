@@ -16,7 +16,7 @@ export function ProjectCard({
   github,
 }) {
   return (
-    <Card className="relative flex transform flex-col rounded-2xl bg-[#143260] shadow-xl transition-all hover:scale-105 focus:outline-none">
+    <Card className="relative flex transform flex-col rounded-2xl bg-white shadow-xl transition-all hover:scale-105 focus:outline-none dark:bg-[#143260]">
       <CardHeader color="blue-gray" className="relative">
         {figure}
       </CardHeader>
@@ -29,13 +29,13 @@ export function ProjectCard({
         </Typography>
         <Typography className="text-xl">{desc}</Typography>
       </CardBody>
-      <CardFooter className="max-sm:grid-col-2 flex flex-wrap items-start justify-between  max-sm:grid max-sm:grid-flow-col sm:mt-1">
+      <CardFooter className="max-sm:grid-col-2 flex flex-wrap items-start justify-between  sm:mt-1 max-sm:grid max-sm:grid-flow-col">
         <div class="max-sm:col-span-1">
           <a href={github} target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-lg fa-github mr-2 dark:text-white dark:hover:text-gray-600"></i>
           </a>
         </div>
-        <div class="ml-auto inline-flex flex-wrap items-center gap-2 max-sm:col-span-1 sm:justify-end">
+        <div class="ml-auto inline-flex flex-wrap items-center gap-2 sm:justify-end max-sm:col-span-1">
           {chipsFooter}
         </div>
       </CardFooter>

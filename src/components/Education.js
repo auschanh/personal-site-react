@@ -3,9 +3,9 @@ import tmuLogo from "../assets/logos/TMU-rgb.png";
 
 const Education = () => {
   return (
-    <div id="education" className="py-40 dark:bg-navy">
+    <div id="education" className="bg-white py-40 dark:bg-navy">
       <div
-        className="education section sm:px-auto row-span-1 px-10 sm:container"
+        className="education section sm:px-auto row-span-1 px-10 text-black sm:container"
         data-aos="fade-zoom-in"
         data-aos-duration="1000"
       >

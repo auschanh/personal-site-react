@@ -18,8 +18,17 @@ import {
 
 const About = () => {
   const [open, setOpen] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   const handleOpen = () => setOpen(!open);
+
+  const toggleText = () => {
+    const aboutMoreText = document.getElementById("about-more");
+    setShowText(!showText);
+    showText
+      ? (aboutMoreText.style.display = "block")
+      : (aboutMoreText.style.display = "none");
+  };
 
   return (
     <div className="grid grid-flow-row justify-center lg:max-w-full">
@@ -80,7 +89,7 @@ const About = () => {
                 interest in programming and building things in high school.
                 Throughout my early university years, the problem solving and
                 creativity of
-                <strong className="dark:text-teal-500">
+                <strong className="text-teal-800 dark:text-teal-500">
                   {" "}
                   Computer Science
                 </strong>{" "}
@@ -88,28 +97,28 @@ const About = () => {
                 choice.
               </p>
               <br />
-              <button
-                className="focus:shadow-outline rounded bg-teal-600 px-3 py-2 font-bold text-white shadow hover:bg-teal-400 focus:outline-none"
-                type="button"
-                id="btn-more"
+              <Button
+                onClick={toggleText}
+                className="focus:shadow-outline mb-4 block rounded bg-teal-600 px-3 py-2 font-bold text-white shadow hover:bg-teal-400 focus:outline-none sm:hidden"
               >
                 University Journey
-              </button>
+                <br />
+              </Button>
               <p id="about-more" className="mt-2">
                 During my tenure at
-                <strong className="dark:text-teal-500">
+                <strong className="text-teal-800 dark:text-teal-500">
                   {" "}
                   Toronto Metropolitan University
                 </strong>
                 , I was able to co-op for
-                <strong className="dark:text-teal-500">
+                <strong className="text-teal-800 dark:text-teal-500">
                   {" "}
                   Ontario Public Service
                 </strong>
                 , where I showed my passion for developing creative solutions. I
                 was given opportunities for ownership over projects, such as
                 working with a
-                <strong className="dark:text-teal-500">
+                <strong className="text-teal-800 dark:text-teal-500">
                   {" "}
                   client to automate her business workflow
                 </strong>{" "}

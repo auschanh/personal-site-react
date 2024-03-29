@@ -46,6 +46,7 @@ module.exports = withMT({
       "max-lg": { max: "1024px" },
       "max-xl": { max: "1280px" },
       "max-2xl": { max: "1536px" },
+      "max-[740px]": { max: "740px" },
     },
   },
   plugins: [

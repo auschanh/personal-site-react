@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
 import resume from "../assets/Resume2024.pdf";
+// import { Button } from "@material-tailwind/react";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div>
       <nav className="fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 py-2 shadow-lg focus:text-neutral-700 dark:bg-black lg:flex-wrap lg:justify-start lg:py-4">
-        <div className="nav-div my-0 flex w-full flex-wrap items-center justify-between px-40 sm:container max-lg:px-0.5 max-sm:max-w-full">
+        <div className="nav-div my-0 flex w-full flex-wrap items-center justify-between px-40 sm:container max-sm:max-w-full max-lg:px-0.5">
           <div className="flex">
             <a href="">
               <img
@@ -34,7 +45,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </button>
           </div>
 
-          <div className="middle-nav items-center justify-between text-xl font-bold">
+          <div className="middle-nav items-center justify-between text-xl font-bold max-md:hidden">
             <ul className="list-style-none flex pl-0 sm:flex-row">
               <li className="mb-4 pr-10 lg:mb-0">
                 <a
@@ -65,9 +76,12 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           <div className="items-center justify-between">
             <ul className="right-nav list-style-none flex pl-0 text-xl sm:flex-row">
               <div>
-                <button className="navbar-burger flex items-center p-3 font-extrabold dark:text-white sm:hidden">
+                <button
+                  className="navbar-burger flex items-center p-3 font-extrabold text-black dark:text-white sm:hidden"
+                  onClick={toggleMenu}
+                >
                   <svg
-                    className="block h-4 w-4 fill-current"
+                    className="block h-4 w-4 fill-current text-black dark:text-white"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -119,7 +133,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           </div>
         </div>
       </nav>
-      <div className="navbar-menu relative z-50 hidden">
+      <div
+        className={`navbar-menu relative z-50 ${isMenuOpen ? "" : "hidden"}`}
+      >
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 dark:bg-white"></div>
         <nav className="fixed bottom-0 left-0 top-0 flex max-w-full flex-col overflow-y-auto border-r bg-white px-6 py-6 dark:bg-dark-navy dark:text-zinc-300">
           <div className="mb-8 flex items-center">
@@ -128,7 +144,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               href="#"
             >
               <img
-                src="assets/logos/ac-logo-black.png"
+                src={logoBlack}
                 className="h-12 transform transition-all hover:scale-110"
               />
             </a>
@@ -137,13 +153,13 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               href="#"
             >
               <img
-                src="assets/logos/ac-logo-white.png"
+                src={logoWhite}
                 className="h-12 transform transition-all hover:scale-110"
               />
             </a>
-            <button className="navbar-close">
+            <button className="navbar-close" onClick={closeMenu}>
               <svg
-                className="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500 dark:text-white"
+                className="h-6 w-6 cursor-pointer text-black  hover:text-gray-500 dark:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -159,10 +175,10 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </button>
           </div>
 
-          <ul>
+          <ul className="text-black dark:text-zinc-300">
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-gray-400"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
                 href="#about"
               >
                 About
@@ -170,7 +186,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-gray-400"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
                 href="#work"
               >
                 Work
@@ -178,7 +194,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-gray-400"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
                 href="#projects"
               >
                 Projects
@@ -186,7 +202,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-gray-400"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
                 href="#contact"
               >
                 Contact
@@ -203,7 +219,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               >
                 <i className="fa-solid fa-file  hover:text-gray-400">
                   {" "}
-                  <span className="font-sans text-sm text-black">RESUME</span>
+                  <span className="font-sans text-sm text-black dark:text-zinc-300">
+                    RESUME
+                  </span>
                 </i>
               </a>
             </li>
@@ -214,7 +232,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-lg fa-github text-black hover:text-gray-400"></i>
+                <i className="fa-brands fa-lg fa-github text-black hover:text-gray-400 dark:text-zinc-300"></i>
+                {"  "}
                 Github
               </a>
             </li>
@@ -225,7 +244,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-lg fa-linkedin text-black hover:text-gray-400"></i>
+                <i className="fa-brands fa-lg fa-linkedin  text-black hover:text-gray-400 dark:text-zinc-300"></i>
+                {"  "}
                 Linkedin
               </a>
             </li>
@@ -236,7 +256,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-lg fa-square-instagram text-black hover:text-gray-400"></i>
+                <i className="fa-brands fa-lg fa-square-instagram text-black hover:text-gray-400 dark:text-zinc-300"></i>
+                {"  "}
                 Instagram
               </a>
             </li>

@@ -16,7 +16,7 @@ const Work = () => {
           id="work"
           className="section sm:px-auto row-span-1 mt-10 justify-items-center px-10 sm:container"
         >
-          <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          <h1 className="text-3xl font-bold text-black underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
             Work Experiences
           </h1>
           <br />
@@ -25,7 +25,7 @@ const Work = () => {
             <div>
               <div
                 tabindex="0"
-                className="collapse collapse-arrow transform border-2 border-indigo-800 transition-all !duration-300 hover:scale-105 hover:duration-150 dark:border-teal-300 dark:bg-navy"
+                className="collapse collapse-arrow transform border-2 border-indigo-800 text-black transition-all !duration-300 hover:scale-105 hover:duration-150 dark:border-teal-300 dark:bg-navy"
               >
                 <input type="checkbox" className="dark:text-white" />
                 <div className="work-header collapse-title flex dark:text-white">
@@ -40,7 +40,7 @@ const Work = () => {
                     <p className="text-sm font-extrabold text-rose-600">
                       May 2021 - Aug 2022 (1yrs 4mos)
                     </p>
-                    <p className="text-xl font-extrabold dark:text-zinc-300">
+                    <p className="text-xl font-extrabold text-black dark:text-zinc-300">
                       Ontario Ministry of Children and Community Services |
                       CYSSC
                     </p>
@@ -204,10 +204,10 @@ const Work = () => {
               className="collapse collapse-arrow mt-4 transform border-2 border-indigo-800 transition-all !duration-300 hover:scale-105 hover:duration-150 dark:border-teal-300 dark:bg-navy sm:mt-14"
             >
               <input type="checkbox" />
-              <div className="collapse-title text-xl font-bold dark:text-white">
+              <div className="collapse-title text-xl font-bold text-black dark:text-white">
                 Other Experiences (Retail)
               </div>
-              <div className="collapse-content">
+              <div className="collapse-content text-black">
                 <div className="starbucks">
                   <p className="text-sm font-extrabold text-rose-600">
                     Oct 2023-Present
