@@ -129,99 +129,91 @@ const images = [
 ];
 
 const CarouselPhotos = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const handleSlideChange = (index) => {
-    setCurrentImageIndex(index);
-  };
-
   return (
-    <div className="flex h-screen ">
-      <Carousel
-        className="fixed inset-0 z-[999] overflow-hidden"
-        loop={true}
-        onChange={handleSlideChange}
-        prevArrow={({ handlePrev }) => (
-          <IconButton
-            variant="text"
-            color="white"
-            size="lg"
-            onClick={handlePrev}
-            className="!absolute left-4 top-2/4 z-10 -translate-y-2/4"
+    <Carousel
+      className="max-h-full max-w-full overflow-hidden"
+      loop={true}
+      prevArrow={({ handlePrev }) => (
+        <IconButton
+          variant="text"
+          color="white"
+          size="lg"
+          onClick={handlePrev}
+          className="!absolute left-4 top-2/4 z-10 -translate-y-2/4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-6 w-6"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
-          </IconButton>
-        )}
-        nextArrow={({ handleNext }) => (
-          <IconButton
-            variant="text"
-            color="white"
-            size="lg"
-            onClick={handleNext}
-            className="!absolute !right-4 top-2/4 z-10 -translate-y-2/4"
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+        </IconButton>
+      )}
+      nextArrow={({ handleNext }) => (
+        <IconButton
+          variant="text"
+          color="white"
+          size="lg"
+          onClick={handleNext}
+          className="!absolute !right-4 top-2/4 z-10 -translate-y-2/4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-6 w-6"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </IconButton>
-        )}
-      >
-        {images.map((img, i) => (
-          <div key={i} className="relative flex w-screen flex-col ">
-            <div
-              id="imageText"
-              className="flex justify-between rounded-t-lg bg-white  pt-1 font-bold"
-            >
-              <div className="pl-2">
-                <div className="text-black">
-                  {img.misc == "" ? "\u00A0" : `📸 Credits: ${img.misc}`}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </IconButton>
+      )}
+    >
+      {images.map((img, i) => (
+        <div
+          key={i}
+          className="space-between relative flex flex-col items-center overflow-visible"
+        >
+          <div className="flex h-full w-full justify-between rounded-t-lg bg-white text-center font-bold text-black">
+            <div className="pl-2">
+              {img.misc ? `📸 Credits: ${img.misc}` : "\u00A0"}
+            </div>
+            <div className="absolute inset-x-0 text-center">{img.title}</div>
+            {img.misc ? (
+              <div className="flex">
+                <div className="pr-2">{img.misc ? "Edit: Me" : "\u00A0"}</div>{" "}
+                <div className="pr-2 text-lg font-medium text-black">
+                  {i + 1}/{images.length}
                 </div>
               </div>
-
-              <div className="absolute inset-x-0 overflow-hidden text-center text-black">
-                {img.title}
+            ) : (
+              <div className="pr-2 text-lg font-medium text-black">
+                {i + 1}/{images.length}
               </div>
-
-              <div className="pr-2 text-black">
-                {img.misc == "" ? "\u00A0" : "Edit: Me"}
-              </div>
-            </div>
-
-            <img
-              key={i}
-              src={img.path}
-              alt={`Photo ${i}`}
-              loading="lazy"
-              className="aspect-auto h-full w-full object-contain object-center"
-            />
+            )}
           </div>
-        ))}
-      </Carousel>
-    </div>
+          <img
+            src={img.path}
+            alt={`Photo ${i}`}
+            loading="lazy"
+            className="max-h-full max-w-full object-contain"
+          />
+        </div>
+      ))}
+    </Carousel>
   );
 };
 

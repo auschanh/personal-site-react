@@ -276,16 +276,16 @@ const About = () => {
               📸 My Photos
             </Button>
           </div>
-          <div className="dialog-container">
-            <Dialog
-              open={open}
-              handler={handleOpen}
-              className="fixed inset-0 z-[998]  grid  w-screen  bg-transparent  "
-              padding={false}
-            >
+          <Dialog
+            className="mt-0 bg-transparent pt-0 "
+            open={open}
+            handler={handleOpen}
+            size="xl"
+          >
+            <DialogBody>
               <CarouselPhotos />
-            </Dialog>
-          </div>
+            </DialogBody>
+          </Dialog>
         </div>
       </div>
     </div>
