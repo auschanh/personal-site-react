@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-site-react/static/css/main.7610ea96.css",
+    "main.css": "/personal-site-react/static/css/main.91da3d87.css",
     "main.js": "/personal-site-react/static/js/main.9006a746.js",
     "static/media/review-caption.gif": "/personal-site-react/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/personal-site-react/static/media/search-caption.74276848ca3d66ccb0aa.gif",
@@ -36,11 +36,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/personal-site-react/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/personal-site-react/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/personal-site-react/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.7610ea96.css.map": "/personal-site-react/static/css/main.7610ea96.css.map",
+    "main.91da3d87.css.map": "/personal-site-react/static/css/main.91da3d87.css.map",
     "main.9006a746.js.map": "/personal-site-react/static/js/main.9006a746.js.map"
   },
   "entrypoints": [
-    "static/css/main.7610ea96.css",
+    "static/css/main.91da3d87.css",
     "static/js/main.9006a746.js"
   ]
 }
