@@ -3866,18 +3866,6 @@ details.collapse summary::-webkit-details-marker {
   top: 100%;
 }
 
-.top-4 {
-  top: 1rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -3938,10 +3926,6 @@ details.collapse summary::-webkit-details-marker {
   z-index: 2;
 }
 
-.z-\[998\] {
-  z-index: 998;
-}
-
 .z-\[9995\] {
   z-index: 9995;
 }
@@ -3982,6 +3966,10 @@ details.collapse summary::-webkit-details-marker {
   margin: -1px !important;
 }
 
+.\!m-0 {
+  margin: 0px !important;
+}
+
 .-m-px {
   margin: -1px;
 }
@@ -4004,10 +3992,6 @@ details.collapse summary::-webkit-details-marker {
 
 .m-auto {
   margin: auto;
-}
-
-.\!m-0 {
-  margin: 0px !important;
 }
 
 .\!my-0 {
@@ -4185,6 +4169,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 1.5rem;
 }
 
+.ml-\[0\.5px\] {
+  margin-left: 0.5px;
+}
+
 .ml-\[18px\] {
   margin-left: 18px;
 }
@@ -4199,6 +4187,14 @@ details.collapse summary::-webkit-details-marker {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-0\.5 {
+  margin-right: 0.125rem;
 }
 
 .mr-1 {
@@ -4297,30 +4293,6 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1px;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mr-0 {
-  margin-right: 0px;
-}
-
-.mr-0\.5 {
-  margin-right: 0.125rem;
-}
-
-.ml-\[1px\] {
-  margin-left: 1px;
-}
-
-.ml-\[0\.5px\] {
-  margin-left: 0.5px;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -4369,16 +4341,8 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
-}
-
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
 }
 
 .\!h-0 {
@@ -4586,10 +4550,6 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
-.h-\[95vh\] {
-  height: 95vh;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -4610,6 +4570,14 @@ details.collapse summary::-webkit-details-marker {
   max-height: 48px;
 }
 
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
+.max-h-\[95vh\] {
+  max-height: 95vh;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -4620,14 +4588,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-h-screen {
   max-height: 100vh;
-}
-
-.max-h-\[95vh\] {
-  max-height: 95vh;
-}
-
-.max-h-\[90vh\] {
-  max-height: 90vh;
 }
 
 .min-h-\[1\.5rem\] {
@@ -4854,6 +4814,10 @@ details.collapse summary::-webkit-details-marker {
   width: 76px;
 }
 
+.w-\[95vw\] {
+  width: 95vw;
+}
+
 .w-\[calc\(100\%-100px\)\] {
   width: calc(100% - 100px);
 }
@@ -4877,10 +4841,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[95vw\] {
-  width: 95vw;
 }
 
 .min-w-0 {
@@ -4975,8 +4935,16 @@ details.collapse summary::-webkit-details-marker {
   max-width: 90%;
 }
 
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
+
 .max-w-\[95\%\] {
   max-width: 95%;
+}
+
+.max-w-\[95vw\] {
+  max-width: 95vw;
 }
 
 .max-w-\[calc\(100\%-1rem\)\] {
@@ -4989,18 +4957,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-screen-2xl {
   max-width: 1320px;
-}
-
-.max-w-screen-xl {
-  max-width: 1140px;
-}
-
-.max-w-\[95vw\] {
-  max-width: 95vw;
-}
-
-.max-w-\[90vw\] {
-  max-width: 90vw;
 }
 
 .flex-auto {
@@ -6381,6 +6337,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(158 158 158 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 66 66 / var(--tw-bg-opacity));
@@ -6593,11 +6554,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 235 59 / 0.2);
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -6608,10 +6564,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-gradient-to-tr {
@@ -7209,10 +7161,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 0.125rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -7255,14 +7203,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-px {
   padding-top: 1px;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-left {
@@ -8055,11 +7995,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(239 83 80 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -8657,83 +8592,83 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  1.36% {
+  1.76% {
     content: "I";
   }
 
-  2.92% {
+  3.49% {
     content: "I'";
   }
 
-  4.73% {
+  5.07% {
     content: "I'm";
   }
 
-  6.91% {
+  6.4% {
     content: "I'm ";
   }
 
-  8.07% {
+  8.7% {
     content: "I'm A";
   }
 
-  9.83% {
+  9.71% {
     content: "I'm Au";
   }
 
-  11.46% {
+  11.44% {
     content: "I'm Aus";
   }
 
-  13.61% {
+  13.28% {
     content: "I'm Aust";
   }
 
-  14.68% {
+  14.75% {
     content: "I'm Austi";
   }
 
-  16.52%, 83.18% {
+  16.72%, 83.39% {
     content: "I'm Austin";
   }
 
-  84.85% {
+  85.06% {
     content: "I'm Austi";
   }
 
-  86.52% {
+  86.72% {
     content: "I'm Aust";
   }
 
-  88.18% {
+  88.39% {
     content: "I'm Aus";
   }
 
-  89.85% {
+  90.06% {
     content: "I'm Au";
   }
 
-  91.52% {
+  91.72% {
     content: "I'm A";
   }
 
-  93.18% {
+  93.39% {
     content: "I'm ";
   }
 
-  94.85% {
+  95.06% {
     content: "I'm";
   }
 
-  96.52% {
+  96.72% {
     content: "I'";
   }
 
-  98.18% {
+  98.39% {
     content: "I";
   }
 
-  99.85% {
+  100.06% {
     content: "";
   }
 }
@@ -8747,91 +8682,91 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  0.24% {
+  0.56% {
     content: "C";
   }
 
-  1.4% {
+  1.09% {
     content: "CH";
   }
 
-  1.28% {
+  1.93% {
     content: "CHA";
   }
 
-  2.17% {
+  2.1% {
     content: "CHAN";
   }
 
-  2.52% {
+  2.54% {
     content: "CHANH";
   }
 
-  3.03% {
+  2.83% {
     content: "CHANHS";
   }
 
-  4.2% {
+  4.1% {
     content: "CHANHSA";
   }
 
-  4.06% {
+  4.8% {
     content: "CHANHSAV";
   }
 
-  4.49% {
+  5.32% {
     content: "CHANHSAVA";
   }
 
-  5.45% {
+  5.34% {
     content: "CHANHSAVAN";
   }
 
-  5.61%, 79.28% {
+  5.95%, 79.61% {
     content: "CHANHSAVANG";
   }
 
-  81.12% {
+  81.45% {
     content: "CHANHSAVAN";
   }
 
-  82.96% {
+  83.3% {
     content: "CHANHSAVA";
   }
 
-  84.8% {
+  85.14% {
     content: "CHANHSAV";
   }
 
-  86.64% {
+  86.98% {
     content: "CHANHSA";
   }
 
-  88.48% {
+  88.82% {
     content: "CHANHS";
   }
 
-  90.33% {
+  90.66% {
     content: "CHANH";
   }
 
-  92.17% {
+  92.5% {
     content: "CHAN";
   }
 
-  94.01% {
+  94.35% {
     content: "CHA";
   }
 
-  95.85% {
+  96.19% {
     content: "CH";
   }
 
-  97.69% {
+  98.03% {
     content: "C";
   }
 
-  99.53% {
+  99.87% {
     content: "";
   }
 }
@@ -8845,315 +8780,311 @@ details.collapse summary::-webkit-details-marker {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 
-  0.06% {
+  0.81% {
     content: "I";
   }
 
-  0.87% {
+  0.94% {
     content: "I'";
   }
 
-  2.14% {
+  1.64% {
     content: "I'm";
   }
 
-  2.73% {
+  2.31% {
     content: "I'm ";
   }
 
-  2.77% {
+  2.38% {
     content: "I'm a";
   }
 
-  3.48% {
+  2.94% {
     content: "I'm a ";
   }
 
-  3.72% {
+  4.15% {
     content: "I'm a s";
   }
 
-  4.86% {
+  4.14% {
     content: "I'm a so";
   }
 
-  5.02% {
+  4.67% {
     content: "I'm a sof";
   }
 
-  5.2% {
+  6.11% {
     content: "I'm a soft";
   }
 
-  5.94% {
+  6.59% {
     content: "I'm a softw";
   }
 
-  6.48% {
+  6.29% {
     content: "I'm a softwa";
   }
 
-  6.9% {
+  7.29% {
     content: "I'm a softwar";
   }
 
-  8.17% {
+  8.05% {
     content: "I'm a software";
   }
 
-  8.27% {
+  8.56% {
     content: "I'm a software ";
   }
 
-  9.29% {
+  8.83% {
     content: "I'm a software d";
   }
 
-  9.17% {
+  9.35% {
     content: "I'm a software de";
   }
 
-  9.78% {
+  10.33% {
     content: "I'm a software dev";
   }
 
-  11.05% {
+  10.89% {
     content: "I'm a software deve";
   }
 
-  11.23% {
+  11.15% {
     content: "I'm a software devel";
   }
 
-  12.12% {
+  12.29% {
     content: "I'm a software develo";
   }
 
-  11.94% {
+  12.37% {
     content: "I'm a software develop";
   }
 
-  12.85% {
+  13.34% {
     content: "I'm a software develope";
   }
 
-  13.17% {
+  13.3% {
     content: "I'm a software developer";
   }
 
-  13.63% {
+  13.76% {
     content: "I'm a software developer ";
   }
 
-  14.95% {
+  14.64% {
     content: "I'm a software developer b";
   }
 
-  15.28% {
+  14.96% {
     content: "I'm a software developer ba";
   }
 
-  15.95% {
+  15.83% {
     content: "I'm a software developer bas";
   }
 
-  16.35% {
+  16.51% {
     content: "I'm a software developer base";
   }
 
-  17.27% {
+  17.28% {
     content: "I'm a software developer based";
   }
 
-  17.21% {
+  17.16% {
     content: "I'm a software developer based ";
   }
 
-  17.64% {
+  18.17% {
     content: "I'm a software developer based i";
   }
 
-  18.66% {
+  18.81% {
     content: "I'm a software developer based in";
   }
 
-  18.81% {
+  19.48% {
     content: "I'm a software developer based in ";
   }
 
-  19.59% {
+  19.41% {
     content: "I'm a software developer based in T";
   }
 
-  20.1% {
+  20.33% {
     content: "I'm a software developer based in To";
   }
 
-  20.84% {
+  20.68% {
     content: "I'm a software developer based in Tor";
   }
 
-  21.79% {
-    content: "I'm a software developer based in Toro";
-  }
-
-  22.31% {
+  21.67% {
     content: "I'm a software developer based in Toron";
   }
 
-  22.33% {
+  22.08% {
     content: "I'm a software developer based in Toront";
   }
 
-  22.61% {
+  23.07% {
     content: "I'm a software developer based in Toronto";
   }
 
-  23.81% {
+  23.95% {
     content: "I'm a software developer based in Toronto,";
   }
 
-  24.32% {
+  24.28% {
     content: "I'm a software developer based in Toronto, ";
   }
 
-  24.29% {
+  24.33% {
     content: "I'm a software developer based in Toronto, w";
   }
 
-  24.98% {
+  25.42% {
     content: "I'm a software developer based in Toronto, wi";
   }
 
-  25.45% {
+  26.07% {
     content: "I'm a software developer based in Toronto, wit";
   }
 
-  26.31% {
+  26.78% {
     content: "I'm a software developer based in Toronto, with";
   }
 
-  27.28% {
+  26.7% {
     content: "I'm a software developer based in Toronto, with ";
   }
 
-  27.2% {
+  27.38% {
     content: "I'm a software developer based in Toronto, with a";
   }
 
-  28.4% {
+  28.58% {
     content: "I'm a software developer based in Toronto, with a ";
   }
 
-  28.62% {
+  29.04% {
     content: "I'm a software developer based in Toronto, with a p";
   }
 
-  29.25% {
+  28.84% {
     content: "I'm a software developer based in Toronto, with a pa";
   }
 
-  29.99% {
+  30.07% {
     content: "I'm a software developer based in Toronto, with a pas";
   }
 
-  30.3% {
+  30.2% {
     content: "I'm a software developer based in Toronto, with a pass";
   }
 
-  30.52% {
+  30.95% {
     content: "I'm a software developer based in Toronto, with a passi";
   }
 
-  31.22% {
+  31.81% {
     content: "I'm a software developer based in Toronto, with a passio";
   }
 
-  31.56% {
+  32.06% {
     content: "I'm a software developer based in Toronto, with a passion";
   }
 
-  32.18% {
+  33.03% {
     content: "I'm a software developer based in Toronto, with a passion ";
   }
 
-  33.44% {
+  33.14% {
     content: "I'm a software developer based in Toronto, with a passion f";
   }
 
-  33.91% {
+  34.16% {
     content: "I'm a software developer based in Toronto, with a passion fo";
   }
 
-  34.02% {
+  34.18% {
     content: "I'm a software developer based in Toronto, with a passion for";
   }
 
-  34.57% {
+  34.65% {
     content: "I'm a software developer based in Toronto, with a passion for ";
   }
 
-  35.87% {
+  35.31% {
     content: "I'm a software developer based in Toronto, with a passion for w";
   }
 
-  36.41% {
+  35.49% {
     content: "I'm a software developer based in Toronto, with a passion for we";
   }
 
-  36.78% {
+  36.75% {
     content: "I'm a software developer based in Toronto, with a passion for web";
   }
 
-  36.82% {
+  37.32% {
     content: "I'm a software developer based in Toronto, with a passion for web ";
   }
 
-  37.32% {
+  37.86% {
     content: "I'm a software developer based in Toronto, with a passion for web d";
   }
 
-  38.19% {
+  38.65% {
     content: "I'm a software developer based in Toronto, with a passion for web de";
   }
 
-  39.24% {
+  39.01% {
     content: "I'm a software developer based in Toronto, with a passion for web dev";
   }
 
-  39.65% {
+  39.59% {
     content: "I'm a software developer based in Toronto, with a passion for web deve";
   }
 
-  40.32% {
+  40.18% {
     content: "I'm a software developer based in Toronto, with a passion for web devel";
   }
 
-  40.28% {
+  40.9% {
     content: "I'm a software developer based in Toronto, with a passion for web develo";
   }
 
-  41.18% {
+  40.82% {
     content: "I'm a software developer based in Toronto, with a passion for web develop";
   }
 
-  41.83% {
+  41.85% {
     content: "I'm a software developer based in Toronto, with a passion for web developm";
   }
 
-  42.23% {
+  41.92% {
     content: "I'm a software developer based in Toronto, with a passion for web developme";
   }
 
-  42.63% {
+  42.45% {
     content: "I'm a software developer based in Toronto, with a passion for web developmen";
   }
 
-  43.27% {
+  43.05% {
     content: "I'm a software developer based in Toronto, with a passion for web development";
   }
 
-  43.58%, 99.76% {
+  43.96%, 100.14% {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 }
@@ -13811,10 +13742,6 @@ h2 {
 }
 
 @media (max-width: 1024px) {
-  .max-lg\:hidden {
-    display: none;
-  }
-
   .max-lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
