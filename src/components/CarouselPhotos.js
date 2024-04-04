@@ -185,31 +185,40 @@ const CarouselPhotos = () => {
       {images.map((img, i) => (
         <div
           key={i}
-          className="space-between relative flex flex-col items-center overflow-visible"
+          className="space-between relative flex max-h-screen max-w-[100vw] flex-col items-center overflow-hidden"
         >
-          <div className="flex h-full w-full justify-between rounded-t-lg bg-white text-center font-bold text-black">
+          <div className="flex w-[95vw] max-w-full justify-between overflow-hidden rounded-t-lg bg-white text-center font-bold text-black max-md:hidden max-lg:text-sm">
             <div className="pl-2">
               {img.misc ? `📸 Credits: ${img.misc}` : "\u00A0"}
             </div>
-            <div className="absolute inset-x-0 text-center">{img.title}</div>
+            <div className="absolute inset-x-0 overflow-hidden text-center">
+              {img.title}
+            </div>
             {img.misc ? (
-              <div className="flex">
-                <div className="pr-2">{img.misc ? "Edit: Me" : "\u00A0"}</div>{" "}
-                <div className="pr-2 text-lg font-medium text-black">
+              <div className="flex overflow-hidden">
+                <div className="overflow-hidden pr-2">
+                  {img.misc ? "Edit: Me" : "\u00A0"}
+                </div>{" "}
+                <div className="overflow-hidden pr-2 text-lg font-medium text-black max-lg:text-sm">
                   {i + 1}/{images.length}
                 </div>
               </div>
             ) : (
-              <div className="pr-2 text-lg font-medium text-black">
+              <div className="overflow-hidden pr-2 text-lg font-medium text-black max-lg:text-sm">
                 {i + 1}/{images.length}
               </div>
             )}
+          </div>
+          <div className="hidden overflow-hidden max-md:flex">
+            <div className="absolute right-0 top-0 justify-end bg-gray-600 px-2 text-lg font-medium text-white">
+              {i + 1}/{images.length}
+            </div>
           </div>
           <img
             src={img.path}
             alt={`Photo ${i}`}
             loading="lazy"
-            className="max-h-full max-w-full object-contain"
+            className="max-h-[95vh] w-full max-w-[95vw] overflow-hidden object-contain"
           />
         </div>
       ))}

@@ -277,7 +277,7 @@ const About = () => {
             </Button>
           </div>
           <Dialog
-            className="mt-0 bg-transparent pt-0 "
+            className="!m-0 overflow-hidden bg-transparent !p-0"
             open={open}
             handler={handleOpen}
             size="xl"
