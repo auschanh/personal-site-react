@@ -131,7 +131,7 @@ const images = [
 const CarouselPhotos = () => {
   return (
     <Carousel
-      className="max-h-full max-w-full overflow-hidden"
+      className="max-h-full max-w-full items-center justify-start overflow-hidden object-contain"
       loop={true}
       prevArrow={({ handlePrev }) => (
         <IconButton
@@ -199,19 +199,22 @@ const CarouselPhotos = () => {
                 <div className="overflow-hidden pr-2">
                   {img.misc ? "Edit: Me" : "\u00A0"}
                 </div>{" "}
-                <div className="overflow-hidden pr-2 text-lg font-medium text-black max-lg:text-sm">
-                  {i + 1}/{images.length}
+                <div className="overflow-hidden pr-2 text-base font-extrabold text-black max-lg:text-sm">
+                  <span className="mr-0.5">{i + 1}</span>/
+                  <span className="ml-[0.5px]">{images.length}</span>
                 </div>
               </div>
             ) : (
-              <div className="overflow-hidden pr-2 text-lg font-medium text-black max-lg:text-sm">
-                {i + 1}/{images.length}
+              <div className="overflow-hidden pr-2 text-base font-extrabold text-black max-lg:text-sm">
+                <span className="mr-0.5">{i + 1}</span>/
+                <span className="ml-[0.5px]">{images.length}</span>{" "}
               </div>
             )}
           </div>
           <div className="hidden overflow-hidden max-md:flex">
-            <div className="absolute right-0 top-0 justify-end bg-gray-600 px-2 text-lg font-medium text-white">
-              {i + 1}/{images.length}
+            <div className="absolute right-0 top-0 justify-end bg-gray-600 px-2 text-base font-extrabold text-white">
+              <span className="mr-0.5">{i + 1}</span>/
+              <span className="ml-[0.5px]">{images.length}</span>{" "}
             </div>
           </div>
           <img

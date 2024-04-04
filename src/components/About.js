@@ -277,12 +277,12 @@ const About = () => {
             </Button>
           </div>
           <Dialog
-            className="!m-0 overflow-hidden bg-transparent !p-0"
+            className="!m-0 overflow-hidden bg-transparent !p-0 shadow-none outline-none"
             open={open}
             handler={handleOpen}
             size="xl"
           >
-            <DialogBody>
+            <DialogBody className="flex h-full items-center justify-center">
               <CarouselPhotos />
             </DialogBody>
           </Dialog>

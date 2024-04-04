@@ -10,10 +10,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode !== null ? JSON.parse(savedMode) : true; // on first render, there will be no savedMode in local storage, set darkMode to True
+  });
 
   const toggleDarkMode = () => {
+    const darkModeFlag = !darkMode;
     setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", JSON.stringify(darkModeFlag));
   };
 
   useEffect(() => {
