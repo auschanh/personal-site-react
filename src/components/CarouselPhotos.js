@@ -131,7 +131,7 @@ const images = [
 const CarouselPhotos = () => {
   return (
     <Carousel
-      className="max-h-full max-w-full items-center justify-start overflow-hidden object-contain"
+      className="h-full max-h-full w-full max-w-full items-center justify-start overflow-hidden object-cover"
       loop={true}
       prevArrow={({ handlePrev }) => (
         <IconButton
@@ -185,9 +185,9 @@ const CarouselPhotos = () => {
       {images.map((img, i) => (
         <div
           key={i}
-          className="space-between relative flex max-h-screen max-w-[100vw] flex-col items-center overflow-hidden"
+          className="space-between relative flex h-full max-h-full w-full max-w-full flex-col items-center overflow-hidden"
         >
-          <div className="flex w-[95vw] max-w-full justify-between overflow-hidden rounded-t-lg bg-white text-center font-bold text-black max-md:hidden max-lg:text-sm">
+          <div className="m-0 flex h-full max-h-full w-full max-w-full justify-between overflow-hidden rounded-t-lg bg-white p-0 text-center font-bold text-black max-md:hidden max-lg:text-sm">
             <div className="pl-2">
               {img.misc ? `📸 Credits: ${img.misc}` : "\u00A0"}
             </div>
@@ -221,7 +221,7 @@ const CarouselPhotos = () => {
             src={img.path}
             alt={`Photo ${i}`}
             loading="lazy"
-            className="max-h-[95vh] w-full max-w-[95vw] overflow-hidden object-contain"
+            className="h-auto w-auto overflow-hidden object-cover"
           />
         </div>
       ))}
