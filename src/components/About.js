@@ -282,7 +282,7 @@ const About = () => {
             handler={handleOpen}
             size="xl"
           >
-            <DialogBody className="flex h-full items-center justify-center">
+            <DialogBody className="flex h-full items-center justify-center overflow-hidden">
               <CarouselPhotos />
             </DialogBody>
           </Dialog>
