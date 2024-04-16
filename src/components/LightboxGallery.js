@@ -8,6 +8,8 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 import pic1 from "../assets/photography/20191225-DSC_0005.jpg";
 import pic2 from "../assets/photography/20191227-DSC_0348.jpg";
@@ -140,21 +142,24 @@ const images = [
 const LightboxGallery = ( {open, close}) => {
   const captionsRef = useRef(null);
   const fullscreenRef = React.useRef(null);
+  const zoomRef = React.useRef(null);
 
 	return (
 		<>
 			<Lightbox
         close={close} 
-        plugins={[Captions, Counter, Fullscreen]}
+        plugins={[Captions, Counter, Fullscreen, Zoom]}
         styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .65)" } }}
         open={open}
         fullscreen={{ ref: fullscreenRef }}
-        counter={{ container: { style: { top: 0, left: 0 } } }} 
+        counter={{ container: { style: { top: 0, left: 0 } } }}
 				slides={images.map((img, i) => ({
           src: img.path,
           title: img.title,
+          description: img.misc ? `📸 Credits: ${img.misc} \u00A0\u00A0\u00A0\u00A0\u00A0 🧑‍💻 Edit: Austin Chanhsavang (Me)` : ''
         }))}
-        captions={{ref: captionsRef}}
+        captions={{ref: captionsRef
+        }}
         on={{
           click: () => {
             (captionsRef.current?.visible

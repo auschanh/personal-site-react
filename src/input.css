@@ -146,4 +146,32 @@ h2 {
 
 .yarl__slide_title {
   text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+@media screen and (max-width: 768px) {
+  .yarl__counter {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    top: auto !important;
+  }
+  .yarl__slide_title {
+    text-align: center;
+    position: relative;
+    left: auto;
+    right: auto;
+    transform: none;
+  }
+  .yarl__slide_description {
+    text-align: end !important;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  [aria-label="Zoom in"], [aria-label="Zoom out"] {
+    display: none !important;
+  }
 }
