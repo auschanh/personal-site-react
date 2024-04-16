@@ -1,5 +1,14 @@
-import React, { useState } from "react";
-import { Carousel, IconButton } from "@material-tailwind/react";
+import React, { useState, useRef } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/plugins/captions.css";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import "yet-another-react-lightbox/styles.css";
+
 import pic1 from "../assets/photography/20191225-DSC_0005.jpg";
 import pic2 from "../assets/photography/20191227-DSC_0348.jpg";
 import pic3 from "../assets/photography/20191231-DSC_0867.jpg";
@@ -128,105 +137,36 @@ const images = [
   // },
 ];
 
-const CarouselPhotos = () => {
-  return (
-    <Carousel
-      className="h-fit max-h-fit w-fit max-w-fit items-center justify-start overflow-hidden object-cover"
-      loop={true}
-      prevArrow={({ handlePrev }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handlePrev}
-          className="!absolute left-4 top-2/4 z-10 -translate-y-2/4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
-        </IconButton>
-      )}
-      nextArrow={({ handleNext }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handleNext}
-          className="!absolute !right-4 top-2/4 z-10 -translate-y-2/4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-            />
-          </svg>
-        </IconButton>
-      )}
-    >
-      {images.map((img, i) => (
-        <div
-          key={i}
-          className="space-between relative flex h-full max-h-full w-full max-w-full flex-col items-center overflow-hidden"
-        >
-          <div className="m-0 flex h-full max-h-full w-full max-w-full justify-between overflow-hidden rounded-t-lg bg-white p-0 text-center font-bold text-black max-md:hidden max-lg:text-sm">
-            <div className="pl-2">
-              {img.misc ? `📸 Credits: ${img.misc}` : "\u00A0"}
-            </div>
-            <div className="absolute inset-x-0 overflow-hidden text-center">
-              {img.title}
-            </div>
-            {img.misc ? (
-              <div className="flex overflow-hidden">
-                <div className="overflow-hidden pr-2">
-                  {img.misc ? "Edit: Me" : "\u00A0"}
-                </div>{" "}
-                <div className="overflow-hidden pr-2 text-base font-extrabold text-black max-lg:text-sm">
-                  <span className="mr-0.5">{i + 1}</span>/
-                  <span className="ml-[0.5px]">{images.length}</span>
-                </div>
-              </div>
-            ) : (
-              <div className="overflow-hidden pr-2 text-base font-extrabold text-black max-lg:text-sm">
-                <span className="mr-0.5">{i + 1}</span>/
-                <span className="ml-[0.5px]">{images.length}</span>{" "}
-              </div>
-            )}
-          </div>
-          <div className="hidden overflow-hidden max-md:flex">
-            <div className="absolute right-0 top-0 justify-end bg-gray-600 px-2 text-base font-extrabold text-white">
-              <span className="mr-0.5">{i + 1}</span>/
-              <span className="ml-[0.5px]">{images.length}</span>{" "}
-            </div>
-          </div>
-          <img
-            src={img.path}
-            alt={`Photo ${i}`}
-            loading="lazy"
-            className="h-full w-full overflow-hidden object-contain object-center"
-          />
-        </div>
-      ))}
-    </Carousel>
-  );
-};
+const LightboxGallery = ( {open, close}) => {
+  const captionsRef = useRef(null);
+  const fullscreenRef = React.useRef(null);
 
-export default CarouselPhotos;
+	return (
+		<>
+			<Lightbox
+        close={close} 
+        plugins={[Captions, Counter, Fullscreen]}
+        styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .65)" } }}
+        open={open}
+        fullscreen={{ ref: fullscreenRef }}
+        counter={{ container: { style: { top: 0, left: 0 } } }} 
+				slides={images.map((img, i) => ({
+          src: img.path,
+          title: img.title,
+        }))}
+        captions={{ref: captionsRef}}
+        on={{
+          click: () => {
+            (captionsRef.current?.visible
+              ? captionsRef.current?.hide
+              : captionsRef.current?.show)?.();
+          },
+          fullscreen: () => fullscreenRef.current?.enter(),
+        }}
+        
+			/>
+		</>
+	);
+}
+
+export default LightboxGallery;

@@ -15,7 +15,8 @@
     "react-scripts": "5.0.1",
     "tailwind-typewriter": "^1.0.1",
     "tw-elements": "^1.1.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.17.3"
   },
   "scripts": {
     "start": "react-scripts start",

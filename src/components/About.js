@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import me from "../assets/DSC00108 CROP.png";
 import meJapan from "../assets/hobbies/MixTapeCover.jpg";
 import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
 import CarouselPhotos from "./CarouselPhotos";
+import LightboxGallery from "./LightboxGallery";
 
 import {
   Button,
@@ -14,13 +15,22 @@ import {
   Carousel,
   IconButton,
   Typography,
+  button,
 } from "@material-tailwind/react";
 
 const About = () => {
   const [open, setOpen] = useState(false);
   const [showText, setShowText] = useState(false);
+  const buttonRef = useRef(null);
 
   const handleOpen = () => setOpen(!open);
+
+  useEffect(() => {
+    if (!open) {
+      // Set focus on the button when the Lightbox is closed
+      buttonRef.current.focus();
+    }
+  }, [open]);
 
   const toggleText = () => {
     const aboutMoreText = document.getElementById("about-more");
@@ -270,22 +280,24 @@ const About = () => {
           </div>
           <div className="flex justify-center">
             <Button
+              ref={buttonRef}
               onClick={handleOpen}
+              autoFocus
               className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 text-base font-bold text-white shadow hover:scale-110 hover:bg-teal-400 focus:outline-none"
             >
               📸 My Photos
             </Button>
           </div>
-          <Dialog
-            className="!m-0 overflow-hidden bg-transparent !p-0 shadow-none outline-none"
+          <LightboxGallery open={open} close={()=>setOpen(false)}/>
+          {/* <Dialog
+            className="!m-0 overflow-hidden bg-transparent !p-0 shadow-none outline-none h-screen w-screen"
             open={open}
             handler={handleOpen}
-            size="xl"
           >
             <DialogBody className="flex h-full items-center justify-center overflow-hidden">
               <CarouselPhotos />
             </DialogBody>
-          </Dialog>
+          </Dialog> */}
         </div>
       </div>
     </div>
