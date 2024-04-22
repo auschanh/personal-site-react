@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.86f5ed36.css",
-    "main.js": "/static/js/main.9f3992f6.js",
+    "main.css": "/static/css/main.6d5feac1.css",
+    "main.js": "/static/js/main.3c7cde0f.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -29,7 +29,7 @@
     "static/media/20200102-DSC_0028.jpg": "/static/media/20200102-DSC_0028.5be0d3c394ed22b07e2d.jpg",
     "static/media/just-one.jpg": "/static/media/just-one.777d06a5ed187fce1514.jpg",
     "static/media/blackjack-cropped.png": "/static/media/blackjack-cropped.5a41f9d6b2db7d996cf3.png",
-    "static/media/Resume2024.pdf": "/static/media/Resume2024.f2bd24459b8d437b60a7.pdf",
+    "static/media/Resume2024.pdf": "/static/media/Resume2024.00022cd73b7ae650ca7a.pdf",
     "static/media/react-3.png": "/static/media/react-3.885778c4c1d2856e1ea1.png",
     "index.html": "/index.html",
     "static/media/sharepoint.svg": "/static/media/sharepoint.054eed443eda9d925a60fe66eb0e0546.svg",
@@ -37,11 +37,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.86f5ed36.css.map": "/static/css/main.86f5ed36.css.map",
-    "main.9f3992f6.js.map": "/static/js/main.9f3992f6.js.map"
+    "main.6d5feac1.css.map": "/static/css/main.6d5feac1.css.map",
+    "main.3c7cde0f.js.map": "/static/js/main.3c7cde0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f5ed36.css",
-    "static/js/main.9f3992f6.js"
+    "static/css/main.6d5feac1.css",
+    "static/js/main.3c7cde0f.js"
   ]
 }
