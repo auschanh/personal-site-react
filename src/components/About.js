@@ -42,7 +42,7 @@ const About = () => {
 
   return (
     <div className="grid grid-flow-row justify-center lg:max-w-full">
-      <div className="w-screen bg-slate-200 py-10 pt-32 dark:bg-dark-navy sm:pt-64">
+      <div className="w-screen bg-slate-200 py-10 md:py-40 2xl:py-[28rem] pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
           <div className="hero-left picture basis-full items-center justify-center lg:basis-1/3">
             <img
@@ -281,12 +281,12 @@ const About = () => {
               </Carousel>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center pt-10">
             <Button
               ref={buttonRef}
               onClick={handleOpen}
               autoFocus
-              className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 text-base font-bold text-white shadow hover:scale-110 hover:bg-teal-400 focus:outline-none"
+              className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 text-xl font-bold text-white shadow hover:scale-110 hover:bg-teal-200 focus:outline-none"
             >
               📸 My Photos
             </Button>

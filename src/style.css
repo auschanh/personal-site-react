@@ -7089,6 +7089,11 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 5px;
 }
 
+.py-\[28rem\] {
+  padding-top: 28rem;
+  padding-bottom: 28rem;
+}
+
 .\!pr-7 {
   padding-right: 1.75rem !important;
 }
@@ -7219,6 +7224,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-px {
   padding-top: 1px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-left {
@@ -10683,6 +10692,11 @@ h2 {
   background-color: rgb(186 104 200 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-teal-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 203 196 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-80:hover {
   --tw-bg-opacity: 0.8;
 }
@@ -13574,6 +13588,11 @@ h2 {
     justify-self: end;
   }
 
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .md\:pr-1 {
     padding-right: 0.25rem;
   }
@@ -13666,6 +13685,21 @@ h2 {
     padding-bottom: 1rem;
   }
 
+  .lg\:py-80 {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .lg\:py-96 {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .lg\:py-\[28rem\] {
+    padding-top: 28rem;
+    padding-bottom: 28rem;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -13738,6 +13772,16 @@ h2 {
 
   .\32xl\:max-w-\[75\%\] {
     max-width: 75%;
+  }
+
+  .\32xl\:py-\[28rem\] {
+    padding-top: 28rem;
+    padding-bottom: 28rem;
+  }
+
+  .\32xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 
