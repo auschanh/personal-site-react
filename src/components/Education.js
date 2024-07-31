@@ -3,14 +3,14 @@ import tmuLogo from "../assets/logos/TMU-rgb.png";
 
 const Education = () => {
   return (
-    <div id="education" className="bg-white py-40 dark:bg-navy">
+    <div id="education" className="bg-slate-100 py-40 dark:bg-navy">
       <div
         className="education section sm:px-auto row-span-1 px-10 text-black sm:container"
         data-aos="fade-zoom-in"
         data-aos-duration="1000"
       >
-        <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
-          Education
+        <h1 className="text-3xl font-bold font-mono underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          / Education
         </h1>
         <br />
         <br />
@@ -38,6 +38,11 @@ const Education = () => {
               </span>
             </p>
           </div>
+          
+        </div>
+        <div className="text-lg mt-4 font-mono text-teal-600 dark:text-teal-300">
+          <span className="font-extrabold">COURSES: </span> 
+          <span className="dark:text-zinc-300 text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
         </div>
       </div>
     </div>

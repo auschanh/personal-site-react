@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
-import resume from "../assets/Resume2024.pdf";
+import resume from "../assets/Resume2024Word.pdf";
 // import { Button } from "@material-tailwind/react";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
