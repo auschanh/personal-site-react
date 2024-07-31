@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.22bcd9b3.css",
-    "main.js": "/static/js/main.01815a30.js",
+    "main.css": "/static/css/main.c33aa583.css",
+    "main.js": "/static/js/main.77454736.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -28,8 +28,16 @@
     "static/media/DSC00108 CROP.png": "/static/media/DSC00108 CROP.b9098b5656ffb34a0d68.png",
     "static/media/20200102-DSC_0028.jpg": "/static/media/20200102-DSC_0028.5be0d3c394ed22b07e2d.jpg",
     "static/media/just-one.jpg": "/static/media/just-one.777d06a5ed187fce1514.jpg",
+    "static/media/homepage.jpg": "/static/media/homepage.33a22e29eb746b3ff49a.jpg",
     "static/media/blackjack-cropped.png": "/static/media/blackjack-cropped.5a41f9d6b2db7d996cf3.png",
-    "static/media/Resume2024Word.pdf": "/static/media/Resume2024Word.d77df7942e988918ced3.pdf",
+    "static/media/chat.jpg": "/static/media/chat.c1028fadfee1edea705d.jpg",
+    "static/media/voteHint.jpg": "/static/media/voteHint.108b5fb9619326044fba.jpg",
+    "static/media/eliminateHint.jpg": "/static/media/eliminateHint.8a3c9ef96a5da98547c7.jpg",
+    "static/media/lobby.jpg": "/static/media/lobby.994918425c870e6104fd.jpg",
+    "static/media/failscreen.jpg": "/static/media/failscreen.17b1d4c1c671dbefa08d.jpg",
+    "static/media/hint.jpg": "/static/media/hint.5bb8a7ae60cfdd9f67ae.jpg",
+    "static/media/Resume2024Word.pdf": "/static/media/Resume2024Word.79fd796922d16dffea59.pdf",
+    "static/media/settings.jpg": "/static/media/settings.06d2c97413be60cef94c.jpg",
     "static/media/react-3.png": "/static/media/react-3.885778c4c1d2856e1ea1.png",
     "index.html": "/index.html",
     "static/media/sharepoint.svg": "/static/media/sharepoint.054eed443eda9d925a60fe66eb0e0546.svg",
@@ -37,11 +45,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.22bcd9b3.css.map": "/static/css/main.22bcd9b3.css.map",
-    "main.01815a30.js.map": "/static/js/main.01815a30.js.map"
+    "main.c33aa583.css.map": "/static/css/main.c33aa583.css.map",
+    "main.77454736.js.map": "/static/js/main.77454736.js.map"
   },
   "entrypoints": [
-    "static/css/main.22bcd9b3.css",
-    "static/js/main.01815a30.js"
+    "static/css/main.c33aa583.css",
+    "static/js/main.77454736.js"
   ]
 }
