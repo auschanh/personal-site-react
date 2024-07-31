@@ -42,7 +42,7 @@ const About = () => {
 
   return (
     <div className="grid grid-flow-row justify-center lg:max-w-full">
-      <div className="w-screen bg-slate-100 py-10 pt-32 dark:bg-dark-navy sm:pt-64">
+      <div className="w-screen bg-slate-200 py-10 pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
           <div className="hero-left picture basis-full items-center justify-center lg:basis-1/3">
             <img
@@ -68,23 +68,24 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a software developer based in Toronto, with a passion for
-                web development.
+                I'm a software developer based in Toronto, with a growing interest in AI.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div id="about-jump" className="bg-white dark:bg-navy"></div>
+      <div id="about-jump" className="bg-slate-100 dark:bg-navy"></div>
 
-      <div className="bg-white dark:bg-navy">
+      <div className="bg-slate-100 dark:bg-navy">
         <div
           id="about"
           className="section about sm:px-auto row-span-1 mb-20 mt-32 px-10 pb-16 text-black sm:container"
         >
-          <h1 className="text-3xl font-bold underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
-            About
+          
+          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+            / About 
           </h1>
+          
           <br />
           <div
             className="section-desc"
@@ -139,7 +140,9 @@ const About = () => {
               <p>
                 Currently, I'm always keeping up with what's trendy in tech. I
                 love to continuously learn and grow my skill set as a developer
-                and a person. Below are some things outside of tech that I'm
+                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Artificial Intelligence</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">AI</strong>.
+                <br />
+                Below are some things outside of tech that I'm
                 interested in.
               </p>
             </div>

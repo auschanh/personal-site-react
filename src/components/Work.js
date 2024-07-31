@@ -11,13 +11,13 @@ const Work = () => {
   return (
     <div>
       <div id="work-jump"></div>
-      <div className="work bg-slate-100 py-40 dark:bg-dark-navy">
+      <div className="work bg-slate-200 py-40 dark:bg-dark-navy">
         <div
           id="work"
           className="section sm:px-auto row-span-1 mt-10 justify-items-center px-10 sm:container"
         >
-          <h1 className="text-3xl font-bold text-black underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
-            Work Experiences
+          <h1 className="text-3xl font-bold font-mono text-black underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+           / Work Experiences
           </h1>
           <br />
           <br />
@@ -25,7 +25,7 @@ const Work = () => {
             <div>
               <div
                 tabindex="0"
-                className="collapse collapse-arrow transform border-2 border-indigo-800 text-black transition-all !duration-300 hover:scale-105 hover:duration-150 dark:border-teal-300 dark:bg-navy"
+                className="collapse collapse-arrow transform text-black transition-all !duration-300 hover:scale-105 hover:duration-150 dark:bg-navy bg-slate-100"
               >
                 <input type="checkbox" className="dark:text-white" />
                 <div className="work-header collapse-title flex dark:text-white">
@@ -36,32 +36,37 @@ const Work = () => {
                       className="w-16 md:w-10"
                     />
                   </div>
-                  <div className="ml-3">
-                    <p className="text-sm font-extrabold text-rose-600">
-                      May 2021 - Aug 2022 (1yrs 4mos)
-                    </p>
-                    <p className="text-xl font-extrabold text-black dark:text-zinc-300">
-                      Ontario Ministry of Children and Community Services |
-                      CYSSC
-                    </p>
-                    <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
-                      PROGRAMMER
-                    </p>
+                  <div className="ml-3 flex justify-between w-full">
+                    <div>
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                        Ontario Ministry of Children and Community Services
+                      </p>
+                      <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
+                        SOFTWARE DEVELOPER
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-300">
+                        May 2021 - Aug 2022 (1yrs 4mos)
+                      </p>
+                    </div>
+                  
                   </div>
                 </div>
+
                 <div className="job1-desc collapse-content">
-                  <p className="mt-3 font-extrabold text-teal-600 dark:text-teal-300">
+                  <p className="mt-3 font-extrabold dark:text-white text-black">
                     Responsibilities
                   </p>
                   <ul className="job-desc ml-3 list-disc text-base dark:text-zinc-300">
                     <li className="my-2">
                       Created and maintained{" "}
-                      <strong className="dark:text-white">SharePoint</strong>{" "}
+                      <strong className="text-teal-800 dark:text-teal-500">SharePoint</strong>{" "}
                       sites based on client tickets and requirements
                     </li>
                     <li className="my-2">
                       Automated tasks with{" "}
-                      <strong className="dark:text-white">
+                      <strong className="text-teal-800 dark:text-teal-500">
                         Power Automate
                       </strong>{" "}
                       to track files, populate lists/tables, email and notify
@@ -69,35 +74,35 @@ const Work = () => {
                     </li>
                     <li className="my-2">
                       Utilized{" "}
-                      <strong className="dark:text-white">ReactJS</strong> and{" "}
-                      <strong className="dark:text-white">
+                      <strong className="text-teal-800 dark:text-teal-500">ReactJS</strong> and{" "}
+                      <strong className="text-teal-800 dark:text-teal-500">
                         SharePoint Framework (SPFx)
                       </strong>{" "}
                       to uniquely customize and develop client{" "}
-                      <strong className="dark:text-white">
+                      <strong className="text-teal-800 dark:text-teal-500">
                         SharePoint site
                       </strong>
                     </li>
                   </ul>
                   <br />
                   <div className="highlights mb-3">
-                    <p className="font-xl mt-3 font-extrabold text-teal-600 dark:text-teal-300">
+                    <p className="font-xl mt-3 font-extrabold dark:text-white text-black">
                       Highlights
                     </p>
                     <p className="my-2 text-base dark:text-zinc-300">
                       ▶{" "}
-                      <strong className="dark:text-white">
+                      <strong className="text-teal-800 dark:text-teal-500">
                         Selected as a speaker for CYSSC Learning and Engagement
                         Conference
                       </strong>{" "}
-                      among multiple co-op students - spoke about a solo project
+                      among multiple co-op students - spoke to over 300+ employees about a solo project
                       on building a Sharepoint site and workflow for client,
                       dramatically reducing time to populate, sort and filter
                       data from applicants.
                     </p>
                     <p className="text-base dark:text-zinc-300">
                       ▶ Developed a workflow that{" "}
-                      <strong className="dark:text-white">
+                      <strong className="text-teal-800 dark:text-teal-500">
                         automated ticket requests
                       </strong>{" "}
                       from clients onto team task list, removing manual
@@ -201,23 +206,31 @@ const Work = () => {
           <div>
             <div
               tabindex="0"
-              className="collapse collapse-arrow mt-4 transform border-2 border-indigo-800 transition-all !duration-300 hover:scale-105 hover:duration-150 dark:border-teal-300 dark:bg-navy sm:mt-14"
+              className="collapse collapse-arrow mt-4 transform  transition-all !duration-300 hover:scale-105 hover:duration-150 bg-slate-100 dark:bg-navy sm:mt-14"
             >
               <input type="checkbox" />
               <div className="collapse-title text-xl font-bold text-black dark:text-white">
                 Other Experiences (Retail)
               </div>
+
               <div className="collapse-content text-black">
                 <div className="starbucks">
-                  <p className="text-sm font-extrabold text-rose-600">
-                    Oct 2023-Present
-                  </p>
-                  <p className="text-xl font-extrabold dark:text-zinc-300">
-                    Starbucks (Retail)
-                  </p>
-                  <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
-                    BARISTA
-                  </p>
+                  <div className="flex justify-between w-full">
+                    <div>
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                        Starbucks (Retail)
+                      </p>
+                      <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
+                        BARISTA
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-300">
+                        Oct 2023-Present
+                      </p>
+                    </div>
+                  </div>
+                  
                   <p className="dark:text-zinc-300">
                     Tasks include: daily cleaning of tools, carefully crafting
                     customized drinks, and restocking inventory.
@@ -225,26 +238,36 @@ const Work = () => {
                 </div>
                 <br />
                 <br />
+
                 <div className="longos">
-                  <p className="text-sm font-extrabold text-rose-600">
-                    Jul 2016 - April 2021 (4yrs 8mos)
-                  </p>
-                  <p className="text-xl font-extrabold dark:text-zinc-300">
-                    Longos Corporation (Retail)
-                  </p>
-                  <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
-                    DAIRY CLERK
-                  </p>
+                  <div className="flex justify-between w-100">
+                    <div>
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                        Longos Corporation (Retail)
+                      </p>
+                      <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
+                        DAIRY CLERK
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-300">
+                        Jul 2016 - April 2021 (4yrs 8mos)
+                      </p>
+                    </div>
+                   
+                    
+                  </div>
+                
                   <p className="job-desc text-base dark:text-zinc-300">
                     Daily tasks included: solo closing the department on closing
                     days, stocking inventory and assisting customers. A lot of
                     my interpersonal skills were developed here, such as{" "}
-                    <span className="font-bold dark:text-white">teamwork</span>,{" "}
-                    <span className="font-bold dark:text-white">
+                    <span className="font-bold text-teal-800 dark:text-teal-500">teamwork</span>,{" "}
+                    <span className="font-bold text-teal-800 dark:text-teal-500">
                       initiative
                     </span>
                     , and
-                    <span className="font-bold dark:text-white">
+                    <span className="font-bold text-teal-800 dark:text-teal-500">
                       {" "}
                       customer service
                     </span>
@@ -253,16 +276,24 @@ const Work = () => {
                 </div>
                 <br />
                 <br />
+
                 <div className="shoppers">
-                  <p className="text-sm font-extrabold text-rose-600">
-                    Nov 2014 - Feb 2015 (4mos)
-                  </p>
-                  <p className="text-xl font-extrabold dark:text-zinc-300">
-                    Shoppers Drug Mart (Retail)
-                  </p>
-                  <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
-                    ASSISTANT PHARMACIST/CASHIER
-                  </p>
+                  <div className="flex justify-between flex-full">
+                    <div>
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                        Shoppers Drug Mart (Retail)
+                      </p>
+                      <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
+                        ASSISTANT PHARMACIST/CASHIER
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-300">
+                        Nov 2014 - Feb 2015 (4mos)
+                      </p>
+                    </div>
+                  </div>
+                  
                   <p className="dark:text-zinc-300">
                     Stocked inventory of medicines and drugs, filled customer
                     prescriptions with precise instructions (weighing, removing,

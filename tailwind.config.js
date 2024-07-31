@@ -24,6 +24,7 @@ module.exports = withMT({
         },
         slate: {
           100: "rgb(241 245 249)",
+          200: "#e2e8f0"
         },
         gray: {
           700: "rgb(55 65 81)",
