@@ -90,8 +90,8 @@ const About = () => {
           <div
             className="section-desc"
             data-aos="fade-zoom-in"
-            data-aos-duration="1000"
-            data-aos-offset="100"
+            data-aos-duration="2000"
+            data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
           >
             <div className="text-xl dark:text-zinc-300 max-sm:text-sm">

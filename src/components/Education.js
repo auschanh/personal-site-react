@@ -6,15 +6,16 @@ const Education = () => {
     <div id="education" className="bg-slate-100 py-40 dark:bg-navy">
       <div
         className="education section sm:px-auto row-span-1 px-10 text-black sm:container"
-        data-aos="fade-zoom-in"
-        data-aos-duration="1000"
       >
         <h1 className="text-3xl font-bold font-mono underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
           / Education
         </h1>
         <br />
         <br />
-        <div className="section-desc flex flex-col sm:flex-row">
+        <div data-aos="fade-zoom-in"
+        data-aos-duration="2000"
+        data-aos-offset="250">
+            <div className="section-desc flex flex-col sm:flex-row">
           <div className="tmu-logo">
             <img src={tmuLogo} alt="TMU logo" className="sm:h-20" />
           </div>
@@ -44,6 +45,8 @@ const Education = () => {
           <span className="font-extrabold">COURSES: </span> 
           <span className="dark:text-zinc-300 text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
         </div>
+        </div>
+        
       </div>
     </div>
   );

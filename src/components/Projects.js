@@ -63,7 +63,13 @@ const Projects = () => {
 
           <div className="section-desc">
 
-            <div className="mt-20">
+            <div 
+            data-aos="fade-zoom-in-down"
+            data-aos-duration="2000"
+            data-aos-offset="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+            className="mt-20">
               <ProjectCard
                 title={
                   <a
@@ -72,7 +78,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     href="https://bookreviews-app.fly.dev/"
                   >
-                    Book Review Website
+                    🔗 Book Review Website
                   </a>
                 }
                 chips={
@@ -128,6 +134,7 @@ const Projects = () => {
                   />,
                 ]}
                 github="https://github.com/auschanh/Book-Reviews"
+                linkURL={"https://bookreviews-app.fly.dev/"}
                 desc={
                   <div class="text-xs dark:text-zinc-300 sm:text-xl">
                     <p>
@@ -154,7 +161,13 @@ const Projects = () => {
               ></ProjectCard>
             </div>
 
-            <div className="mt-20">
+            <div 
+            data-aos="fade-zoom-in-down"
+            data-aos-duration="2000"
+            data-aos-offset="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+            className="mt-20">
               <ProjectCard
                 title={"CallSigns Game"}
                 github="https://github.com/auschanh/just_one"
@@ -248,7 +261,13 @@ const Projects = () => {
               ></ProjectCard>
             </div>
 
-            <div className="mt-20">
+            <div 
+            data-aos="fade-zoom-in-down"
+            data-aos-duration="2000"
+            data-aos-offset="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+            className="mt-20">
               <ProjectCard
                 title={"BlackJack Terminal Game"}
                 chipsFooter={
