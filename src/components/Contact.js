@@ -19,17 +19,20 @@ const Contact = () => {
           <br />
           <div
             className="text-xl text-gray-700 dark:text-zinc-300"
+            data-aos-once="true"
             data-aos="fade-zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="2000"
+            data-aos-offset="250"
           >
             If you want to get in touch, email me at:{" "}
             <strong>auschanh@gmail.com</strong>
           </div>
           <div
             className="text-xl text-gray-700 dark:text-zinc-300"
+            data-aos-once="true"
             data-aos="fade-zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="200"
+            data-aos-duration="2000"
+            data-aos-delay="250"
           >
             Or leave me a message below.
           </div>

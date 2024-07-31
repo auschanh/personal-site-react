@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   Carousel,
   IconButton,
   Dialog,
   DialogBody,
 } from "@material-tailwind/react";
+import Lightbox from "yet-another-react-lightbox";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
-export function CarouselProject({ images, arrowColor }) {
+export function CarouselProject({ images, arrowColor, delay }) {
   const [open, setOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -19,11 +25,16 @@ export function CarouselProject({ images, arrowColor }) {
     setOpen(false);
   };
 
+  const fullscreenRef = useRef(null);
+  const zoomRef = useRef(null);
+
   return (
     <div>
       <Carousel
         className="rounded-xl"
         loop={true}
+        autoplay={true}
+        autoplayDelay={delay}
         prevArrow={({ handlePrev }) => (
           <IconButton
             variant="text"
@@ -85,7 +96,7 @@ export function CarouselProject({ images, arrowColor }) {
           </div>
         ))}
       </Carousel>
-      <Dialog
+      {/* <Dialog
         size="xl"
         open={open}
         handler={handleClose}
@@ -99,7 +110,25 @@ export function CarouselProject({ images, arrowColor }) {
             className="max-h-[90vh] max-w-[90vw] items-center justify-center overflow-visible object-contain"
           />
         </DialogBody>
-      </Dialog>
+      </Dialog> */}
+      <Lightbox
+        open={open}
+        close={handleClose}
+        index={selectedIndex}
+        plugins={[Counter, Fullscreen, Zoom]}
+        fullscreen={{ ref: fullscreenRef }}
+        zoom={{ ref: zoomRef, maxZoomPixelRatio: 2, scrollToZoom: true }}
+        styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .65)" } }}
+        slides={images.map((img, i) => (
+          {
+            src: img,
+            alt: `Photo ${i}`
+          }
+        ))}
+        on={{
+          fullscreen: () => fullscreenRef.current?.enter()
+        }}
+      />
     </div>
   );
 }
