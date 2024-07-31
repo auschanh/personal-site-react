@@ -117,7 +117,7 @@ export function CarouselProject({ images, arrowColor, delay }) {
         index={selectedIndex}
         plugins={[Counter, Fullscreen, Zoom]}
         fullscreen={{ ref: fullscreenRef }}
-        zoom={{ ref: zoomRef }}
+        zoom={{ ref: zoomRef, maxZoomPixelRatio: 2, scrollToZoom: true }}
         styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .65)" } }}
         slides={images.map((img, i) => (
           {

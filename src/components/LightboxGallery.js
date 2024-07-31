@@ -152,6 +152,7 @@ const LightboxGallery = ( {open, close}) => {
         styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .65)" } }}
         open={open}
         fullscreen={{ ref: fullscreenRef }}
+        zoom={{ ref: zoomRef, maxZoomPixelRatio: 2, scrollToZoom: true }}
         counter={{ container: { style: { top: 0, left: 0 } } }}
 				slides={images.map((img, i) => ({
           src: img.path,
