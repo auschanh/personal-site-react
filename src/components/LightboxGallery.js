@@ -141,8 +141,8 @@ const images = [
 
 const LightboxGallery = ( {open, close}) => {
   const captionsRef = useRef(null);
-  const fullscreenRef = React.useRef(null);
-  const zoomRef = React.useRef(null);
+  const fullscreenRef = useRef(null);
+  const zoomRef = useRef(null);
 
 	return (
 		<>

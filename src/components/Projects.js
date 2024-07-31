@@ -12,7 +12,16 @@ import {
   blackJackGif,
   blackJackLogo,
   justOneLogo,
+  chat,
+  eliminateHint,
+  failscreen,
+  hint,
+  homepage,
+  lobby,
+  settings,
+  guess
 } from "./ProjectPhotos";
+
 
 const bookReviewImages = [
   bookReviewAccReviews,
@@ -23,6 +32,17 @@ const bookReviewImages = [
 ];
 
 const blackJackImages = [blackJackGif, blackJackLogo];
+
+const callSignsImages = [
+  homepage,
+  settings,
+  lobby,
+  hint,
+  chat,
+  eliminateHint,
+  guess,
+  failscreen
+]
 
 const Projects = () => {
   return (
@@ -128,6 +148,7 @@ const Projects = () => {
                   <CarouselProject
                     images={bookReviewImages}
                     arrowColor={"black"}
+                    delay={8000}
                   />
                 }
               ></ProjectCard>
@@ -212,11 +233,16 @@ const Projects = () => {
                   </div>
                 }
                 figure={
-                  <img
-                    src={justOneLogo}
-                    loading="lazy"
-                    alt="just one digital game"
-                    class="h-full w-full object-contain opacity-60 hover:opacity-100"
+                  // <img
+                  //   src={justOneLogo}
+                  //   loading="lazy"
+                  //   alt="just one digital game"
+                  //   class="h-full w-full object-contain opacity-60 hover:opacity-100"
+                  // />
+                  <CarouselProject 
+                    images={callSignsImages}
+                    arrowColor={"white"}
+                    delay={5000}
                   />
                 }
               ></ProjectCard>
