@@ -245,14 +245,14 @@ const Projects = () => {
                       game sessions, game lobby settings, chat messaging, and basic NLP comparing word hints, verifying the guesser's guess.
                     </p>
                     <br/>
-                    <Link to={"/callsigns"}>
+                    {/* <Link to={"/callsigns"}>
                       <Button
                         autoFocus
                         className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 font-bold text-white shadow hover:scale-110 hover:bg-teal-200 focus:outline-none"
                       >
                         Details
                       </Button>
-                    </Link>
+                    </Link> */}
                   </div>
                 }
                 figure={
