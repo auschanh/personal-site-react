@@ -7,6 +7,7 @@ module.exports = withMT({
     "./node_modules/tw-elements/dist/js/**/*.js",
     "./src/components/*{html,js}",
     "*./public/{html,js}",
+    "./src/pages/*{html,js}"
   ],
   theme: {
     extend: {
@@ -47,6 +48,7 @@ module.exports = withMT({
       "max-lg": { max: "1024px" },
       "max-xl": { max: "1280px" },
       "max-2xl": { max: "1536px" },
+      "max-3xl": { max: "1920px" },
       "max-[740px]": { max: "740px" },
     },
   },

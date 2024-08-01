@@ -2,11 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
 import resume from "../assets/Resume2024Word.pdf";
+import { Link, useNavigate } from "react-router-dom";
+
 // import { Button } from "@material-tailwind/react";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -40,18 +43,29 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = (path) => {
+    navigate(path);
+    setTimeout(() => {
+      const id = path.split("#")[1];
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 0);
+  };
+
   return (
     <div>
       <nav className="fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 py-2 shadow-lg focus:text-neutral-700 dark:bg-black lg:flex-wrap lg:justify-start lg:py-4">
         <div className="nav-div my-0 flex w-full flex-wrap items-center justify-between px-40 sm:container max-sm:max-w-full max-lg:px-0.5">
           <div className="flex">
-            <a href="">
+            <a href="/">
               <img
                 src={logoBlack}
                 className="ml-1 mr-3 h-12 transform transition-all hover:scale-110 dark:hidden"
               />
             </a>
-            <a href="">
+            <a href="/">
               <img
                 src={logoWhite}
                 className="ml-1 mr-3 hidden h-12 transform transition-all hover:scale-110 dark:block"
@@ -73,28 +87,31 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           <div className="middle-nav items-center justify-between text-xl font-bold max-md:hidden">
             <ul className="list-style-none flex pl-0 sm:flex-row">
               <li className="mb-4 pr-10 lg:mb-0">
-                <a
-                  href="#about-jump"
+                <Link
+                  to="/#about-jump"
+                  onClick={() => handleNavClick("/#about-jump")}
                   className="text-black hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-2 hover:underline-offset-[6px] dark:text-zinc-300 dark:hover:text-gray-600"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li className="mb-4 pr-10 lg:mb-0">
-                <a
-                  href="#work-jump"
+                <Link
+                  to="/#work-jump"
+                  onClick={() => handleNavClick("/#work-jump")}
                   className="text-black hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-2 hover:underline-offset-[6px] dark:text-zinc-300 dark:hover:text-gray-600"
                 >
                   Work
-                </a>
+                </Link>
               </li>
               <li className="mb-4 pr-10 lg:mb-0">
-                <a
-                  href="#projects-jump"
+                <Link
+                  href="/#projects-jump"
+                  onClick={() => handleNavClick("/#projects-jump")}
                   className="text-black hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-2 hover:underline-offset-[6px] dark:text-zinc-300 dark:hover:text-gray-600"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -161,6 +178,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           </div>
         </div>
       </nav>
+
+      {/* MOBILE */}
+
       <div
         className={`navbar-menu relative z-50 ${isMenuOpen ? "" : "hidden"}`}
         ref={menuRef}
@@ -170,7 +190,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           <div className="mb-8 flex items-center">
             <a
               className="mr-auto text-3xl font-bold leading-none dark:hidden"
-              href="#"
+              href="/"
             >
               <img
                 src={logoBlack}
@@ -179,7 +199,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </a>
             <a
               className="mr-auto hidden transform text-3xl font-bold leading-none dark:block"
-              href="#"
+              href="/"
             >
               <img
                 src={logoWhite}
@@ -206,36 +226,40 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
 
           <ul className="text-black dark:text-zinc-300">
             <li className="mb-1">
-              <a
+              <Link
                 className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
-                href="#about"
+                to="/#about"
+                onClick={() => handleNavClick("/#about-jump")}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="mb-1">
-              <a
+              <Link
                 className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
-                href="#work"
+                to="/#work"
+                onClick={() => handleNavClick("/#work-jump")}
               >
                 Work
-              </a>
+              </Link>
             </li>
             <li className="mb-1">
-              <a
+              <Link
                 className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
-                href="#projects"
+                to="/#projects"
+                onClick={() => handleNavClick("/#projects-jump")}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="mb-1">
-              <a
+              <Link
                 className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
-                href="#contact"
+                to="#/contact"
+                onClick={() => handleNavClick("/#contact-jump")}
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <br />
             <br />
