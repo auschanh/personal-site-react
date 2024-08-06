@@ -68,7 +68,7 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a software developer based in Toronto, with a growing interest in AI.
+                I'm a Software Developer based in Toronto with over 1 year of Power Platform development experience, and a keen interest in AI.
               </p>
             </div>
           </div>
