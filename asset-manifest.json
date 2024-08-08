@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c461c8f.css",
-    "main.js": "/static/js/main.ef467a18.js",
+    "main.css": "/static/css/main.c301bf1d.css",
+    "main.js": "/static/js/main.fd0aabb5.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -33,7 +33,7 @@
     "static/media/chat.jpg": "/static/media/chat.c1028fadfee1edea705d.jpg",
     "static/media/voteHint.jpg": "/static/media/voteHint.108b5fb9619326044fba.jpg",
     "static/media/eliminateHint.jpg": "/static/media/eliminateHint.8a3c9ef96a5da98547c7.jpg",
-    "static/media/Resume2024Word.pdf": "/static/media/Resume2024Word.75c6c86991ea6cf59e19.pdf",
+    "static/media/Resume2024Word.pdf": "/static/media/Resume2024Word.3642ec505b051d8c33bf.pdf",
     "static/media/lobby.jpg": "/static/media/lobby.994918425c870e6104fd.jpg",
     "static/media/failscreen.jpg": "/static/media/failscreen.17b1d4c1c671dbefa08d.jpg",
     "static/media/hint.jpg": "/static/media/hint.5bb8a7ae60cfdd9f67ae.jpg",
@@ -45,11 +45,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.4c461c8f.css.map": "/static/css/main.4c461c8f.css.map",
-    "main.ef467a18.js.map": "/static/js/main.ef467a18.js.map"
+    "main.c301bf1d.css.map": "/static/css/main.c301bf1d.css.map",
+    "main.fd0aabb5.js.map": "/static/js/main.fd0aabb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c461c8f.css",
-    "static/js/main.ef467a18.js"
+    "static/css/main.c301bf1d.css",
+    "static/js/main.fd0aabb5.js"
   ]
 }
