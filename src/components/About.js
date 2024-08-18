@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import me from "../assets/DSC00108 CROP.png";
+import mePhilly from "../assets/MePhilly2024 CROP.png"
 import meJapan from "../assets/hobbies/MixTapeCover.jpg";
 import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
@@ -46,7 +47,7 @@ const About = () => {
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
           <div className="hero-left picture basis-full items-center justify-center lg:basis-1/3">
             <img
-              src={me}
+              src={mePhilly}
               alt="'me"
               className="rounded-xl border-2 border-black drop-shadow-xl dark:border-white"
             />
