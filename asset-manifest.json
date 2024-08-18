@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c301bf1d.css",
-    "main.js": "/static/js/main.fd0aabb5.js",
+    "main.css": "/static/css/main.a8d26f6a.css",
+    "main.js": "/static/js/main.fa5952e2.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -25,6 +25,7 @@
     "static/media/MarlieGasStation2.jpg": "/static/media/MarlieGasStation2.e230935eaeb2f9db1be6.jpg",
     "static/media/NightSkyJoshuaTree.jpg": "/static/media/NightSkyJoshuaTree.77b4ed7756cd04db9a15.jpg",
     "static/media/20200102-DSC_0986.jpg": "/static/media/20200102-DSC_0986.c1dec93281177efb9f60.jpg",
+    "static/media/MePhilly2024 CROP.png": "/static/media/MePhilly2024 CROP.e87b4007d4b2ebf156b2.png",
     "static/media/DSC00108 CROP.png": "/static/media/DSC00108 CROP.b9098b5656ffb34a0d68.png",
     "static/media/20200102-DSC_0028.jpg": "/static/media/20200102-DSC_0028.5be0d3c394ed22b07e2d.jpg",
     "static/media/just-one.jpg": "/static/media/just-one.777d06a5ed187fce1514.jpg",
@@ -45,11 +46,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.c301bf1d.css.map": "/static/css/main.c301bf1d.css.map",
-    "main.fd0aabb5.js.map": "/static/js/main.fd0aabb5.js.map"
+    "main.a8d26f6a.css.map": "/static/css/main.a8d26f6a.css.map",
+    "main.fa5952e2.js.map": "/static/js/main.fa5952e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c301bf1d.css",
-    "static/js/main.fd0aabb5.js"
+    "static/css/main.a8d26f6a.css",
+    "static/js/main.fa5952e2.js"
   ]
 }
