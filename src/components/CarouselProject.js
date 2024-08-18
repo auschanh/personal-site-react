@@ -90,7 +90,7 @@ export function CarouselProject({ images, arrowColor, delay }) {
               src={img}
               alt={`Photo ${i}`}
               loading="lazy"
-              className="h-full w-full object-contain"
+              className="xl:h-[450px] laptop:h-[50vh] w-full object-cover"
               onClick={() => handleOpen(i)}
             />
           </div>

@@ -43,7 +43,7 @@ const Education = () => {
         </div>
         <div className="text-lg mt-4 font-mono text-teal-600 dark:text-teal-300">
           <span className="font-extrabold">COURSES: </span> 
-          <span className="dark:text-zinc-300 text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
+          <span className="dark:text-zinc-400 text-base max-lg:text-xs laptop:text-lg text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
         </div>
         </div>
         

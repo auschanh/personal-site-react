@@ -22,6 +22,9 @@ module.exports = withMT({
         },
         zinc: {
           300: "rgb(212 212 216)",
+          400: "#a1a1aa",
+          500: "#71717a",
+          600: "#52525b"
         },
         slate: {
           100: "rgb(241 245 249)",
@@ -42,6 +45,7 @@ module.exports = withMT({
       // padding: "2rem",
     },
     screens: {
+      "laptop": { min: "1920px"},
       "max-xs": { max: "320px" },
       "max-sm": { max: "640px" },
       "max-md": { max: "768px" },
@@ -57,7 +61,7 @@ module.exports = withMT({
     require("tw-elements/dist/plugin.cjs"),
     require("tailwind-typewriter")({
       wordsets: {
-        firstName: { words: ["I'm Austin"], writeSpeed: 0.1 }, // 1s to type
+        firstName: { words: ["Austin"], writeSpeed: 0.1 }, // 1s to type
         lastName: {
           words: ["CHANHSAVANG"],
           writeSpeed: 0.03,

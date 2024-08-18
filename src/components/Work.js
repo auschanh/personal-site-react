@@ -46,7 +46,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-300">
+                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-400">
                         May 2021 - Aug 2022 (1yrs 4mos)
                       </p>
                     </div>
@@ -55,10 +55,10 @@ const Work = () => {
                 </div>
 
                 <div className="job1-desc collapse-content">
-                  <p className="mt-3 font-extrabold dark:text-white text-black">
+                  <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
                     Responsibilities
                   </p>
-                  <ul className="job-desc ml-3 list-disc text-base dark:text-zinc-300">
+                  <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-400">
                     <li className="my-2">
                       Created and maintained{" "}
                       <strong className="text-teal-800 dark:text-teal-500">SharePoint</strong>{" "}
@@ -86,10 +86,10 @@ const Work = () => {
                   </ul>
                   <br />
                   <div className="highlights mb-3">
-                    <p className="font-xl mt-3 font-extrabold dark:text-white text-black">
+                    <p className="text-lg mt-3 font-extrabold dark:text-white text-black">
                       Highlights
                     </p>
-                    <p className="my-2 text-base dark:text-zinc-300">
+                    <p className="my-2 text-base laptop:text-lg dark:text-zinc-400">
                       ▶{" "}
                       <strong className="text-teal-800 dark:text-teal-500">
                         Selected as a speaker for CYSSC Learning and Engagement
@@ -100,7 +100,7 @@ const Work = () => {
                       dramatically reducing time to populate, sort and filter
                       data from applicants.
                     </p>
-                    <p className="text-base dark:text-zinc-300">
+                    <p className="text-base laptop:text-lg dark:text-zinc-400">
                       ▶ Developed a workflow that{" "}
                       <strong className="text-teal-800 dark:text-teal-500">
                         automated ticket requests
@@ -225,13 +225,13 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-300">
+                      <p className="text-sm font-medium font-mono text-black dark:text-zinc-400">
                         Oct 2023-Present
                       </p>
                     </div>
                   </div>
                   
-                  <p className="dark:text-zinc-300">
+                  <p className="dark:text-zinc-400 laptop:text-lg">
                     Tasks include: daily cleaning of tools, carefully crafting
                     customized drinks, and restocking inventory.
                   </p>
@@ -250,7 +250,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-300">
+                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-400">
                         Jul 2016 - April 2021 (4yrs 8mos)
                       </p>
                     </div>
@@ -258,7 +258,7 @@ const Work = () => {
                     
                   </div>
                 
-                  <p className="job-desc text-base dark:text-zinc-300">
+                  <p className="job-desc text-base dark:text-zinc-400 laptop:text-lg">
                     Daily tasks included: solo closing the department on closing
                     days, stocking inventory and assisting customers. A lot of
                     my interpersonal skills were developed here, such as{" "}
@@ -288,13 +288,13 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-300">
+                      <p className="text-sm font-mono font-medium text-black dark:text-zinc-400">
                         Nov 2014 - Feb 2015 (4mos)
                       </p>
                     </div>
                   </div>
                   
-                  <p className="dark:text-zinc-300">
+                  <p className="dark:text-zinc-400 laptop:text-lg">
                     Stocked inventory of medicines and drugs, filled customer
                     prescriptions with precise instructions (weighing, removing,
                     adding etc) and organized files.

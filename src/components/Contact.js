@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="text-4xl font-extrabold dark:text-white">Say Hi!</div>
           <br />
           <div
-            className="text-xl text-gray-700 dark:text-zinc-300"
+            className="text-xl text-gray-700 dark:text-zinc-400"
             data-aos-once="true"
             data-aos="fade-zoom-in"
             data-aos-duration="2000"
@@ -29,7 +29,7 @@ const Contact = () => {
             <strong>auschanh@gmail.com</strong>
           </div>
           <div
-            className="text-xl text-gray-700 dark:text-zinc-300"
+            className="text-xl text-gray-700 dark:text-zinc-400"
             data-aos-once="true"
             data-aos="fade-zoom-in"
             data-aos-duration="2000"

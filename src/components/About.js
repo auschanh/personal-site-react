@@ -55,7 +55,7 @@ const About = () => {
           <div className="hero-right desc mt-5 flex basis-full items-center justify-center text-center sm:ml-5 md:basis-2/3">
             <div className="">
               <p className="text-3xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
-                Hi,{" "}
+                Hi, I'm {" "}
                 <span className="text-teal-700 type-firstName dark:text-teal-300"></span>
               </p>
               <p className="text-lg font-bold dark:text-white sm:text-2xl">
@@ -63,7 +63,7 @@ const About = () => {
               </p>
               <br />
               <p
-                className="text-xl text-black dark:text-neutral-400 sm:text-3xl"
+                className="text-3xl text-black dark:text-neutral-400 max-sm:text-xl max-3xl:text-2xl"
                 data-aos="fade-zoom-in"
                 data-aos-duration="2000"
                 data-aos-easing="ease-out-cubic"
@@ -95,7 +95,7 @@ const About = () => {
             data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
           >
-            <div className="text-xl dark:text-zinc-300 max-sm:text-sm">
+            <div className="text-lg laptop:text-xl dark:text-zinc-400 max-sm:text-sm">
               <p>
                 Initially into a health related career path, I've always had an
                 interest in programming and building things in high school.

@@ -70,7 +70,7 @@ const Projects = () => {
             data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
-            className="mt-20">
+            className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
               <ProjectCard
                 title={
                   <a
@@ -137,7 +137,7 @@ const Projects = () => {
                 github="https://github.com/auschanh/Book-Reviews"
                 linkURL={"https://bookreviews-app.fly.dev/"}
                 desc={
-                  <div class="text-xs dark:text-zinc-300 sm:text-xl">
+                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       A website with a small catalog of books to search from.
                       Users can share a written review and rating of books after
@@ -168,7 +168,7 @@ const Projects = () => {
             data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
-            className="mt-20">
+            className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
               <ProjectCard
                 title={"CallSigns Game"}
                 github="https://github.com/auschanh/just_one"
@@ -233,7 +233,7 @@ const Projects = () => {
                   />
                 ]}
                 desc={
-                  <div class="text-xs dark:text-zinc-300 font-medium sm:text-xl">
+                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       Based off of the Just One board game. 
                       <p>
@@ -277,7 +277,7 @@ const Projects = () => {
             data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
-            className="mt-20">
+            className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
               <ProjectCard
                 title={"BlackJack Terminal Game"}
                 chipsFooter={
@@ -291,7 +291,7 @@ const Projects = () => {
                 }
                 github="https://github.com/auschanh/blackjack"
                 desc={
-                  <div class="text-xs dark:text-zinc-300 sm:text-xl">
+                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       A small game of Blackjack, fully playable in the terminal.
                     </p>
