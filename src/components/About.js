@@ -45,11 +45,11 @@ const About = () => {
     <div className="grid grid-flow-row justify-center lg:max-w-full">
       <div className="w-screen bg-slate-200 pb-[28rem] max-3xl:pb-10 pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
-          <div className="hero-left picture basis-full items-center justify-center lg:basis-1/3">
+          <div className="hero-left picture basis-full flex items-center justify-center lg:basis-1/3">
             <img
               src={mePhilly}
               alt="'me"
-              className="rounded-xl border-2 border-black drop-shadow-xl dark:border-white"
+              className="rounded-xl border-2 h-[25rem] border-black drop-shadow-xl dark:border-white"
             />
           </div>
           <div className="hero-right desc mt-5 flex basis-full items-center justify-center text-center sm:ml-5 md:basis-2/3">

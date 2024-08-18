@@ -4564,6 +4564,26 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[13rem\] {
+  height: 13rem;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -8616,83 +8636,83 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  1.46% {
+  2.06% {
     content: "I";
   }
 
-  3.05% {
+  3.67% {
     content: "I'";
   }
 
-  5.35% {
+  4.77% {
     content: "I'm";
   }
 
-  6.52% {
+  6.42% {
     content: "I'm ";
   }
 
-  7.84% {
+  8.41% {
     content: "I'm A";
   }
 
-  9.52% {
+  9.94% {
     content: "I'm Au";
   }
 
-  12.04% {
+  11.99% {
     content: "I'm Aus";
   }
 
-  13.26% {
+  12.9% {
     content: "I'm Aust";
   }
 
-  15.39% {
+  14.69% {
     content: "I'm Austi";
   }
 
-  16.21%, 82.87% {
+  16.65%, 83.31% {
     content: "I'm Austin";
   }
 
-  84.54% {
+  84.98% {
     content: "I'm Austi";
   }
 
-  86.21% {
+  86.65% {
     content: "I'm Aust";
   }
 
-  87.87% {
+  88.31% {
     content: "I'm Aus";
   }
 
-  89.54% {
+  89.98% {
     content: "I'm Au";
   }
 
-  91.21% {
+  91.65% {
     content: "I'm A";
   }
 
-  92.87% {
+  93.31% {
     content: "I'm ";
   }
 
-  94.54% {
+  94.98% {
     content: "I'm";
   }
 
-  96.21% {
+  96.65% {
     content: "I'";
   }
 
-  97.87% {
+  98.31% {
     content: "I";
   }
 
-  99.54% {
+  99.98% {
     content: "";
   }
 }
@@ -8706,91 +8726,91 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  0.13% {
+  0.09% {
     content: "C";
   }
 
-  1.33% {
+  0.81% {
     content: "CH";
   }
 
-  2.15% {
+  1.84% {
     content: "CHA";
   }
 
-  2.36% {
+  2.19% {
     content: "CHAN";
   }
 
-  2.56% {
+  2.6% {
     content: "CHANH";
   }
 
-  3.79% {
+  3.03% {
     content: "CHANHS";
   }
 
-  4.36% {
+  3.8% {
     content: "CHANHSA";
   }
 
-  3.99% {
+  4.66% {
     content: "CHANHSAV";
   }
 
-  5.31% {
+  4.58% {
     content: "CHANHSAVA";
   }
 
-  5.72% {
+  5.04% {
     content: "CHANHSAVAN";
   }
 
-  6.37%, 80.03% {
+  6.33%, 80% {
     content: "CHANHSAVANG";
   }
 
-  81.88% {
+  81.84% {
     content: "CHANHSAVAN";
   }
 
-  83.72% {
+  83.68% {
     content: "CHANHSAVA";
   }
 
-  85.56% {
+  85.52% {
     content: "CHANHSAV";
   }
 
-  87.4% {
+  87.37% {
     content: "CHANHSA";
   }
 
-  89.24% {
+  89.21% {
     content: "CHANHS";
   }
 
-  91.08% {
+  91.05% {
     content: "CHANH";
   }
 
-  92.93% {
+  92.89% {
     content: "CHAN";
   }
 
-  94.77% {
+  94.73% {
     content: "CHA";
   }
 
-  96.61% {
+  96.57% {
     content: "CH";
   }
 
-  98.45% {
+  98.42% {
     content: "C";
   }
 
-  100.29% {
+  100.26% {
     content: "";
   }
 }
@@ -8804,311 +8824,315 @@ details.collapse summary::-webkit-details-marker {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 
-  0.87% {
+  0.72% {
     content: "I";
   }
 
-  1.22% {
+  0.88% {
     content: "I'";
   }
 
-  2.09% {
+  1.36% {
     content: "I'm";
   }
 
-  2.71% {
+  2.03% {
     content: "I'm ";
   }
 
-  2.76% {
+  3.07% {
     content: "I'm a";
   }
 
-  3.15% {
+  2.91% {
     content: "I'm a ";
   }
 
-  4.37% {
+  4.18% {
     content: "I'm a s";
   }
 
-  4.59% {
+  4.06% {
     content: "I'm a so";
   }
 
-  5.2% {
+  5.43% {
     content: "I'm a sof";
   }
 
-  5.49% {
+  5.84% {
     content: "I'm a soft";
   }
 
-  6.43% {
+  5.98% {
     content: "I'm a softw";
   }
 
-  6.48% {
+  6.3% {
     content: "I'm a softwa";
   }
 
-  7.45% {
+  7.61% {
     content: "I'm a softwar";
   }
 
-  8.27% {
+  7.91% {
     content: "I'm a software";
   }
 
-  7.96% {
+  8.81% {
     content: "I'm a software ";
   }
 
-  8.49% {
+  8.99% {
     content: "I'm a software d";
   }
 
-  9.37% {
+  9.44% {
     content: "I'm a software de";
   }
 
-  10.33% {
+  10.02% {
     content: "I'm a software dev";
   }
 
-  11.09% {
+  10.85% {
     content: "I'm a software deve";
   }
 
-  10.97% {
+  10.95% {
     content: "I'm a software devel";
   }
 
-  12.04% {
+  11.61% {
     content: "I'm a software develo";
   }
 
-  12.25% {
+  12.3% {
     content: "I'm a software develop";
   }
 
-  13.17% {
+  13.09% {
     content: "I'm a software develope";
   }
 
-  13.21% {
+  13.43% {
     content: "I'm a software developer";
   }
 
-  13.86% {
+  13.64% {
     content: "I'm a software developer ";
   }
 
-  14.96% {
+  14.69% {
     content: "I'm a software developer b";
   }
 
-  15.16% {
+  14.71% {
     content: "I'm a software developer ba";
   }
 
-  15.89% {
+  15.46% {
     content: "I'm a software developer bas";
   }
 
-  16.52% {
+  15.87% {
     content: "I'm a software developer base";
   }
 
-  17.28% {
+  16.45% {
     content: "I'm a software developer based";
   }
 
-  17.08% {
+  17.05% {
     content: "I'm a software developer based ";
   }
 
-  18.2% {
+  18.29% {
     content: "I'm a software developer based i";
   }
 
-  18.59% {
+  18.05% {
     content: "I'm a software developer based in";
   }
 
-  18.73% {
+  19.57% {
     content: "I'm a software developer based in ";
   }
 
-  19.75% {
+  20.1% {
     content: "I'm a software developer based in T";
   }
 
-  20.68% {
+  20.65% {
     content: "I'm a software developer based in To";
   }
 
-  20.97% {
+  21% {
     content: "I'm a software developer based in Tor";
   }
 
-  21.27% {
+  21.51% {
     content: "I'm a software developer based in Toro";
   }
 
-  21.58% {
+  21.63% {
     content: "I'm a software developer based in Toron";
   }
 
-  22.7% {
+  22.66% {
     content: "I'm a software developer based in Toront";
   }
 
-  22.94% {
+  22.89% {
     content: "I'm a software developer based in Toronto";
   }
 
-  24.09% {
+  23.1% {
     content: "I'm a software developer based in Toronto,";
   }
 
-  23.87% {
+  24.51% {
     content: "I'm a software developer based in Toronto, ";
   }
 
-  24.72% {
+  24.57% {
     content: "I'm a software developer based in Toronto, w";
   }
 
-  25.76% {
+  25.55% {
     content: "I'm a software developer based in Toronto, wi";
   }
 
-  26.03% {
+  26.31% {
     content: "I'm a software developer based in Toronto, wit";
   }
 
-  26.04% {
+  26.24% {
     content: "I'm a software developer based in Toronto, with";
   }
 
-  26.57% {
+  27.45% {
     content: "I'm a software developer based in Toronto, with ";
   }
 
-  27.36% {
+  27.04% {
     content: "I'm a software developer based in Toronto, with a";
   }
 
-  28.04% {
+  27.97% {
     content: "I'm a software developer based in Toronto, with a ";
   }
 
-  28.74% {
+  28.92% {
     content: "I'm a software developer based in Toronto, with a p";
   }
 
-  29.46% {
+  28.81% {
     content: "I'm a software developer based in Toronto, with a pa";
   }
 
-  30.09% {
+  29.88% {
     content: "I'm a software developer based in Toronto, with a pas";
   }
 
-  29.88% {
+  30.26% {
     content: "I'm a software developer based in Toronto, with a pass";
   }
 
-  30.82% {
+  30.8% {
     content: "I'm a software developer based in Toronto, with a passi";
   }
 
-  31.48% {
+  31.64% {
     content: "I'm a software developer based in Toronto, with a passio";
   }
 
-  31.94% {
+  31.66% {
     content: "I'm a software developer based in Toronto, with a passion";
   }
 
-  32.2% {
+  32.74% {
     content: "I'm a software developer based in Toronto, with a passion ";
   }
 
-  33.03% {
+  33.29% {
     content: "I'm a software developer based in Toronto, with a passion f";
   }
 
-  33.68% {
+  33.34% {
     content: "I'm a software developer based in Toronto, with a passion fo";
   }
 
-  34.09% {
+  34.05% {
     content: "I'm a software developer based in Toronto, with a passion for";
   }
 
-  34.59% {
+  35.13% {
     content: "I'm a software developer based in Toronto, with a passion for ";
   }
 
-  35.56% {
+  34.91% {
     content: "I'm a software developer based in Toronto, with a passion for w";
   }
 
-  36.38% {
+  35.85% {
+    content: "I'm a software developer based in Toronto, with a passion for we";
+  }
+
+  36.89% {
     content: "I'm a software developer based in Toronto, with a passion for web";
   }
 
-  36.83% {
+  37.19% {
     content: "I'm a software developer based in Toronto, with a passion for web ";
   }
 
-  38.13% {
+  37.5% {
     content: "I'm a software developer based in Toronto, with a passion for web d";
   }
 
-  38.58% {
+  38.31% {
     content: "I'm a software developer based in Toronto, with a passion for web de";
   }
 
-  38.45% {
+  38.77% {
     content: "I'm a software developer based in Toronto, with a passion for web dev";
   }
 
-  38.88% {
+  39.05% {
     content: "I'm a software developer based in Toronto, with a passion for web deve";
   }
 
-  39.73% {
+  39.82% {
     content: "I'm a software developer based in Toronto, with a passion for web devel";
   }
 
-  40.3% {
+  40.47% {
     content: "I'm a software developer based in Toronto, with a passion for web develo";
   }
 
-  41.39% {
+  41.48% {
     content: "I'm a software developer based in Toronto, with a passion for web develop";
   }
 
-  41.62% {
+  41.78% {
     content: "I'm a software developer based in Toronto, with a passion for web developm";
   }
 
-  42.25% {
+  42.26% {
     content: "I'm a software developer based in Toronto, with a passion for web developme";
   }
 
-  42.64% {
+  43.15% {
     content: "I'm a software developer based in Toronto, with a passion for web developmen";
   }
 
-  43.49% {
+  43.56% {
     content: "I'm a software developer based in Toronto, with a passion for web development";
   }
 
-  43.45%, 99.63% {
+  44.1%, 100.28% {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 }
