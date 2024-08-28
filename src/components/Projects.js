@@ -62,7 +62,7 @@ const Projects = () => {
           <br />
           <br />
 
-          <div className="section-desc">
+          <div className="section-desc space-y-56 max-2xl:space-y-32">
 
             <div 
             data-aos="fade-zoom-in-down"
