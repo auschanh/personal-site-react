@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b14b2e1.css",
-    "main.js": "/static/js/main.4c29294e.js",
+    "main.css": "/static/css/main.5ca2832b.css",
+    "main.js": "/static/js/main.31b1ef50.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -37,7 +37,7 @@
     "static/media/lobby.jpg": "/static/media/lobby.994918425c870e6104fd.jpg",
     "static/media/failscreen.jpg": "/static/media/failscreen.17b1d4c1c671dbefa08d.jpg",
     "static/media/hint.jpg": "/static/media/hint.5bb8a7ae60cfdd9f67ae.jpg",
-    "static/media/Austin_Chanhsavang_Resume_2024.pdf": "/static/media/Austin_Chanhsavang_Resume_2024.83a73375e13e0a88b8f6.pdf",
+    "static/media/Austin_Chanhsavang_Resume_2024.pdf": "/static/media/Austin_Chanhsavang_Resume_2024.1f726ad031cab250a1a4.pdf",
     "static/media/settings.jpg": "/static/media/settings.06d2c97413be60cef94c.jpg",
     "static/media/react-3.png": "/static/media/react-3.885778c4c1d2856e1ea1.png",
     "index.html": "/index.html",
@@ -46,11 +46,11 @@
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.9b14b2e1.css.map": "/static/css/main.9b14b2e1.css.map",
-    "main.4c29294e.js.map": "/static/js/main.4c29294e.js.map"
+    "main.5ca2832b.css.map": "/static/css/main.5ca2832b.css.map",
+    "main.31b1ef50.js.map": "/static/js/main.31b1ef50.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b14b2e1.css",
-    "static/js/main.4c29294e.js"
+    "static/css/main.5ca2832b.css",
+    "static/js/main.31b1ef50.js"
   ]
 }
