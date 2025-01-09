@@ -69,7 +69,7 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a Software Developer based in Toronto with over 1 year of Power Platform development experience, and a keen interest in AI.
+                I'm a Software Developer based in Toronto with over 1 year of Power Platform development experience. Currently working with Kafka as a Support Engineer at Psyncopate.
               </p>
             </div>
           </div>
@@ -141,8 +141,8 @@ const About = () => {
               <p>
                 Currently, I'm always keeping up with what's trendy in tech. I
                 love to continuously learn and grow my skill set as a developer
-                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Artificial Intelligence</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">AI</strong>.
-                <br />
+                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Apache Kafka</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">event driven architectures</strong>.
+                <br /><br/>
                 Below are some things outside of tech that I'm
                 interested in.
               </p>
