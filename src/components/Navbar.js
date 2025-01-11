@@ -3,11 +3,13 @@ import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
 import resume from "../assets/Austin_Chanhsavang_Resume_2025.pdf";
 import { Link, useNavigate } from "react-router-dom";
+import LightboxGallery from "./LightboxGallery";
 
 // import { Button } from "@material-tailwind/react";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
 
@@ -42,6 +44,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const handleOpen = () => setOpen(!open);
 
   const handleNavClick = (path) => {
     navigate(path);
@@ -113,7 +117,16 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                   Projects
                 </Link>
               </li>
+              <li className="mb-4 pr-10 lg:mb-0">
+                <p
+                  onClick={handleOpen}
+                  className="text-black cursor-pointer hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-2 hover:underline-offset-[6px] dark:text-zinc-300 dark:hover:text-gray-600"
+                >
+                  My Photos
+                  </p>
+              </li>
             </ul>
+            <LightboxGallery open={open} close={()=>setOpen(false)}/>
           </div>
           <div className="items-center justify-between">
             <ul className="right-nav list-style-none flex pl-0 text-xl sm:flex-row">

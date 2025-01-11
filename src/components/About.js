@@ -287,7 +287,7 @@ const About = () => {
               ref={buttonRef}
               onClick={handleOpen}
               autoFocus
-              className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 text-xl font-bold text-white shadow hover:scale-110 hover:bg-teal-200 focus:outline-none"
+              className="focus:shadow-outline rounded bg-rose-600 px-12 py-4 text-xl font-bold text-white shadow hover:scale-110 hover:bg-rose-400 focus:outline-none"
             >
               📸 My Photos
             </Button>

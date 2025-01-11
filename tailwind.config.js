@@ -16,6 +16,7 @@ module.exports = withMT({
         navy: "#0B1C36",
         rose: {
           600: "rgb(225 29 72)",
+          400: "#fb7185"
         },
         neutral: {
           400: "rgb(163 163 163)",
