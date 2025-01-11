@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
+import Certifications from "./components/Certifications";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -62,6 +63,7 @@ function App() {
                   <>
                     <About />
                     <Work />
+                    <Certifications />
                     <Education />
                     <Projects />
                     <Contact />

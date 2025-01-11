@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <div id="contact-jump">
-        <div id="contact" className="bg-slate-100 pb-12 pt-40 dark:bg-navy">
+        <div id="contact" className="bg-slate-200 pb-12 pt-40 dark:bg-dark-navy">
       <div className="contact text-black sm:container max-sm:px-10">
         <div className="section row-span-1 text-center">
           <div className="text-4xl font-extrabold dark:text-white">Say Hi!</div>

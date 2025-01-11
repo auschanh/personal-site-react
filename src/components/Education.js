@@ -3,7 +3,7 @@ import tmuLogo from "../assets/logos/TMU-rgb.png";
 
 const Education = () => {
   return (
-    <div id="education" className="bg-slate-100 py-40 dark:bg-navy">
+    <div id="education" className="bg-slate-200 py-40 dark:bg-dark-navy">
       <div
         className="education section sm:px-auto row-span-1 px-10 text-black sm:container"
       >
@@ -20,7 +20,7 @@ const Education = () => {
             <img src={tmuLogo} alt="TMU logo" className="sm:h-20" />
           </div>
           <div className="edu-desc ml-3 text-2xl">
-            <p className="text-lg font-extrabold text-rose-600 sm:text-sm">
+            <p className="text-xl font-extrabold text-rose-600 sm:text-lg">
               Sept 2018 - Apr 2023
             </p>
             <span className="font-bold dark:text-zinc-300">

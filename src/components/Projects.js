@@ -50,7 +50,7 @@ const Projects = () => {
     <div>
       <div id="projects-jump"></div>
 
-      <div className="projects w-screen bg-slate-200 pb-40 pt-32 text-black dark:bg-dark-navy">
+      <div className="projects w-screen bg-slate-100 pb-40 pt-32 text-black dark:bg-navy">
         <div
           id="projects"
           className="section sm:px-auto row-span-1 mt-10 px-10 sm:container"

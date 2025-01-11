@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid-flow-col items-center">
           <p className="text-2xl sm:text-3xl">Thanks for visiting!</p>
           <p className="mt-2 text-xs sm:text-sm">
-            Austin Chanhsavang © 2024 - All rights reserved
+            Austin Chanhsavang © 2025 - All rights reserved
           </p>
         </div>
       </div>

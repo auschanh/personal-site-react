@@ -69,7 +69,7 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a Software Developer based in Toronto with over 1 year of Power Platform development experience. Currently working with Kafka as a Support Engineer at Psyncopate.
+                I'm a Software Developer based in Toronto. Currently working with Apache Kafka as a Support Engineer at Psyncopate.
               </p>
             </div>
           </div>

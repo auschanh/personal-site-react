@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
-import resume from "../assets/Austin_Chanhsavang_Resume_2024.pdf";
+import resume from "../assets/Austin_Chanhsavang_Resume_2025.pdf";
 import { Link, useNavigate } from "react-router-dom";
 
 // import { Button } from "@material-tailwind/react";
