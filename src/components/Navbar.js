@@ -274,6 +274,14 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 Contact
               </Link>
             </li>
+            <li className="mb-1">
+                <p
+                  onClick={handleOpen}
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-rose-600"
+                >
+                  My Photos
+                  </p>
+              </li>
             <br />
             <br />
             <li className="mb-1">
