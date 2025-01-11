@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -32,21 +32,26 @@ function App() {
 
   function ScrollToTop() {
     const { pathname, hash, key } = useLocation();
-  
+    const prevPath = useRef(pathname);
+
     useEffect(() => {
-      if (hash === "") {
-        window.scrollTo(0, 0);
-      } else {
-        setTimeout(() => {
-          const id = hash.replace("#", "");
-          const element = document.getElementById(id);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }, 0);
+      if (pathname !== prevPath.current) { // if path was the same don't scroll to top (for darkMode button), only runs for being rerouted
+        if (hash === "") {
+          window.scrollTo(0, 0);
+        } else {
+          setTimeout(() => {
+            const id = hash.replace("#", "");
+            const element = document.getElementById(id);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 0);
+        }
       }
+
+      prevPath.current = pathname;
     }, [pathname, hash, key]);
-  
+
     return null;
   }
 
