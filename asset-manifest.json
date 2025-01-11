@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ca2832b.css",
-    "main.js": "/static/js/main.31b1ef50.js",
+    "main.css": "/static/css/main.afd77825.css",
+    "main.js": "/static/js/main.87bf2be2.js",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
     "static/media/sorting-caption.gif": "/static/media/sorting-caption.877512d4af8d924c68bc.gif",
@@ -24,9 +24,11 @@
     "static/media/20191231-DSC_0867.jpg": "/static/media/20191231-DSC_0867.47f82bdec00d66ba3639.jpg",
     "static/media/MarlieGasStation2.jpg": "/static/media/MarlieGasStation2.e230935eaeb2f9db1be6.jpg",
     "static/media/NightSkyJoshuaTree.jpg": "/static/media/NightSkyJoshuaTree.77b4ed7756cd04db9a15.jpg",
+    "static/media/CCAAK Certification.png": "/static/media/CCAAK Certification.863b374b81c1cc41929f.png",
     "static/media/20200102-DSC_0986.jpg": "/static/media/20200102-DSC_0986.c1dec93281177efb9f60.jpg",
     "static/media/MePhilly2024 CROP.png": "/static/media/MePhilly2024 CROP.e87b4007d4b2ebf156b2.png",
     "static/media/DSC00108 CROP.png": "/static/media/DSC00108 CROP.b9098b5656ffb34a0d68.png",
+    "static/media/Austin_Chanhsavang_Resume_2025.pdf": "/static/media/Austin_Chanhsavang_Resume_2025.d2c2ff6f22750bae6414.pdf",
     "static/media/20200102-DSC_0028.jpg": "/static/media/20200102-DSC_0028.5be0d3c394ed22b07e2d.jpg",
     "static/media/just-one.jpg": "/static/media/just-one.777d06a5ed187fce1514.jpg",
     "static/media/homepage.jpg": "/static/media/homepage.33a22e29eb746b3ff49a.jpg",
@@ -37,20 +39,25 @@
     "static/media/lobby.jpg": "/static/media/lobby.994918425c870e6104fd.jpg",
     "static/media/failscreen.jpg": "/static/media/failscreen.17b1d4c1c671dbefa08d.jpg",
     "static/media/hint.jpg": "/static/media/hint.5bb8a7ae60cfdd9f67ae.jpg",
-    "static/media/Austin_Chanhsavang_Resume_2024.pdf": "/static/media/Austin_Chanhsavang_Resume_2024.1f726ad031cab250a1a4.pdf",
     "static/media/settings.jpg": "/static/media/settings.06d2c97413be60cef94c.jpg",
+    "static/media/confluent-logo.png": "/static/media/confluent-logo.d76248eafe7f694cb430.png",
     "static/media/react-3.png": "/static/media/react-3.885778c4c1d2856e1ea1.png",
+    "static/media/Apache Kafka.png": "/static/media/Apache Kafka.2ba34c8ef24a8f14ccd2.png",
+    "static/media/Apache Kafka Black.png": "/static/media/Apache Kafka Black.b9a03e6b1310027e2727.png",
+    "static/media/Psyncopate.webp": "/static/media/Psyncopate.0a2304f67b35e58885aa.webp",
     "index.html": "/index.html",
+    "static/media/docker-icon.svg": "/static/media/docker-icon.4b3370139db1f18832b3fc6e77355b42.svg",
+    "static/media/java.svg": "/static/media/java.65e4380863bb67e6a6248b238c7774be.svg",
     "static/media/sharepoint.svg": "/static/media/sharepoint.054eed443eda9d925a60fe66eb0e0546.svg",
     "static/media/icons8-microsoft-power-automate-2020.svg": "/static/media/icons8-microsoft-power-automate-2020.f6dde7267fdc1bf1872d543832b11869.svg",
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "static/media/database-black.svg": "/static/media/database-black.bfb3136268a8e5683d9aff5a28dac602.svg",
     "static/media/database.svg": "/static/media/database.5f0ee774f13a17d5df7df489b37db5c9.svg",
-    "main.5ca2832b.css.map": "/static/css/main.5ca2832b.css.map",
-    "main.31b1ef50.js.map": "/static/js/main.31b1ef50.js.map"
+    "main.afd77825.css.map": "/static/css/main.afd77825.css.map",
+    "main.87bf2be2.js.map": "/static/js/main.87bf2be2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ca2832b.css",
-    "static/js/main.31b1ef50.js"
+    "static/css/main.afd77825.css",
+    "static/js/main.87bf2be2.js"
   ]
 }
