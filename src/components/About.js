@@ -80,7 +80,7 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                Support Engineer @ Psyncopate
+                Support Engineer (Kafka) @ Psyncopate
               </p>
             </div>
           </div>
@@ -109,16 +109,13 @@ const About = () => {
           >
             <div className="text-lg laptop:text-xl dark:text-zinc-400 max-sm:text-sm">
               <p>
-                Initially into a health related career path, I've always had an
-                interest in programming and building things in high school.
-                Throughout my early university years, the problem solving and
-                creativity of
+                Originally pursuing healthcare, I discovered an enduring fascination with programming in high school, where I enjoyed building simple games for fun.
+                In university, exposure to 
                 <strong className="text-teal-800 dark:text-teal-500">
                   {" "}
-                  Computer Science
+                  Computer Science's
                 </strong>{" "}
-                reignited a passion within me, making the career switch an easy
-                choice.
+                blend of creative problem solving and constant innovation reshaped my career trajectory.
               </p>
               <br />
               <Button
@@ -151,12 +148,11 @@ const About = () => {
               </p>
               <br />
               <p>
-                Currently, I'm always keeping up with what's trendy in tech. I
+                I'm always keeping up with trends in tech. I
                 love to continuously learn and grow my skill set as a developer
-                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Apache Kafka</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">event driven architectures</strong>.
-                <br /><br/>
-                Below are some things outside of tech that I'm
-                interested in.
+                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Kafka</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">distributed event driven architectures</strong>.
+                <br /> <br/> <br/>
+                Here are some other interests/hobbies of mine:
               </p>
             </div>
 
@@ -238,7 +234,7 @@ const About = () => {
                       <p class="hidden px-16 text-base md:block">
                         <span class="bg-black bg-opacity-80 px-3">
                           I'm still learning a lot about the photography world,
-                          but I hope to pick up a new camera soon.
+                          and love to shoot for fun.
                         </span>
                       </p>
                     </div>
@@ -257,7 +253,7 @@ const About = () => {
                       </h5>
                       <p class="hidden text-base md:block">
                         I've been gaming since I could walk - my favourite
-                        genres include JRPGs and Souls-like games.
+                        genres include RPGs and Souls-like games.
                       </p>
                       <p class="hidden text-base md:block">
                         Recent Favourites: Elden Ring, Dark Souls 3, Persona 5
@@ -285,7 +281,7 @@ const About = () => {
                       </p>
                       <p class="hidden text-base md:block">
                         <span class="bg-black px-4 py-1 opacity-80">
-                          I am a big Toronto Maple Leafs fan! I know I know.
+                          I am a big Toronto Maple Leafs fan.
                         </span>
                       </p>
                     </div>

@@ -64,6 +64,132 @@ const Projects = () => {
 
           <div className="section-desc space-y-56 max-2xl:space-y-32">
 
+            
+            {/* Project 1 - Callsigns */}
+
+
+            <div 
+            data-aos="fade-zoom-in-down"
+            data-aos-duration="2000"
+            data-aos-offset="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+            className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
+              <ProjectCard
+                title={<a
+                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-rose-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://callsigns-oulv.vercel.app/"
+                  >
+                    🔗 CallSigns Website
+                  </a>}
+                github="https://github.com/auschanh/callsigns"
+                linkURL={"https://callsigns-oulv.vercel.app/"}
+                chips={[
+                  // <Chip
+                  //   className="rounded-full"
+                  //   key="1"
+                  //   color="pink"
+                  //   value="Work in Progress"
+                  //   size="sm"
+                  // />,
+                  <Chip
+                    key="2"
+                    color="blue"
+                    value="Website"
+                    size="sm"
+                    className="rounded-full"
+                  />,
+                ]}
+                chipsFooter={[
+                  <Chip
+                    className="rounded-full"
+                    color="amber"
+                    value="Socket.IO"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="teal"
+                    value="React"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="light-blue"
+                    value="Tailwind"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="pink"
+                    value="API"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="HTML"
+                    size="sm"
+                    variant="outlined"
+                  />,
+                  <Chip
+                    className="rounded-full"
+                    color="deep-orange"
+                    value="CSS"
+                    size="sm"
+                    variant="outlined"
+                  />
+                ]}
+                desc={
+                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
+                    <p>
+                      Based off of the Just One board game. 
+                      <p>
+                        An online game where a designated player is selected to guess a word, and the other players give a one word hint. Similar hints are eliminated.
+                      
+                      </p>
+                      Includes{" "}
+                      <span class="font-bold text-teal-300">sockets</span> for
+                      game sessions, game lobby settings, chat messaging, and basic NLP comparing word hints, verifying the guesser's guess.
+                    </p>
+                    <br/>
+                    {/* <Link to={"/callsigns"}>
+                      <Button
+                        autoFocus
+                        className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 font-bold text-white shadow hover:scale-110 hover:bg-teal-200 focus:outline-none"
+                      >
+                        Details
+                      </Button>
+                    </Link> */}
+                  </div>
+                }
+                figure={
+                  // <img
+                  //   src={justOneLogo}
+                  //   loading="lazy"
+                  //   alt="just one digital game"
+                  //   class="h-full w-full object-contain opacity-60 hover:opacity-100"
+                  // />
+                  <CarouselProject 
+                    images={callSignsImages}
+                    arrowColor={"white"}
+                    delay={5000}
+                  />
+                }
+              ></ProjectCard>
+            </div>
+            
+
+
+            {/* Project 2 - Book Reviews */}
+
+
             <div 
             data-aos="fade-zoom-in-down"
             data-aos-duration="2000"
@@ -162,115 +288,8 @@ const Projects = () => {
               ></ProjectCard>
             </div>
 
-            <div 
-            data-aos="fade-zoom-in-down"
-            data-aos-duration="2000"
-            data-aos-offset="200"
-            data-aos-easing="ease-out-cubic"
-            data-aos-once="true"
-            className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
-              <ProjectCard
-                title={"CallSigns Game"}
-                github="https://github.com/auschanh/just_one"
-                chips={[
-                  <Chip
-                    className="rounded-full"
-                    key="1"
-                    color="pink"
-                    value="Work in Progress"
-                    size="sm"
-                  />,
-                  <Chip
-                    key="2"
-                    color="blue"
-                    value="Website"
-                    size="sm"
-                    className="rounded-full"
-                  />,
-                ]}
-                chipsFooter={[
-                  <Chip
-                    className="rounded-full"
-                    color="amber"
-                    value="Socket.IO"
-                    size="sm"
-                    variant="outlined"
-                  />,
-                  <Chip
-                    className="rounded-full"
-                    color="teal"
-                    value="React"
-                    size="sm"
-                    variant="outlined"
-                  />,
-                  <Chip
-                    className="rounded-full"
-                    color="light-blue"
-                    value="Tailwind"
-                    size="sm"
-                    variant="outlined"
-                  />,
-                  <Chip
-                    className="rounded-full"
-                    color="pink"
-                    value="API"
-                    size="sm"
-                    variant="outlined"
-                  />,
-                  <Chip
-                    className="rounded-full"
-                    color="deep-orange"
-                    value="HTML"
-                    size="sm"
-                    variant="outlined"
-                  />,
-                  <Chip
-                    className="rounded-full"
-                    color="deep-orange"
-                    value="CSS"
-                    size="sm"
-                    variant="outlined"
-                  />
-                ]}
-                desc={
-                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
-                    <p>
-                      Based off of the Just One board game. 
-                      <p>
-                        An online game where a designated player is selected to guess a word, and the other players give a one word hint. Similar hints are eliminated.
-                      
-                      </p>
-                      Includes{" "}
-                      <span class="font-bold text-teal-300">sockets</span> for
-                      game sessions, game lobby settings, chat messaging, and basic NLP comparing word hints, verifying the guesser's guess.
-                    </p>
-                    <br/>
-                    {/* <Link to={"/callsigns"}>
-                      <Button
-                        autoFocus
-                        className="focus:shadow-outline rounded bg-teal-600 px-6 py-2 font-bold text-white shadow hover:scale-110 hover:bg-teal-200 focus:outline-none"
-                      >
-                        Details
-                      </Button>
-                    </Link> */}
-                  </div>
-                }
-                figure={
-                  // <img
-                  //   src={justOneLogo}
-                  //   loading="lazy"
-                  //   alt="just one digital game"
-                  //   class="h-full w-full object-contain opacity-60 hover:opacity-100"
-                  // />
-                  <CarouselProject 
-                    images={callSignsImages}
-                    arrowColor={"white"}
-                    delay={5000}
-                  />
-                }
-              ></ProjectCard>
-            </div>
 
+            {/* Project 3 */}
             <div 
             data-aos="fade-zoom-in-down"
             data-aos-duration="2000"
