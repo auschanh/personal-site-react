@@ -101,7 +101,7 @@ h2 {
 }
 
 .section {
-  @apply lg:px-36;
+  @apply 3xl:px-96 xl:px-32 px-10;
 }
 
 .section-desc {

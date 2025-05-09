@@ -54,6 +54,7 @@ module.exports = withMT({
       "max-xl": { max: "1280px" },
       "max-2xl": { max: "1536px" },
       "max-3xl": { max: "1920px" },
+      "3xl": { min: "1920px" },
       "max-[740px]": { max: "740px" },
     },
   },

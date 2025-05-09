@@ -91,7 +91,7 @@ h2 {
 }
 
 .section {
-  @apply lg:px-36;
+  @apply lg:px-[40rem] px-10;
 }
 
 .section-desc {
@@ -394,3 +394,4 @@ btn:active:hover,
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+

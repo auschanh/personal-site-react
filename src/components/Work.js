@@ -21,7 +21,7 @@ const Work = () => {
       <div className="work bg-slate-200 py-40 dark:bg-dark-navy">
         <div
           id="work"
-          className="section sm:px-auto row-span-1 mt-10 px-10 sm:container"
+          className="section sm:px-auto row-span-1 mt-10 sm:container"
         >
           <h1 className="text-3xl font-bold font-mono text-black underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
            / Work Experiences
@@ -55,7 +55,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-400">
+                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-400 max-sm:ml-4">
                         Jan 2025 - Present
                       </p>
                     </div>
@@ -64,64 +64,27 @@ const Work = () => {
                 </div>
 
                 <div className="job1-desc collapse-content">
-                  <p className="text-base dark:text-zinc-400">TBD...</p> 
-                  {/* <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
+                  {/* <p className="text-base dark:text-zinc-400">TBD...</p>  */}
+                  <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
                     Responsibilities
                   </p>
                   <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-400">
                     <li className="my-2">
-                      Created and maintained{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">SharePoint</strong>{" "}
-                      sites based on client tickets and requirements
+                      Resolved P1/P2 incidents for a low-latency, multi-AZ on-premises{" "}
+                      <strong className="text-teal-800 dark:text-teal-500">Kafka</strong>{" "}
+                      cluster, conducting root cause analysis (RCA) for broker performance,{" "} 
+                      <strong className="text-teal-800 dark:text-teal-500">Zookeeper</strong>{" "}
+                      coordination, and security misconfigurations to ensure 99.9% SLA
                     </li>
                     <li className="my-2">
-                      Automated tasks with{" "}
+                      Streamlined troubleshooting and knowledge-sharing by documenting{" "}
                       <strong className="text-teal-800 dark:text-teal-500">
-                        Power Automate
+                        Kafka Broker/Zookeeper
                       </strong>{" "}
-                      to track files, populate lists/tables, email and notify
-                      clients
+                      configurations, and security protocols for multi-AZ deployments
                     </li>
-                    <li className="my-2">
-                      Utilized{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">ReactJS</strong> and{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
-                        SharePoint Framework (SPFx)
-                      </strong>{" "}
-                      to uniquely customize and develop client{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
-                        SharePoint site
-                      </strong>
-                    </li>
+                    
                   </ul>
-                  <br />
-                  <div className="highlights mb-3">
-                    <p className="text-lg mt-3 font-extrabold dark:text-white text-black">
-                      Highlights
-                    </p>
-                    <p className="my-2 text-base laptop:text-lg dark:text-zinc-400">
-                      ▶{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
-                        Selected as a speaker for CYSSC Learning and Engagement
-                        Conference
-                      </strong>{" "}
-                      among multiple co-op students - spoke to over 300+ employees about a solo project
-                      on building a Sharepoint site and workflow for client,
-                      dramatically reducing time to populate, sort and filter
-                      data from applicants.
-                    </p>
-                    <p className="text-base laptop:text-lg dark:text-zinc-400">
-                      ▶ Developed a workflow that{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
-                        automated ticket requests
-                      </strong>{" "}
-                      from clients onto team task list, removing manual
-                      insertion of data and significantly improving requests to
-                      assigned ticket times. The workflow involved automated
-                      emailing, assigning priority and inserting into ticket
-                      list.
-                    </p>
-                  </div> */}
                 </div>
               </div>
             </div>

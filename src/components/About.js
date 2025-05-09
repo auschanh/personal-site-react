@@ -42,6 +42,7 @@ const About = () => {
   };
 
   return (
+    // Hero Section
     <div className="grid grid-flow-row justify-center lg:max-w-full">
       <div className="w-screen bg-slate-200 pb-[28rem] max-3xl:pb-10 pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
@@ -69,7 +70,17 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a Software Developer based in Toronto. Currently working with Apache Kafka as a Support Engineer at Psyncopate.
+                I'm a Software Developer based in Toronto. I love to build and solve problems for websites and distributed systems.
+              </p>
+              <br/>
+              <p
+                className="text-xl text-black dark:text-neutral-400 max-sm:text-md max-3xl:text-xl"
+                data-aos="fade-zoom-in"
+                data-aos-duration="2000"
+                data-aos-easing="ease-out-cubic"
+                data-aos-once="true"
+              >
+                Support Engineer @ Psyncopate
               </p>
             </div>
           </div>
@@ -77,10 +88,11 @@ const About = () => {
       </div>
       <div id="about-jump" className="bg-slate-100 dark:bg-navy"></div>
 
+      {/* About Sub-Section */}
       <div className="bg-slate-100 dark:bg-navy">
         <div
           id="about"
-          className="section about sm:px-auto row-span-1 mb-20 mt-32 px-10 pb-16 text-black sm:container"
+          className="section about sm:px-auto row-span-1 mb-20 mt-32 pb-16 text-black sm:container"
         >
           
           <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">

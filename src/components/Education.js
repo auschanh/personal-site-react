@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div id="education" className="bg-slate-200 py-40 dark:bg-dark-navy">
       <div
-        className="education section sm:px-auto row-span-1 px-10 text-black sm:container"
+        className="education section sm:px-auto row-span-1  text-black sm:container"
       >
         <h1 className="text-3xl font-bold font-mono underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
           / Education
