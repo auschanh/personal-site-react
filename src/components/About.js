@@ -1,7 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import me from "../assets/DSC00108 CROP.png";
 import mePhilly from "../assets/MePhilly2024 CROP.png"
+import meMontreal1 from "../assets/heroPics/20250808-DSCF0299.jpg"
+import meMontreal2 from "../assets/heroPics/20250809-DSCF0720.jpg"
 import meJapan from "../assets/hobbies/MixTapeCover.jpg";
+import meJapanSelfie from "../assets/hobbies/20191229-DSC_0638.jpg";
 import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
 import CarouselPhotos from "./CarouselPhotos";
@@ -23,8 +26,26 @@ const About = () => {
   const [open, setOpen] = useState(false);
   const [showText, setShowText] = useState(false);
   const buttonRef = useRef(null);
+  const [heroIndex, setHeroIndex] = useState(0)
+  const [heroFade, setHeroFade] = useState(true);
 
+  const heroImages = [meMontreal2, meMontreal1]
   const handleOpen = () => setOpen(!open);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // fade out
+      setHeroFade(false);
+
+      setTimeout(() => {
+        // change image, fade in
+        setHeroIndex((prev) => (prev + 1) % heroImages.length);
+        setHeroFade(true);
+      }, 750); // match fade-out duration
+    }, 5000); // change every 5s
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   useEffect(() => {
     if (!open) {
@@ -47,30 +68,32 @@ const About = () => {
       <div className="w-screen bg-slate-200 pb-[28rem] max-3xl:pb-10 pt-32 dark:bg-dark-navy sm:pt-64">
         <div className="hero mb-12 flex flex-row place-items-center justify-center font-mono sm:container">
           <div className="hero-left picture basis-full flex items-center justify-center lg:basis-1/3">
+          
             <img
-              src={mePhilly}
-              alt="'me"
-              className="rounded-xl border-2 h-[25rem] border-black drop-shadow-xl dark:border-white"
-            />
+                src={heroImages[heroIndex]}
+                alt="'me"
+                className={`rounded-xl border-2 h-[25rem] border-black drop-shadow-xl dark:border-white transition-opacity duration-[750ms] ${heroFade ? 'opacity-100' : 'opacity-0'}`}
+              />
+          
           </div>
           <div className="hero-right desc mt-5 flex basis-full items-center justify-center text-center sm:ml-5 md:basis-2/3">
             <div className="">
               <p className="text-3xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
                 Hi, I'm {" "}
-                <span className="text-teal-700 type-firstName dark:text-teal-300"></span>
+                <span className="text-teal-700 type-firstName dark:text-neon-teal"></span>
               </p>
               <p className="text-lg font-bold dark:text-white sm:text-2xl">
-                <span className="text-rose-600 type-lastName"></span>
+                <span className="text-rose-600 dark:text-neon-pink type-lastName"></span>
               </p>
               <br />
               <p
-                className="text-3xl text-black dark:text-neutral-400 max-sm:text-xl max-3xl:text-2xl"
+                className="text-3xl text-black dark:text-zinc-300 max-sm:text-xl max-3xl:text-2xl"
                 data-aos="fade-zoom-in"
                 data-aos-duration="2000"
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                I'm a Software Developer based in Toronto. I love to build and solve problems for websites and distributed systems.
+                I'm a Software Developer based in Toronto. I love to solve problems for distributed systems and websites.
               </p>
               <br/>
               <p
@@ -80,7 +103,7 @@ const About = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-once="true"
               >
-                Support Engineer (Kafka) @ Psyncopate
+                <span className="dark:text-cyber-rose">Support Engineer (Kafka) @ Psyncopate</span> 
               </p>
             </div>
           </div>
@@ -95,7 +118,7 @@ const About = () => {
           className="section about sm:px-auto row-span-1 mb-20 mt-32 pb-16 text-black sm:container"
         >
           
-          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
             / About 
           </h1>
           
@@ -107,11 +130,11 @@ const About = () => {
             data-aos-offset="200"
             data-aos-easing="ease-out-cubic"
           >
-            <div className="text-lg laptop:text-xl dark:text-zinc-400 max-sm:text-sm">
+            <div className="text-lg laptop:text-xl dark:text-zinc-300 max-sm:text-sm">
               <p>
-                Originally pursuing healthcare, I discovered an enduring fascination with programming in high school, where I enjoyed building simple games for fun.
+                Originally pursuing healthcare, I discovered a fascination with programming in high school, where I enjoyed building simple games for fun.
                 In university, exposure to 
-                <strong className="text-teal-800 dark:text-teal-500">
+                <strong className="text-teal-600 dark:text-neon-teal">
                   {" "}
                   Computer Science's
                 </strong>{" "}
@@ -127,19 +150,19 @@ const About = () => {
               </Button>
               <p id="about-more" className="mt-2">
                 During my tenure at
-                <strong className="text-teal-800 dark:text-teal-500">
+                <strong className="text-teal-600 dark:text-neon-teal">
                   {" "}
                   Toronto Metropolitan University
                 </strong>
                 , I was able to co-op for
-                <strong className="text-teal-800 dark:text-teal-500">
+                <strong className="text-teal-600 dark:text-neon-teal">
                   {" "}
                   Ontario Public Service
                 </strong>
                 , where I showed my passion for developing creative solutions. I
                 was given opportunities for ownership over projects, such as
                 working with a
-                <strong className="text-teal-800 dark:text-teal-500">
+                <strong className="text-teal-600 dark:text-neon-teal">
                   {" "}
                   client to automate her business workflow
                 </strong>{" "}
@@ -150,7 +173,7 @@ const About = () => {
               <p>
                 I'm always keeping up with trends in tech. I
                 love to continuously learn and grow my skill set as a developer
-                and a person. Right now, that's <strong className="text-teal-800 dark:text-teal-500">Kafka</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-800 dark:text-teal-500">distributed event driven architectures</strong>.
+                and a person. Right now, that's <strong className="text-teal-600 dark:text-neon-teal">Kafka</strong>, and I'm excited to deep dive and learn more about <strong className="text-teal-600 dark:text-neon-teal">distributed event driven architectures</strong>.
                 <br /> <br/> <br/>
                 Here are some other interests/hobbies of mine:
               </p>
@@ -219,7 +242,7 @@ const About = () => {
               >
                 <div className="relative h-full w-full">
                   <img
-                    src={meJapan}
+                    src={meJapanSelfie}
                     alt="Me in Japan"
                     className="h-full w-full object-cover"
                   />

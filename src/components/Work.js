@@ -23,7 +23,7 @@ const Work = () => {
           id="work"
           className="section sm:px-auto row-span-1 mt-10 sm:container"
         >
-          <h1 className="text-3xl font-bold font-mono text-black underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          <h1 className="text-3xl font-bold font-mono text-black underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
            / Work Experiences
           </h1>
           <br />
@@ -47,15 +47,15 @@ const Work = () => {
                   </div>
                   <div className="ml-3 flex justify-between w-full">
                     <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-neon-teal">
                         Psyncopate
                       </p>
                       <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
-                        SUPPORT ENGINEER
+                        SUPPORT ENGINEER, SOFTWARE DEVELOPER
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-400 max-sm:ml-4">
+                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-300 max-sm:ml-4">
                         Jan 2025 - Present
                       </p>
                     </div>
@@ -64,27 +64,39 @@ const Work = () => {
                 </div>
 
                 <div className="job1-desc collapse-content">
-                  {/* <p className="text-base dark:text-zinc-400">TBD...</p>  */}
+                  {/* <p className="text-base dark:text-zinc-300">TBD...</p>  */}
+
                   <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
                     Responsibilities
                   </p>
-                  <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-400">
+
+                  <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-300">
+
                     <li className="my-2">
                       Resolved P1/P2 incidents for a low-latency, multi-AZ on-premises{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">Kafka</strong>{" "}
+                      <strong className="text-teal-600 dark:text-neon-teal" >Kafka</strong>{" "}
                       cluster, conducting root cause analysis (RCA) for broker performance,{" "} 
-                      <strong className="text-teal-800 dark:text-teal-500">Zookeeper</strong>{" "}
+                      <strong className="text-teal-600 dark:text-neon-teal">Zookeeper</strong>{" "}
                       coordination, and security misconfigurations to ensure 99.9% SLA
                     </li>
+
                     <li className="my-2">
                       Streamlined troubleshooting and knowledge-sharing by documenting{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         Kafka Broker/Zookeeper
                       </strong>{" "}
                       configurations, and security protocols for multi-AZ deployments
                     </li>
-                    
+
+                    <li className="my-2">
+                      Developed serializing avro {" "}
+                      <strong className="text-teal-600 dark:text-neon-teal">Producer and Consumer</strong>{""}
+                      , for a customized Confluent library according to customer's needs.{" "} 
+                      
+                    </li>
+
                   </ul>
+
                 </div>
               </div>
             </div>
@@ -107,7 +119,7 @@ const Work = () => {
                     src={kafkaBlack}
                     className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     <p>Apache</p>
                     <p>Kafka</p>
                   </div>
@@ -123,7 +135,7 @@ const Work = () => {
                     src={confluentTealLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-24"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     Confluent
                   </div>
                 </div>
@@ -138,7 +150,7 @@ const Work = () => {
                     src={javaLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-8 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-8 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     Java
                   </div>
                 </div>
@@ -153,7 +165,7 @@ const Work = () => {
                     src={dockerLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     Docker
                   </div>
                 </div>
@@ -172,7 +184,7 @@ const Work = () => {
                     src={sqlLogoBlack}
                     className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     KSQL
                   </div>
                   
@@ -202,7 +214,7 @@ const Work = () => {
                   </div>
                   <div className="ml-3 flex justify-between w-full">
                     <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-neon-teal">
                         Ontario Ministry of Children and Community Services
                       </p>
                       <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
@@ -210,7 +222,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-400">
+                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-300">
                         May 2021 - Aug 2022 (1yrs 4mos)
                       </p>
                     </div>
@@ -222,15 +234,15 @@ const Work = () => {
                   <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
                     Responsibilities
                   </p>
-                  <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-400">
+                  <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-300">
                     <li className="my-2">
                       Created and maintained{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">SharePoint</strong>{" "}
+                      <strong className="text-teal-600 dark:text-neon-teal">SharePoint</strong>{" "}
                       sites based on client tickets and requirements
                     </li>
                     <li className="my-2">
                       Automated tasks with{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         Power Automate
                       </strong>{" "}
                       to track files, populate lists/tables, email and notify
@@ -238,12 +250,12 @@ const Work = () => {
                     </li>
                     <li className="my-2">
                       Utilized{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">ReactJS</strong> and{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">ReactJS</strong> and{" "}
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         SharePoint Framework (SPFx)
                       </strong>{" "}
                       to uniquely customize and develop client{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         SharePoint site
                       </strong>
                     </li>
@@ -253,9 +265,9 @@ const Work = () => {
                     <p className="text-lg mt-3 font-extrabold dark:text-white text-black">
                       Highlights
                     </p>
-                    <p className="my-2 text-base laptop:text-lg dark:text-zinc-400">
+                    <p className="my-2 text-base laptop:text-lg dark:text-zinc-300">
                       ▶{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         Selected as a speaker for CYSSC Learning and Engagement
                         Conference
                       </strong>{" "}
@@ -264,9 +276,9 @@ const Work = () => {
                       dramatically reducing time to populate, sort and filter
                       data from applicants.
                     </p>
-                    <p className="text-base laptop:text-lg dark:text-zinc-400">
+                    <p className="text-base laptop:text-lg dark:text-zinc-300">
                       ▶ Developed a workflow that{" "}
-                      <strong className="text-teal-800 dark:text-teal-500">
+                      <strong className="text-teal-600 dark:text-neon-teal">
                         automated ticket requests
                       </strong>{" "}
                       from clients onto team task list, removing manual
@@ -294,7 +306,7 @@ const Work = () => {
                     src={reactLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     React
                   </div>
                 </div>
@@ -309,7 +321,7 @@ const Work = () => {
                     src={typescriptLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     TypeScript
                   </div>
                 </div>
@@ -328,7 +340,7 @@ const Work = () => {
                     src={sqlLogoBlack}
                     className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     SQL
                   </div>
                 </div>
@@ -343,7 +355,7 @@ const Work = () => {
                     src={sharepointLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     SharePoint
                   </div>
                 </div>
@@ -358,7 +370,7 @@ const Work = () => {
                     src={powerautomateLogo}
                     className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
                   />
-                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-300 sm:text-xl">
+                  <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-neon-teal sm:text-xl">
                     <p>Power</p>
                     <p>Automate</p>
                   </div>
@@ -383,7 +395,7 @@ const Work = () => {
                 <div className="starbucks">
                   <div className="flex justify-between w-full">
                     <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-neon-teal">
                         Starbucks (Retail)
                       </p>
                       <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
@@ -391,15 +403,15 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-extrabold font-mono text-black dark:text-zinc-400">
+                      <p className="text-sm font-extrabold font-mono text-black dark:text-zinc-300">
                         Oct 2023 - Jan 2025 (1yr 3mos)
                       </p>
                     </div>
                   </div>
                   
-                  <p className="dark:text-zinc-400 laptop:text-lg">
+                  <p className="dark:text-zinc-300 laptop:text-lg">
                     Provided exceptional customer service through customer connections, and by crafting quality hand crafted drinks. 
-                    <strong className="text-teal-600 dark:text-teal-300"> Partner of the Quarter (POQ) Winner Q4.</strong>
+                    <strong className="text-teal-600 dark:text-neon-teal"> Partner of the Quarter (POQ) Winner Q4.</strong>
                   </p>
                 </div>
                 <br />
@@ -408,7 +420,7 @@ const Work = () => {
                 <div className="longos">
                   <div className="flex justify-between w-100">
                     <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-neon-teal">
                         Longos Corporation (Retail)
                       </p>
                       <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
@@ -416,7 +428,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-mono font-extrabold text-black dark:text-zinc-400">
+                      <p className="text-sm font-mono font-extrabold text-black dark:text-zinc-300">
                         Jul 2016 - April 2021 (4yrs 8mos)
                       </p>
                     </div>
@@ -424,16 +436,16 @@ const Work = () => {
                     
                   </div>
                 
-                  <p className="job-desc text-base dark:text-zinc-400 laptop:text-lg">
+                  <p className="job-desc text-base dark:text-zinc-300 laptop:text-lg">
                     Daily tasks included: solo closing the department on closing
                     days, stocking inventory and assisting customers. A lot of
                     my interpersonal skills were developed here, such as{" "}
-                    <span className="font-bold text-teal-800 dark:text-teal-500">teamwork</span>,{" "}
-                    <span className="font-bold text-teal-800 dark:text-teal-500">
+                    <span className="font-bold text-teal-600 dark:text-neon-teal">teamwork</span>,{" "}
+                    <span className="font-bold text-teal-600 dark:text-neon-teal">
                       initiative
                     </span>
                     , and
-                    <span className="font-bold text-teal-800 dark:text-teal-500">
+                    <span className="font-bold text-teal-600 dark:text-neon-teal">
                       {" "}
                       customer service
                     </span>
@@ -446,7 +458,7 @@ const Work = () => {
                 <div className="shoppers">
                   <div className="flex justify-between flex-full">
                     <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-300">
+                      <p className="text-xl font-extrabold text-teal-600 dark:text-neon-teal">
                         Shoppers Drug Mart (Retail)
                       </p>
                       <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
@@ -454,13 +466,13 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-mono font-extrabold text-black dark:text-zinc-400">
+                      <p className="text-sm font-mono font-extrabold text-black dark:text-zinc-300">
                         Nov 2014 - Feb 2015 (4mos)
                       </p>
                     </div>
                   </div>
                   
-                  <p className="dark:text-zinc-400 laptop:text-lg">
+                  <p className="dark:text-zinc-300 laptop:text-lg">
                     Stocked inventory of medicines and drugs, filled customer
                     prescriptions with precise instructions (weighing, removing,
                     adding etc) and organized files.

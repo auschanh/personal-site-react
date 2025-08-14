@@ -7,7 +7,7 @@ const Education = () => {
       <div
         className="education section sm:px-auto row-span-1  text-black sm:container"
       >
-        <h1 className="text-3xl font-bold font-mono underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+        <h1 className="text-3xl font-bold font-mono underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
           / Education
         </h1>
         <br />
@@ -20,30 +20,30 @@ const Education = () => {
             <img src={tmuLogo} alt="TMU logo" className="sm:h-20" />
           </div>
           <div className="edu-desc ml-3 text-2xl">
-            <p className="text-xl font-extrabold text-rose-600 sm:text-lg">
+            <p className="text-xl font-extrabold text-neon-pink sm:text-lg">
               Sept 2018 - Apr 2023
             </p>
-            <span className="font-bold dark:text-zinc-300">
+            <span className="font-bold dark:text-white">
               Toronto Metropolitan University{" "}
             </span>
             <span id="small-text" className="dark:text-neutral-400">
               (formerly Ryerson University)
             </span>
-            <p className="dark:text-neutral-400">
+            <p className="dark:text-zinc-300">
               Bachelor of Computer Science Honours (Co-op)
             </p>
             <p>
-              <span className="font-bold dark:text-zinc-300">GPA:</span>{" "}
-              <span className="font-bold text-teal-600 dark:text-teal-500">
+              <span className="font-bold dark:text-white">GPA:</span>{" "}
+              <span className="font-bold text-teal-600 dark:text-neon-teal">
                 3.48
               </span>
             </p>
           </div>
           
         </div>
-        <div className="text-lg mt-4 font-mono text-teal-600 dark:text-teal-300">
+        <div className="text-lg mt-4 font-mono text-teal-600 dark:text-neon-teal">
           <span className="font-extrabold">COURSES: </span> 
-          <span className="dark:text-zinc-400 text-base max-lg:text-xs laptop:text-lg text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
+          <span className="dark:text-zinc-300 text-base max-lg:text-xs laptop:text-lg text-black">Data Structures, Algorithms, Operating Systems, Web Systems, Web Applications, Data Science, Information and Web Retrieval </span>
         </div>
         </div>
         

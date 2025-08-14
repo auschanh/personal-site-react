@@ -55,7 +55,7 @@ const Projects = () => {
           id="projects"
           className="section sm:px-auto row-span-1 mt-10 sm:container"
         >
-          <h1 className="text-3xl font-bold font-mono underline decoration-rose-600 decoration-4 underline-offset-8 dark:text-white">
+          <h1 className="text-3xl font-bold font-mono underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
             / Projects
           </h1>
 
@@ -77,7 +77,7 @@ const Projects = () => {
             className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto">
               <ProjectCard
                 title={<a
-                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-rose-600"
+                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-neon-pink"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://callsigns-oulv.vercel.app/"
@@ -147,7 +147,7 @@ const Projects = () => {
                   />
                 ]}
                 desc={
-                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
+                  <div class="text-xs dark:text-zinc-300 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       Based off of the Just One board game. 
                       <p>
@@ -155,7 +155,7 @@ const Projects = () => {
                       
                       </p>
                       Includes{" "}
-                      <span class="font-bold text-teal-300">sockets</span> for
+                      <span class="font-bold dark:text-neon-teal text-teal-300">sockets</span> for
                       game sessions, game lobby settings, chat messaging, and basic NLP comparing word hints, verifying the guesser's guess.
                     </p>
                     <br/>
@@ -200,7 +200,7 @@ const Projects = () => {
               <ProjectCard
                 title={
                   <a
-                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-rose-600"
+                    class="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-neon-pink"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://bookreviews-app.fly.dev/"
@@ -263,7 +263,7 @@ const Projects = () => {
                 github="https://github.com/auschanh/Book-Reviews"
                 linkURL={"https://bookreviews-app.fly.dev/"}
                 desc={
-                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
+                  <div class="text-xs dark:text-zinc-300 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       A website with a small catalog of books to search from.
                       Users can share a written review and rating of books after
@@ -272,8 +272,8 @@ const Projects = () => {
                     <p>
                       Includes implementing, searching, registering, logging in
                       and out with a{" "}
-                      <span class="font-bold text-teal-300">database</span> and
-                      utilizing <span class="font-bold text-teal-300">API</span>{" "}
+                      <span class="font-bold dark:text-neon-teal text-teal-300">database</span> and
+                      utilizing <span class="font-bold dark:text-neon-teal text-teal-300">API</span>{" "}
                       calls.
                     </p>
                   </div>
@@ -290,7 +290,7 @@ const Projects = () => {
 
 
             {/* Project 3 */}
-            <div 
+            {/* <div 
             data-aos="fade-zoom-in-down"
             data-aos-duration="2000"
             data-aos-offset="200"
@@ -310,7 +310,7 @@ const Projects = () => {
                 }
                 github="https://github.com/auschanh/blackjack"
                 desc={
-                  <div class="text-xs dark:text-zinc-400 font-medium sm:text-lg laptop:text-2xl">
+                  <div class="text-xs dark:text-zinc-300 font-medium sm:text-lg laptop:text-2xl">
                     <p>
                       A small game of Blackjack, fully playable in the terminal.
                     </p>
@@ -336,7 +336,7 @@ const Projects = () => {
                   />
                 }
               ></ProjectCard>
-            </div>
+            </div> */}
 
           </div>
         </div>

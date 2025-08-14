@@ -27,21 +27,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-github mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-gray-600"></i>
+          <i className="icons fa-brands fa-github mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
         <a
           href="https://linkedin.com/in/auschanh"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-linkedin mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-gray-600"></i>
+          <i className="icons fa-brands fa-linkedin mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
         <a
           href="https://instagram.com/auschanh"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-square-instagram mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-rose-600 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-gray-600"></i>
+          <i className="icons fa-brands fa-square-instagram mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
       </nav>
     </footer>

@@ -39,6 +39,9 @@ module.exports = withMT({
           600: "rgb(79 70 229)",
           800: "rgb(55 48 163)",
         },
+        "neon-teal": "#4DE9D9",
+        "neon-pink": "#FF2E7A",
+        "cyber-rose": "#FF2A9F"
       },
     },
     container: {
