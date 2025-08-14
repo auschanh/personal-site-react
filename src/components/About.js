@@ -26,26 +26,27 @@ const About = () => {
   const [open, setOpen] = useState(false);
   const [showText, setShowText] = useState(false);
   const buttonRef = useRef(null);
-  const [heroIndex, setHeroIndex] = useState(0)
-  const [heroFade, setHeroFade] = useState(true);
-
+  const heroRef = useRef(null);
+  const heroIndexRef = useRef(0); // no rendering 
+  
   const heroImages = [meMontreal2, meMontreal1]
   const handleOpen = () => setOpen(!open);
 
-  useEffect(() => {
+
+  useEffect(() => { // only runs on mount
     const interval = setInterval(() => {
-      // fade out
-      setHeroFade(false);
+      heroRef.current.classList.add('opacity-0'); // fade out
 
       setTimeout(() => {
-        // change image, fade in
-        setHeroIndex((prev) => (prev + 1) % heroImages.length);
-        setHeroFade(true);
-      }, 750); // match fade-out duration
-    }, 5000); // change every 5s
+        heroIndexRef.current = (heroIndexRef.current + 1) % heroImages.length;
+        heroRef.current.src = heroImages[heroIndexRef.current];
+        heroRef.current.classList.remove('opacity-0'); // fade back in
+      }, 750);
+
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [heroImages.length]);
+  }, []);
 
   useEffect(() => {
     if (!open) {
@@ -70,9 +71,10 @@ const About = () => {
           <div className="hero-left picture basis-full flex items-center justify-center lg:basis-1/3">
           
             <img
-                src={heroImages[heroIndex]}
+                ref={heroRef}
+                src={heroImages[0]}
                 alt="'me"
-                className={`rounded-xl border-2 h-[25rem] border-black drop-shadow-xl dark:border-white transition-opacity duration-[750ms] ${heroFade ? 'opacity-100' : 'opacity-0'}`}
+                className={`rounded-xl border-2 h-[25rem] border-black drop-shadow-xl dark:border-white transition-opacity duration-700`}
               />
           
           </div>
