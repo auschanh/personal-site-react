@@ -29,7 +29,7 @@ const About = () => {
   const heroRef = useRef(null);
   const heroIndexRef = useRef(0); // no rendering 
   
-  const heroImages = [meMontreal2, meMontreal1]
+  const heroImages = [meMontreal2, mePhilly]
   const handleOpen = () => setOpen(!open);
 
 
