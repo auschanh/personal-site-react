@@ -51,7 +51,7 @@ const Work = () => {
                         Psyncopate
                       </p>
                       <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
-                        SUPPORT ENGINEER, SOFTWARE DEVELOPER
+                        SOFTWARE ENGINEER
                       </p>
                     </div>
                     <div>
