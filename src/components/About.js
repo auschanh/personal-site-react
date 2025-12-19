@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import mePhilly from "../assets/MePhilly2024 CROP.png"
 import meMontreal2 from "../assets/heroPics/20250809-DSCF0720.jpg"
 import meJapanSelfie from "../assets/hobbies/20191229-DSC_0638.jpg";
+import meVancouverPort from "../assets/heroPics/VancouverPort.JPG"
 import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
 import heroPic from "../assets/heroPics/VancouverSeaSky.jpg";
@@ -14,7 +15,7 @@ const About = () => {
   const aboutRef = useRef(null);
   const aboutIndexRef = useRef(0); // no rendering 
   
-  const aboutImages = [meMontreal2, mePhilly]
+  const aboutImages = [meMontreal2, mePhilly, meVancouverPort]
 
   useEffect(() => { // only runs on mount
     const interval = setInterval(() => {
@@ -96,7 +97,6 @@ const About = () => {
 
         <br />
         <br/>
-      <p>Here are some hobbies of mine:</p>
     </>
   )
 
@@ -171,6 +171,7 @@ const About = () => {
       </div>
     </div>
     </div>
+    </div>
 
             {/* HOBBY CAROUSEL */}
             <div
@@ -179,56 +180,44 @@ const About = () => {
               data-aos-offset="375"
               className="py-10"
             >
-              <Carousel className="rounded-xl" autoplay loop>
-                {/* Photography */}
-                <div className="relative w-full h-full">
-                  <img
-                    src={meJapanSelfie}
-                    alt="Me in Japan"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-x-[15%] bottom-5 py-5 text-center text-white">
-                    <h5 className="text-xl bg-black/80 px-3 inline-block">
-                      Photography
-                    </h5>
-                    <p className="hidden md:block bg-black/80 px-3 mt-2 inline-block">
-                      Currently enjoying street photography with Fujifilm x100Vi
-                    </p>
-                  </div>
-                </div>
+  <div className="mt-10">
+    <p className="mb-6 text-lg font-semibold dark:text-zinc-300">
+      Outside of work, I enjoy:
+    </p>
 
-                {/* Gaming */}
-                <div className="relative w-full h-full">
-                  <img
-                    src={gamingImage}
-                    alt="Gaming"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-x-[15%] bottom-5 py-5 text-center text-white">
-                    <h5 className="text-xl bg-black/80 px-5 inline-block">Gaming</h5>
-                    <p className="hidden md:block">
-                      RPGs & Souls-like games. Recent favorites: Elden Ring, DS3,
-                      P5R.
-                    </p>
-                  </div>
-                </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">📸</span>
+        <span className="font-medium">Photography</span>
+      </div>
 
-                {/* Hockey */}
-                <div className="relative w-full h-full">
-                  <img
-                    src={hockeyImage}
-                    alt="Hockey"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-x-[15%] bottom-5 py-5 text-center text-white">
-                    <h5 className="text-xl bg-black/80 px-3 inline-block">Hockey</h5>
-                    <p className="hidden md:block bg-black/80 px-4 py-1 inline-block">
-                      Big Toronto Maple Leafs fan.
-                    </p>
-                  </div>
-                </div>
-              </Carousel>
-            </div>
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">🎮</span>
+        <span className="font-medium">Gaming</span>
+      </div>
+
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">📺</span>
+        <span className="font-medium">Anime & Manga</span>
+      </div>
+
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">⌨️</span>
+        <span className="font-medium">Mechanical Keyboards</span>
+      </div>
+
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">🍵</span>
+        <span className="font-medium">Matcha</span>
+      </div>
+
+      <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
+        <span className="text-2xl">✈️</span>
+        <span className="font-medium">Travel (more soon)</span>
+      </div>
+    </div>
+  </div>
+
           </div>
 
           {/* PHOTO GALLERY BUTTON */}
