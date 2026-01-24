@@ -56,7 +56,7 @@ const About = () => {
 
     <p className="text-xl dark:text-white/70">
       <span className="text-cyber-rose">
-        Engineer (Kafka) @ Psyncopate
+        Engineer @ Psyncopate Technologies
       </span>
     </p>
   </>
@@ -213,7 +213,7 @@ const About = () => {
 
       <div className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60">
         <span className="text-2xl">✈️</span>
-        <span className="font-medium">Travel (more soon)</span>
+        <span className="font-medium">Travel </span>
       </div>
     </div>
   </div>

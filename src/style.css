@@ -3674,16 +3674,6 @@ details.collapse summary::-webkit-details-marker {
   right: 0px;
 }
 
-.inset-x-\[15\%\] {
-  left: 15%;
-  right: 15%;
-}
-
-.inset-y-0 {
-  top: 0px;
-  bottom: 0px;
-}
-
 .\!right-4 {
   right: 1rem !important;
 }
@@ -3746,10 +3736,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bottom-4 {
   bottom: 1rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
 }
 
 .bottom-\[14\%\] {
@@ -4000,10 +3986,6 @@ details.collapse summary::-webkit-details-marker {
   margin: -1px !important;
 }
 
-.\!m-0 {
-  margin: 0px !important;
-}
-
 .-m-px {
   margin: -1px;
 }
@@ -4031,11 +4013,6 @@ details.collapse summary::-webkit-details-marker {
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-}
-
-.-mx-3 {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
 }
 
 .mx-0 {
@@ -4131,20 +4108,12 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 0.25rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .mb-2\.5 {
   margin-bottom: 0.625rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -4271,6 +4240,10 @@ details.collapse summary::-webkit-details-marker {
   margin-right: auto;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -4299,16 +4272,8 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.75rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -4325,18 +4290,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-px {
   margin-top: 1px;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -4451,6 +4404,10 @@ details.collapse summary::-webkit-details-marker {
   height: 0.875rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -4511,8 +4468,8 @@ details.collapse summary::-webkit-details-marker {
   height: 160px;
 }
 
-.h-\[25rem\] {
-  height: 25rem;
+.h-\[22rem\] {
+  height: 22rem;
 }
 
 .h-\[260px\] {
@@ -4610,26 +4567,6 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
-}
-
-.h-\[50rem\] {
-  height: 50rem;
-}
-
-.h-\[70rem\] {
-  height: 70rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-\[22rem\] {
-  height: 22rem;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -4666,10 +4603,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-\[80vh\] {
-  max-height: 80vh;
 }
 
 .min-h-\[1\.5rem\] {
@@ -4710,10 +4643,6 @@ details.collapse summary::-webkit-details-marker {
 
 .min-h-\[auto\] {
   min-height: auto;
-}
-
-.min-h-\[40rem\] {
-  min-height: 40rem;
 }
 
 .\!w-px {
@@ -5047,22 +4976,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-screen-2xl {
   max-width: 1320px;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-\[50\%\] {
-  max-width: 50%;
-}
-
-.max-w-\[60\%\] {
-  max-width: 60%;
-}
-
-.max-w-screen-lg {
-  max-width: 960px;
 }
 
 .flex-auto {
@@ -5521,10 +5434,6 @@ details.collapse summary::-webkit-details-marker {
           appearance: none;
 }
 
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -5593,6 +5502,10 @@ details.collapse summary::-webkit-details-marker {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -5603,10 +5516,6 @@ details.collapse summary::-webkit-details-marker {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -5621,16 +5530,16 @@ details.collapse summary::-webkit-details-marker {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-56 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(14rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(14rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-56 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(14rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(14rem * var(--tw-space-y-reverse));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -6136,11 +6045,6 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(103 58 183 / var(--tw-border-opacity));
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(238 238 238 / var(--tw-border-opacity));
-}
-
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(224 224 224 / var(--tw-border-opacity));
@@ -6221,6 +6125,10 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(0 150 136 / var(--tw-border-opacity));
 }
 
+.border-teal-500\/30 {
+  border-color: rgb(0 150 136 / 0.3);
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -6237,10 +6145,6 @@ details.collapse summary::-webkit-details-marker {
 .border-yellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(255 235 59 / var(--tw-border-opacity));
-}
-
-.border-teal-500\/30 {
-  border-color: rgb(0 150 136 / 0.3);
 }
 
 .\!border-t-transparent {
@@ -6421,11 +6325,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(0 188 212 / 0.2);
 }
 
-.bg-dark-navy {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 17 33 / var(--tw-bg-opacity));
-}
-
 .bg-deep-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 87 34 / var(--tw-bg-opacity));
@@ -6492,11 +6391,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-green-500\/20 {
   background-color: rgb(76 175 80 / 0.2);
-}
-
-.bg-indigo-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(197 202 233 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-500 {
@@ -6676,6 +6570,10 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 235 59 / var(--tw-bg-opacity));
@@ -6701,30 +6599,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-zinc-600\/50 {
   background-color: rgb(82 82 91 / 0.5);
-}
-
-.bg-black\/80 {
-  background-color: rgb(0 0 0 / 0.8);
-}
-
-.bg-black\/30 {
-  background-color: rgb(0 0 0 / 0.3);
-}
-
-.bg-black\/5 {
-  background-color: rgb(0 0 0 / 0.05);
-}
-
-.bg-black\/50 {
-  background-color: rgb(0 0 0 / 0.5);
-}
-
-.bg-black\/25 {
-  background-color: rgb(0 0 0 / 0.25);
-}
-
-.bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
 }
 
 .bg-opacity-60 {
@@ -6943,14 +6817,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-gradient-to: #ffee58 var(--tw-gradient-to-position);
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
 .bg-clip-border {
   background-clip: border-box;
 }
@@ -6964,24 +6830,12 @@ details.collapse summary::-webkit-details-marker {
           background-clip: text;
 }
 
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .fill-\[\#afafaf\] {
   fill: #afafaf;
 }
 
 .fill-current {
   fill: currentColor;
-}
-
-.stroke-current {
-  stroke: currentColor;
 }
 
 .object-contain {
@@ -7092,11 +6946,6 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 3rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -7120,11 +6969,6 @@ details.collapse summary::-webkit-details-marker {
 .px-40 {
   padding-left: 10rem;
   padding-right: 10rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -7192,6 +7036,11 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -7220,11 +7069,6 @@ details.collapse summary::-webkit-details-marker {
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-6 {
@@ -7267,11 +7111,6 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 5px;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .\!pr-7 {
   padding-right: 1.75rem !important;
 }
@@ -7308,8 +7147,8 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 10rem;
 }
 
-.pb-\[28rem\] {
-  padding-bottom: 28rem;
+.pb-80 {
+  padding-bottom: 20rem;
 }
 
 .pb-\[5px\] {
@@ -7322,6 +7161,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pl-2 {
@@ -7350,6 +7193,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pr-\[24px\] {
@@ -7410,46 +7257,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-px {
   padding-top: 1px;
-}
-
-.pr-20 {
-  padding-right: 5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
-.pr-0 {
-  padding-right: 0px;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pb-80 {
-  padding-bottom: 20rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pt-60 {
-  padding-top: 15rem;
 }
 
 .text-left {
@@ -7729,10 +7536,6 @@ details.collapse summary::-webkit-details-marker {
   letter-spacing: 0em;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-
 .\!text-\[\#14a44d\] {
   --tw-text-opacity: 1 !important;
   color: rgb(20 164 77 / var(--tw-text-opacity)) !important;
@@ -7909,6 +7712,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(0 96 100 / var(--tw-text-opacity));
 }
 
+.text-cyber-rose {
+  --tw-text-opacity: 1;
+  color: rgb(255 42 159 / var(--tw-text-opacity));
+}
+
 .text-danger {
   --tw-text-opacity: 1;
   color: rgb(220 76 100 / var(--tw-text-opacity));
@@ -8078,6 +7886,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(255 46 122 / var(--tw-text-opacity));
 }
 
+.text-neon-teal {
+  --tw-text-opacity: 1;
+  color: rgb(77 233 217 / var(--tw-text-opacity));
+}
+
 .text-neutral-200 {
   --tw-text-opacity: 1;
   color: rgb(229 229 229 / var(--tw-text-opacity));
@@ -8168,11 +7981,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(183 28 28 / var(--tw-text-opacity));
 }
 
-.text-rose-600 {
-  --tw-text-opacity: 1;
-  color: rgb(225 29 72 / var(--tw-text-opacity));
-}
-
 .text-secondary {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
@@ -8242,20 +8050,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
-.text-cyber-rose {
-  --tw-text-opacity: 1;
-  color: rgb(255 42 159 / var(--tw-text-opacity));
-}
-
-.text-neon-teal {
-  --tw-text-opacity: 1;
-  color: rgb(77 233 217 / var(--tw-text-opacity));
-}
-
-.text-white\/80 {
-  color: rgb(255 255 255 / 0.8);
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -8289,11 +8083,6 @@ details.collapse summary::-webkit-details-marker {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.placeholder-gray-500::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(158 158 158 / var(--tw-placeholder-opacity));
-}
-
 .\!opacity-0 {
   opacity: 0 !important;
 }
@@ -8324,10 +8113,6 @@ details.collapse summary::-webkit-details-marker {
 
 .opacity-60 {
   opacity: 0.6;
-}
-
-.opacity-80 {
-  opacity: 0.8;
 }
 
 .opacity-\[\.53\] {
@@ -8861,51 +8646,51 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  2.3% {
+  1.76% {
     content: "A";
   }
 
-  3.69% {
+  3.41% {
     content: "Au";
   }
 
-  6.08% {
+  6.17% {
     content: "Aus";
   }
 
-  7.26% {
+  7.78% {
     content: "Aust";
   }
 
-  9.61% {
+  9.48% {
     content: "Austi";
   }
 
-  11.85%, 88.77% {
+  11.34%, 88.26% {
     content: "Austin";
   }
 
-  90.7% {
+  90.18% {
     content: "Austi";
   }
 
-  92.62% {
+  92.11% {
     content: "Aust";
   }
 
-  94.54% {
+  94.03% {
     content: "Aus";
   }
 
-  96.47% {
+  95.95% {
     content: "Au";
   }
 
-  98.39% {
+  97.88% {
     content: "A";
   }
 
-  100.31% {
+  99.8% {
     content: "";
   }
 }
@@ -8919,15 +8704,15 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  0.09% {
+  0.53% {
     content: "C";
   }
 
-  0.91% {
+  0.81% {
     content: "CH";
   }
 
-  1.25% {
+  1.67% {
     content: "CHA";
   }
 
@@ -8935,75 +8720,75 @@ details.collapse summary::-webkit-details-marker {
     content: "CHAN";
   }
 
-  2.67% {
+  2.58% {
     content: "CHANH";
   }
 
-  3.26% {
+  3.55% {
     content: "CHANHS";
   }
 
-  3.54% {
+  4.21% {
     content: "CHANHSA";
   }
 
-  4.05% {
+  4.27% {
     content: "CHANHSAV";
   }
 
-  4.59% {
+  5.15% {
     content: "CHANHSAVA";
   }
 
-  5.9% {
+  5.55% {
     content: "CHANHSAVAN";
   }
 
-  6.19%, 79.86% {
+  5.63%, 79.3% {
     content: "CHANHSAVANG";
   }
 
-  81.7% {
+  81.14% {
     content: "CHANHSAVAN";
   }
 
-  83.54% {
+  82.98% {
     content: "CHANHSAVA";
   }
 
-  85.38% {
+  84.82% {
     content: "CHANHSAV";
   }
 
-  87.22% {
+  86.66% {
     content: "CHANHSA";
   }
 
-  89.07% {
+  88.51% {
     content: "CHANHS";
   }
 
-  90.91% {
+  90.35% {
     content: "CHANH";
   }
 
-  92.75% {
+  92.19% {
     content: "CHAN";
   }
 
-  94.59% {
+  94.03% {
     content: "CHA";
   }
 
-  96.43% {
+  95.87% {
     content: "CH";
   }
 
-  98.27% {
+  97.71% {
     content: "C";
   }
 
-  100.12% {
+  99.56% {
     content: "";
   }
 }
@@ -9017,315 +8802,311 @@ details.collapse summary::-webkit-details-marker {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 
-  0.2% {
+  0.89% {
     content: "I";
   }
 
-  0.85% {
+  1.29% {
     content: "I'";
   }
 
-  1.63% {
+  1.76% {
     content: "I'm";
   }
 
-  2.24% {
+  2.4% {
     content: "I'm ";
   }
 
-  3.26% {
+  2.9% {
     content: "I'm a";
   }
 
-  3.6% {
+  3.09% {
     content: "I'm a ";
   }
 
-  4.03% {
+  4.34% {
     content: "I'm a s";
   }
 
-  4.64% {
+  4.62% {
     content: "I'm a so";
   }
 
-  4.88% {
+  5.16% {
     content: "I'm a sof";
   }
 
-  5.96% {
+  5.14% {
     content: "I'm a soft";
   }
 
-  6.44% {
+  5.91% {
     content: "I'm a softw";
   }
 
-  6.91% {
+  6.59% {
     content: "I'm a softwa";
   }
 
-  7.35% {
+  6.96% {
     content: "I'm a softwar";
   }
 
-  7.47% {
+  8.09% {
     content: "I'm a software";
   }
 
-  8% {
+  8.84% {
     content: "I'm a software ";
   }
 
-  8.93% {
+  9.07% {
     content: "I'm a software d";
   }
 
-  9.77% {
+  9.57% {
     content: "I'm a software de";
   }
 
-  9.74% {
+  10.09% {
     content: "I'm a software dev";
   }
 
-  10.98% {
+  10.52% {
     content: "I'm a software deve";
   }
 
-  11.18% {
+  11.23% {
     content: "I'm a software devel";
   }
 
-  11.87% {
+  11.55% {
     content: "I'm a software develo";
   }
 
-  12.37% {
+  12.8% {
     content: "I'm a software develop";
   }
 
-  13.1% {
+  12.77% {
     content: "I'm a software develope";
   }
 
-  13.02% {
+  13.9% {
     content: "I'm a software developer";
   }
 
-  13.99% {
+  14.53% {
     content: "I'm a software developer ";
   }
 
-  14.34% {
+  14.54% {
     content: "I'm a software developer b";
   }
 
-  15.14% {
+  15.47% {
     content: "I'm a software developer ba";
   }
 
-  15.92% {
+  16.09% {
     content: "I'm a software developer bas";
   }
 
-  16.43% {
+  16.48% {
     content: "I'm a software developer base";
   }
 
-  16.81% {
+  16.7% {
     content: "I'm a software developer based";
   }
 
-  17.14% {
+  17.79% {
     content: "I'm a software developer based ";
   }
 
-  18.3% {
+  17.48% {
     content: "I'm a software developer based i";
   }
 
-  18.65% {
+  18.48% {
     content: "I'm a software developer based in";
   }
 
-  18.96% {
+  19.49% {
     content: "I'm a software developer based in ";
   }
 
-  20.15% {
+  19.67% {
     content: "I'm a software developer based in T";
   }
 
-  20.08% {
+  20.27% {
     content: "I'm a software developer based in To";
   }
 
-  20.77% {
+  20.9% {
     content: "I'm a software developer based in Tor";
   }
 
-  21.15% {
+  21.62% {
     content: "I'm a software developer based in Toro";
   }
 
-  22.14% {
+  21.7% {
     content: "I'm a software developer based in Toron";
   }
 
-  22.37% {
+  22.46% {
     content: "I'm a software developer based in Toront";
   }
 
-  22.91% {
+  22.98% {
     content: "I'm a software developer based in Toronto";
   }
 
-  23.73% {
+  23.12% {
     content: "I'm a software developer based in Toronto,";
   }
 
-  24.06% {
+  24.46% {
     content: "I'm a software developer based in Toronto, ";
   }
 
-  24.81% {
+  24.57% {
     content: "I'm a software developer based in Toronto, w";
   }
 
-  25.17% {
+  24.95% {
     content: "I'm a software developer based in Toronto, wi";
   }
 
-  25.54% {
+  25.84% {
     content: "I'm a software developer based in Toronto, wit";
   }
 
-  26.19% {
+  26.7% {
     content: "I'm a software developer based in Toronto, with";
   }
 
-  26.5% {
+  27.39% {
     content: "I'm a software developer based in Toronto, with ";
   }
 
-  27.08% {
-    content: "I'm a software developer based in Toronto, with a";
-  }
-
-  27.96% {
+  27.65% {
     content: "I'm a software developer based in Toronto, with a ";
   }
 
-  29.11% {
+  28.76% {
     content: "I'm a software developer based in Toronto, with a p";
   }
 
-  29.46% {
+  29.26% {
     content: "I'm a software developer based in Toronto, with a pa";
   }
 
-  29.76% {
+  30.11% {
     content: "I'm a software developer based in Toronto, with a pas";
   }
 
-  30.08% {
+  30.2% {
     content: "I'm a software developer based in Toronto, with a pass";
   }
 
-  30.84% {
+  30.52% {
     content: "I'm a software developer based in Toronto, with a passi";
   }
 
-  31.27% {
+  31.02% {
     content: "I'm a software developer based in Toronto, with a passio";
   }
 
-  32.11% {
+  32.41% {
     content: "I'm a software developer based in Toronto, with a passion";
   }
 
-  32.98% {
+  32.76% {
     content: "I'm a software developer based in Toronto, with a passion ";
   }
 
-  33.16% {
+  33.09% {
     content: "I'm a software developer based in Toronto, with a passion f";
   }
 
-  33.94% {
+  33.34% {
     content: "I'm a software developer based in Toronto, with a passion fo";
   }
 
-  34.56% {
+  34.32% {
     content: "I'm a software developer based in Toronto, with a passion for";
   }
 
-  34.38% {
+  34.55% {
     content: "I'm a software developer based in Toronto, with a passion for ";
   }
 
-  35.56% {
+  35.32% {
     content: "I'm a software developer based in Toronto, with a passion for w";
   }
 
-  35.84% {
+  35.59% {
     content: "I'm a software developer based in Toronto, with a passion for we";
   }
 
-  36.13% {
+  36.09% {
     content: "I'm a software developer based in Toronto, with a passion for web";
   }
 
-  37.21% {
+  37.22% {
     content: "I'm a software developer based in Toronto, with a passion for web ";
   }
 
-  37.37% {
+  37.2% {
     content: "I'm a software developer based in Toronto, with a passion for web d";
   }
 
-  38.12% {
+  38.03% {
     content: "I'm a software developer based in Toronto, with a passion for web de";
   }
 
-  38.44% {
+  39.16% {
     content: "I'm a software developer based in Toronto, with a passion for web dev";
   }
 
-  39.28% {
+  39.13% {
     content: "I'm a software developer based in Toronto, with a passion for web deve";
   }
 
-  39.68% {
+  40.13% {
     content: "I'm a software developer based in Toronto, with a passion for web devel";
   }
 
-  40.47% {
+  40.74% {
     content: "I'm a software developer based in Toronto, with a passion for web develo";
   }
 
-  40.62% {
+  40.66% {
     content: "I'm a software developer based in Toronto, with a passion for web develop";
   }
 
-  41.64% {
+  41.45% {
     content: "I'm a software developer based in Toronto, with a passion for web developm";
   }
 
-  42.3% {
+  42.13% {
     content: "I'm a software developer based in Toronto, with a passion for web developme";
   }
 
-  42.97% {
+  42.23% {
     content: "I'm a software developer based in Toronto, with a passion for web developmen";
   }
 
-  43.23% {
+  43.37% {
     content: "I'm a software developer based in Toronto, with a passion for web development";
   }
 
-  43.55%, 99.73% {
+  44.08%, 100.26% {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 }
@@ -10925,11 +10706,6 @@ h2 {
   background-color: rgb(128 203 196 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-teal-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 166 154 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-teal-500\/10:hover {
   background-color: rgb(0 150 136 / 0.1);
 }
@@ -11360,11 +11136,6 @@ h2 {
 
 .focus\:bg-transparent:focus {
   background-color: transparent;
-}
-
-.focus\:bg-white:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .focus\:bg-opacity-80:focus {
@@ -13392,6 +13163,10 @@ h2 {
   background-color: rgb(11 28 54 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-navy\/60) {
+  background-color: rgb(11 28 54 / 0.6);
+}
+
 :is(.dark .dark\:bg-neutral-600) {
   --tw-bg-opacity: 1;
   background-color: rgb(82 82 82 / var(--tw-bg-opacity));
@@ -13430,10 +13205,6 @@ h2 {
   background-color: rgb(82 82 91 / 0.5);
 }
 
-:is(.dark .dark\:bg-navy\/60) {
-  background-color: rgb(11 28 54 / 0.6);
-}
-
 :is(.dark .dark\:fill-gray-400) {
   fill: #bdbdbd;
 }
@@ -13441,11 +13212,6 @@ h2 {
 :is(.dark .dark\:text-black) {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-cyber-rose) {
-  --tw-text-opacity: 1;
-  color: rgb(255 42 159 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-gray-200) {
@@ -13461,11 +13227,6 @@ h2 {
 :is(.dark .dark\:text-indigo-400) {
   --tw-text-opacity: 1;
   color: rgb(129 140 248 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-neon-pink) {
-  --tw-text-opacity: 1;
-  color: rgb(255 46 122 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-neon-teal) {
@@ -13498,6 +13259,14 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-white\/70) {
+  color: rgb(255 255 255 / 0.7);
+}
+
+:is(.dark .dark\:text-white\/90) {
+  color: rgb(255 255 255 / 0.9);
+}
+
 :is(.dark .dark\:text-zinc-300) {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
@@ -13506,14 +13275,6 @@ h2 {
 :is(.dark .dark\:text-zinc-400) {
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-white\/70) {
-  color: rgb(255 255 255 / 0.7);
-}
-
-:is(.dark .dark\:text-white\/90) {
-  color: rgb(255 255 255 / 0.9);
 }
 
 :is(.dark .dark\:shadow-\[0_4px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.5\)\]) {
@@ -13722,21 +13483,9 @@ h2 {
 }
 
 @media (min-width: 540px) {
-  .sm\:static {
-    position: static;
-  }
-
-  .sm\:left-0 {
-    left: 0px;
-  }
-
   .sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-  }
-
-  .sm\:ml-5 {
-    margin-left: 1.25rem;
   }
 
   .sm\:ml-6 {
@@ -13759,10 +13508,6 @@ h2 {
     margin-top: 3.5rem;
   }
 
-  .sm\:ml-0 {
-    margin-left: 0px;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -13783,18 +13528,6 @@ h2 {
     height: 20rem;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
-  .sm\:max-w-full {
-    max-width: 100%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -13807,51 +13540,9 @@ h2 {
     justify-content: flex-end;
   }
 
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
-  .sm\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .sm\:pt-64 {
-    padding-top: 16rem;
-  }
-
-  .sm\:pr-0 {
-    padding-right: 0px;
-  }
-
-  .sm\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .sm\:pl-6 {
-    padding-left: 1.5rem;
-  }
-
-  .sm\:text-left {
-    text-align: left;
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
-
-  .sm\:text-right {
-    text-align: right;
   }
 
   .sm\:text-2xl {
@@ -13881,10 +13572,6 @@ h2 {
 }
 
 @media (min-width: 720px) {
-  .md\:left-1\/2 {
-    left: 50%;
-  }
-
   .md\:order-none {
     order: 0;
   }
@@ -13900,18 +13587,6 @@ h2 {
 
   .md\:mr-4 {
     margin-right: 1rem;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:w-10 {
@@ -13966,16 +13641,8 @@ h2 {
     max-width: 83.333333%;
   }
 
-  .md\:basis-2\/3 {
-    flex-basis: 66.666667%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:place-self-center {
@@ -14001,10 +13668,6 @@ h2 {
 }
 
 @media (min-width: 960px) {
-  .lg\:left-1\/2 {
-    left: 50%;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -14045,10 +13708,6 @@ h2 {
     width: 60%;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:min-w-\[40\%\] {
     min-width: 40%;
   }
@@ -14081,10 +13740,6 @@ h2 {
     max-width: 75%;
   }
 
-  .lg\:max-w-full {
-    max-width: 100%;
-  }
-
   .lg\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
@@ -14101,10 +13756,6 @@ h2 {
     flex-direction: row;
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -14117,29 +13768,9 @@ h2 {
     justify-content: flex-start;
   }
 
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .lg\:pl-6 {
-    padding-left: 1.5rem;
-  }
-
-  .lg\:pr-10 {
-    padding-right: 2.5rem;
-  }
-
-  .lg\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 
   .lg\:text-7xl {
@@ -14155,11 +13786,6 @@ h2 {
 
   .xl\:w-\[52rem\] {
     width: 52rem;
-  }
-
-  .xl\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 }
 
@@ -14307,10 +13933,6 @@ h2 {
   .max-md\:hidden {
     display: none;
   }
-
-  .max-md\:bg-opacity-80 {
-    --tw-bg-opacity: 0.8;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -14340,22 +13962,6 @@ h2 {
     --tw-space-y-reverse: 0;
     margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(8rem * var(--tw-space-y-reverse));
-  }
-}
-
-@media (max-width: 1920px) {
-  .max-3xl\:pb-10 {
-    padding-bottom: 2.5rem;
-  }
-
-  .max-3xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .max-3xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 

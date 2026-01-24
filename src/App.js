@@ -69,7 +69,7 @@ function App() {
                     <About />
                     <Work />
                     <Certifications />
-                    <Education />
+                    {/* <Education /> */}
                     <Projects />
                     <Contact />
                   </>
