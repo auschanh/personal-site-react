@@ -5,7 +5,8 @@ import meJapanSelfie from "../assets/hobbies/20191229-DSC_0638.jpg";
 import meVancouverPort from "../assets/heroPics/VancouverPort.JPG"
 import gamingImage from "../assets/hobbies/eldenring1.jpeg";
 import hockeyImage from "../assets/hobbies/leafs.jpg";
-import heroPic from "../assets/heroPics/VancouverSeaSky.jpg";
+// import heroPic from "../assets/heroPics/VancouverSeaSky.jpg";
+import heroPic from "../assets/hobbies/MixTapeCover invert.jpg";
 import LightboxGallery from "./LightboxGallery";
 import { Button, Carousel } from "@material-tailwind/react";
 
