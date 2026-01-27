@@ -43,6 +43,15 @@ module.exports = withMT({
         "neon-pink": "#FF2E7A",
         "cyber-rose": "#FF2A9F"
       },
+      keyframes: {
+      marquee: {
+        "0%": { transform: "translateX(0%)" },
+        "100%": { transform: "translateX(-50%)" },
+      },
+    },
+    animation: {
+      marquee: "marquee 35s linear infinite",
+    },
     },
     container: {
       center: true,

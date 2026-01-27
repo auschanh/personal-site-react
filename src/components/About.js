@@ -10,11 +10,38 @@ import heroPic from "../assets/hobbies/MixTapeCover invert.jpg";
 import LightboxGallery from "./LightboxGallery";
 import { Button, Carousel } from "@material-tailwind/react";
 
+import reactLogo from "../assets/icons/react-3.png";
+import typescriptLogo from "../assets/icons/typescript-official-svgrepo-com.svg";
+import sqlLogo from "../assets/icons/database.svg";
+import sqlLogoBlack from "../assets/icons/database-black.svg";
+import sharepointLogo from "../assets/icons/sharepoint.svg";
+import powerautomateLogo from "../assets/icons/icons8-microsoft-power-automate-2020.svg";
+import kafkaWhite from "../assets/icons/Apache Kafka.png";
+import kafkaBlack from "../assets/icons/Apache Kafka Black.png";
+import javaLogo from "../assets/icons/java.svg";
+import dockerLogo from "../assets/icons/docker-icon.svg";
+import confluentLogo from "../assets/icons/confluent-logo.png";
+import confluentTealLogo from "../assets/icons/confluent-teal.png";
+import psyncopateLogo from "../assets/icons/Psyncopate.webp";
+
 const About = () => {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef(null);
   const aboutRef = useRef(null);
   const aboutIndexRef = useRef(0); // no rendering 
+
+  const skills = [
+  { name: "Kafka", icon: kafkaWhite },
+  { name: "Confluent", icon: confluentLogo},
+  // { name: "Python", icon: "/icons/python.svg" },
+  { name: "Java", icon: javaLogo},
+  { name: "React", icon: reactLogo },
+  // { name: "Tailwind", icon: "/icons/tailwind.svg" },
+  { name: "Docker", icon: dockerLogo },
+  { name: "SQL", icon: sqlLogo },
+  { name: "SharePoint", icon: sharepointLogo},
+  { name: "Power Automate", icon: powerautomateLogo},
+];
   
   const aboutImages = [meMontreal2, mePhilly, meVancouverPort]
 
@@ -104,7 +131,7 @@ const About = () => {
   return (
     <>
       {/* HERO SECTION */}
-    <div className="relative w-screen pt-32 pb-80 bg-slate-200 dark:bg-dark-navy overflow-hidden">
+    <div className="relative w-screen pt-32 pb-4 bg-slate-200 dark:bg-dark-navy overflow-hidden">
       {/* IMAGE */}
       <img
         src={heroPic}
@@ -124,6 +151,33 @@ const About = () => {
       <div className="lg:hidden bg-slate-200 dark:bg-dark-navy px-6 py-12 text-center">
         <HeroText />
       </div>
+    {/* SKILLS STRIP */}
+      <div className=" py-12 overflow-hidden group">
+        <div className="marquee-track flex w-max gap-12 px-8 animate-marquee">
+          {[...skills, ...skills].map((skill, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-3 text-white/80 hover:text-white transition"
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="
+                  h-10 w-10
+                  sm:h-12 sm:w-12
+                  md:h-16 md:w-16
+                  lg:h-20 lg:w-20
+                  object-contain
+                "
+              />
+              <span className="font-medium whitespace-nowrap">
+                {skill.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
 
 {/* MOBILE / TABLET TEXT BELOW IMAGE */}

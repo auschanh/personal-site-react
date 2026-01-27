@@ -55,7 +55,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-300 max-sm:ml-4">
+                      <p className="text-sm font-bold font-mono text-black dark:text-neon-pink max-sm:ml-4">
                         Jan 2025 - Present
                       </p>
                     </div>
@@ -222,7 +222,7 @@ const Work = () => {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-bold font-mono text-black dark:text-zinc-300">
+                      <p className="text-sm font-bold font-mono text-black dark:text-neon-pink">
                         May 2021 - Aug 2022 (1yrs 4mos)
                       </p>
                     </div>
