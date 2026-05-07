@@ -41,7 +41,10 @@ module.exports = withMT({
         },
         "neon-teal": "#4DE9D9",
         "neon-pink": "#FF2E7A",
-        "cyber-rose": "#FF2A9F"
+        "cyber-rose": "#FF2A9F",
+        "rich-pink": "#CC0077",
+        "green": "#00e5a0",
+        "teal-green": "#14E6AF"
       },
       keyframes: {
       marquee: {
@@ -50,7 +53,7 @@ module.exports = withMT({
       },
     },
     animation: {
-      marquee: "marquee 35s linear infinite",
+      marquee: "marquee 20s linear infinite",
     },
     },
     container: {

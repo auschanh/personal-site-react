@@ -67,7 +67,7 @@ const About = () => {
   const HeroText = () => (
   <>
     <p className="text-3xl font-bold dark:text-white md:text-5xl lg:text-7xl">
-      Hi, I'm <span className="text-neon-teal type-firstName"></span>
+      Hi, I'm <span className="text-teal-green type-firstName"></span>
     </p>
 
     <p className="text-lg font-bold dark:text-white sm:text-2xl">
@@ -83,7 +83,7 @@ const About = () => {
     <div className="h-4" />
 
     <p className="text-xl dark:text-white/70">
-      <span className="text-cyber-rose">
+      <span className="text-rich-pink font-bold drop-shadow-2xl">
         Engineer @ Psyncopate Technologies
       </span>
     </p>
@@ -100,9 +100,9 @@ const About = () => {
         <br />
         <p>
           I'm continuously learning and growing my skill set — especially in{" "}
-          <strong className="text-teal-500 dark:text-neon-teal">Kafka</strong>{" "}
+          <strong className="text-teal-500 dark:text-teal-green">Kafka</strong>{" "}
           and{" "}
-          <strong className="text-teal-500 dark:text-neon-teal">
+          <strong className="text-teal-500 dark:text-teal-green">
             distributed event-driven architectures
           </strong>.
         </p>
@@ -110,11 +110,11 @@ const About = () => {
         <br/>
 
         <p className="font-bold">
-          I'm currently double certified for <strong className="text-teal-500 dark:text-neon-teal">
+          I'm currently double certified for <strong className="text-teal-500 dark:text-teal-green">
             Kafka
           </strong>:
         </p>
-        <ol className="mt-4 space-y-2 list-disc list-inside marker:text-teal-500 dark:marker:text-neon-teal">
+        <ol className="mt-4 space-y-2 list-disc list-inside marker:text-teal-500 dark:marker:text-teal-green">
           <li className="pl-1">
             <span className="font-medium">Confluent Kafka Developer</span>
           </li>
@@ -140,7 +140,7 @@ const About = () => {
       />
 
       {/* OVERLAY — desktop only */}
-      <div className="hidden lg:block absolute inset-0 bg-black/40 pointer-events-none" />
+      <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/10 from-45% to-black/70 pointer-events-none" />
 
       {/* DESKTOP OVERLAY TEXT */}
       <div className="hidden lg:flex absolute inset-0 items-center">
@@ -170,9 +170,9 @@ const About = () => {
                   object-contain
                 "
               />
-              <span className="font-medium whitespace-nowrap">
+              {/* <span className="font-medium whitespace-nowrap">
                 {skill.name}
-              </span>
+              </span> */}
             </div>
           ))}
         </div>
