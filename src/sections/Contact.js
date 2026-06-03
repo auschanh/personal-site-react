@@ -33,7 +33,7 @@ const Contact = () => {
               data-aos-duration="1000"
             >
               If you want to get in touch, email me at:{' '}
-              <strong>auschanh@gmail.com</strong>
+              <strong className="dark:text-white">auschanh@gmail.com</strong>
             </div>
             <div
               className="text-xl text-gray-700 body-text"

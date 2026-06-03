@@ -1,50 +1,43 @@
 import React from "react";
 import acLogo from "../assets/logos/ac-logo-white.png";
 
-const Footer = () => {
-  return (
-    <footer className="footer-center block justify-between bg-black p-4 py-2 text-zinc-400 sm:flex sm:py-6">
-      <div id="leftDiv"></div>
-      <div className="flex">
-        <div className="mx-2 sm:mx-6">
-          <a href="">
-            <img
-              src={acLogo}
-              className="h-12 transform transition-all hover:scale-110"
-            />
-          </a>
-        </div>
-        <div className="grid-flow-col items-center">
-          <p className="text-2xl sm:text-3xl">Thanks for visiting!</p>
-          <p className="mt-2 text-xs sm:text-sm">
-            Austin Chanhsavang © 2025 - All rights reserved
-          </p>
+const SOCIAL_LINKS = [
+  { href: "https://github.com/auschanh",      icon: "fa-brands fa-github",           label: "GitHub" },
+  { href: "https://linkedin.com/in/auschanh", icon: "fa-brands fa-linkedin",         label: "LinkedIn" },
+  { href: "https://instagram.com/auschanh",   icon: "fa-brands fa-square-instagram", label: "Instagram" },
+];
+
+const Footer = () => (
+  <footer className="bg-black px-6 lg:px-16 py-6">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+      <div className="flex items-center gap-4">
+        <a href="/" aria-label="Home">
+          <img src={acLogo} className="h-10 transition-transform hover:scale-110" alt="Austin Chanhsavang" />
+        </a>
+        <div>
+          <p className="text-white font-semibold">Thanks for visiting!</p>
+          <p className="text-zinc-500 text-xs mt-0.5">Austin Chanhsavang © 2025 — All rights reserved</p>
         </div>
       </div>
-      <nav className="grid-flow-col max-sm:pt-3 md:mr-4 md:place-self-center md:justify-self-end">
-        <a
-          href="https://github.com/auschanh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="icons fa-brands fa-github mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
-        </a>
-        <a
-          href="https://linkedin.com/in/auschanh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="icons fa-brands fa-linkedin mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
-        </a>
-        <a
-          href="https://instagram.com/auschanh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="icons fa-brands fa-square-instagram mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
-        </a>
+
+      <nav className="flex items-center gap-5" aria-label="Social links">
+        {SOCIAL_LINKS.map(({ href, icon, label }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="text-zinc-400 text-xl hover:text-white transition-colors"
+          >
+            <i className={icon} />
+          </a>
+        ))}
       </nav>
-    </footer>
-  );
-};
+
+    </div>
+  </footer>
+);
+
 export default Footer;

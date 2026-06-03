@@ -3,37 +3,23 @@ import { workExperiences, otherExperiences } from '../data/workData';
 
 const SkillIcon = ({ skill, delay }) => (
   <div
-    data-aos="fade-zoom-in"
-    data-aos-duration="1000"
-    data-aos-offset="250"
+    data-aos="fade-up"
+    data-aos-duration="500"
+    data-aos-offset="150"
     data-aos-delay={delay}
-    className="group relative mx-0.5 flex flex-col items-center sm:mx-6"
+    className="flex flex-col items-center gap-2 w-14 sm:w-16"
   >
     {skill.iconDark ? (
       <>
-        <img
-          src={skill.iconDark}
-          alt={skill.name}
-          className="hidden aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 dark:flex sm:h-16 lg:h-20"
-        />
-        <img
-          src={skill.iconLight}
-          alt={skill.name}
-          className="h-12 transform transition-all hover:scale-125 dark:hidden sm:h-16 lg:h-20"
-        />
+        <img src={skill.iconDark} alt={skill.name} className="hidden h-8 sm:h-10 object-contain dark:block" />
+        <img src={skill.iconLight} alt={skill.name} className="h-8 sm:h-10 object-contain dark:hidden" />
       </>
     ) : (
-      <img
-        src={skill.icon}
-        alt={skill.name}
-        className="aspect-square h-12 transform overflow-visible object-cover transition-all hover:scale-125 sm:h-16 lg:h-20"
-      />
+      <img src={skill.icon} alt={skill.name} className="h-8 sm:h-10 object-contain" />
     )}
-    <div className="mt-6 overflow-visible text-center text-xs font-bold text-teal-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-teal-green sm:text-xl">
-      {skill.name.split('\n').map((line, i) => (
-        <p key={i}>{line}</p>
-      ))}
-    </div>
+    <span className="text-center text-xs leading-tight body-text">
+      {skill.name.replace('\n', ' ')}
+    </span>
   </div>
 );
 
@@ -92,10 +78,13 @@ const ExperienceCard = ({ job }) => (
       </div>
     </div>
 
-    <div className="flex flex-col items-center text-center">
-      <div className="skills-icons mt-8 flex max-w-[100vw] justify-between">
+    <div className="mt-6 px-1">
+      <p className="mb-4 text-xs font-mono font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+        Technologies
+      </p>
+      <div className="flex flex-wrap gap-6 sm:gap-8">
         {job.skills.map((skill, i) => (
-          <SkillIcon key={skill.name} skill={skill} delay={i * 100} />
+          <SkillIcon key={skill.name} skill={skill} delay={i * 75} />
         ))}
       </div>
     </div>
@@ -107,8 +96,8 @@ const Work = () => (
     <div id="work-jump"></div>
     <div className="work bg-slate-200 py-40 dark:bg-dark-navy">
       <div id="work" className="section sm:px-auto row-span-1 mt-10 sm:container">
-        <h1 className="text-3xl font-bold font-mono text-black underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8 dark:text-white">
-          / Work Experiences
+        <h1 className="text-3xl font-bold font-mono text-black dark:text-white">
+          / WORK EXPERIENCES
         </h1>
         <br />
         <br />

@@ -9,8 +9,8 @@ const Projects = () => (
     <div id="projects-jump"></div>
     <div className="projects w-screen bg-slate-100 pb-40 pt-32 text-black dark:bg-dark-navy">
       <div id="projects" className="section sm:px-auto row-span-1 mt-10 sm:container">
-        <h1 className="text-3xl font-bold font-mono underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8 dark:text-white">
-          / Projects
+        <h1 className="text-3xl font-bold font-mono dark:text-white">
+          / PROJECTS
         </h1>
         <br />
         <br />

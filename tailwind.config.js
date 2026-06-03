@@ -9,6 +9,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+      },
       colors: {
         "dark-navy": "#071121",
         navy: "#0B1C36",

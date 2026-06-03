@@ -5,340 +5,217 @@ import resume from "../assets/docs/Austin_Chanhsavang_Resume_2025.pdf";
 import { Link, useNavigate } from "react-router-dom";
 import LightboxGallery from "./LightboxGallery";
 
-// import { Button } from "@material-tailwind/react";
+const NAV_LINKS = [
+  { label: "About",    path: "/#about-jump" },
+  { label: "Work",     path: "/#work-jump" },
+  { label: "Projects", path: "/#projects-jump" },
+  { label: "Contact",  path: "/#contact-jump" },
+];
+
+const SOCIAL_LINKS = [
+  { href: "https://github.com/auschanh",    icon: "fa-brands fa-github",           label: "GitHub" },
+  { href: "https://linkedin.com/in/auschanh", icon: "fa-brands fa-linkedin",        label: "LinkedIn" },
+  { href: "https://instagram.com/auschanh", icon: "fa-brands fa-square-instagram", label: "Instagram" },
+];
+
+const linkClass =
+  "text-sm font-medium text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors";
+
+const iconClass =
+  "text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [photosOpen, setPhotosOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handleOutsideClick = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setIsMenuOpen(false);
       }
     };
-
-    const handleBackdropClick = (e) => {
-      if (e.target.classList.contains("navbar-backdrop")) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("touchstart", handleClickOutside);
-    document.addEventListener("click", handleBackdropClick);
-
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("touchstart", handleOutsideClick);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("touchstart", handleClickOutside);
-      document.removeEventListener("click", handleBackdropClick);
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("touchstart", handleOutsideClick);
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-  const handleOpen = () => setOpen(!open);
-
   const handleNavClick = (path) => {
+    setIsMenuOpen(false);
     navigate(path);
     setTimeout(() => {
       const id = path.split("#")[1];
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }, 0);
   };
 
   return (
-    <div>
-      <nav className="fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 py-2 shadow-lg focus:text-neutral-700 dark:bg-black lg:flex-wrap lg:justify-start lg:py-4">
-        <div className="nav-div my-0 flex w-full flex-wrap items-center justify-between px-40 sm:container max-sm:max-w-full max-lg:px-0.5">
-          <div className="flex">
-            <a href="/">
-              <img
-                src={logoBlack}
-                className="ml-1 mr-3 h-12 transform transition-all hover:scale-110 dark:hidden"
-              />
+    <>
+      {/* ── MAIN NAVBAR ── */}
+      <nav className="fixed top-0 z-50 w-full bg-white/95 dark:bg-black shadow-sm backdrop-blur-sm">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center w-full px-6 lg:px-16 py-3">
+
+          {/* LEFT: Logo */}
+          <div>
+            <a href="/" aria-label="Home">
+              <img src={logoBlack} className="h-10 dark:hidden" alt="Austin Chanhsavang" />
+              <img src={logoWhite} className="h-10 hidden dark:block" alt="Austin Chanhsavang" />
             </a>
-            <a href="/">
-              <img
-                src={logoWhite}
-                className="ml-1 mr-3 hidden h-12 transform transition-all hover:scale-110 dark:block"
-              />
-            </a>
-            <button
-              type="button"
-              className="mb-2 me-2 rounded-full border border-gray-300 bg-black px-3 py-2.5 text-sm font-medium text-white hover:bg-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-zinc-300 dark:text-black dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              id="toggleDarkLightModeBtn"
-              onClick={toggleDarkMode}
-            >
-              <i className="fa-regular fa-moon dark:hidden"></i>{" "}
-              <span className="dark:hidden"> Dark</span>
-              <i className="fa-solid fa-lightbulb !hidden dark:!inline-block"></i>{" "}
-              <span className="hidden dark:inline-block"> Light</span>
-            </button>
           </div>
 
-          <div className="middle-nav items-center justify-between text-xl font-bold max-md:hidden">
-            <ul className="list-style-none flex pl-0 sm:flex-row">
-              <li className="mb-4 pr-10 lg:mb-0">
-                <Link
-                  to="/#about-jump"
-                  onClick={() => handleNavClick("/#about-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="mb-4 pr-10 lg:mb-0">
-                <Link
-                  to="/#work-jump"
-                  onClick={() => handleNavClick("/#work-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
-                >
-                  Work
-                </Link>
-              </li>
-              <li className="mb-4 pr-10 lg:mb-0">
-                <Link
-                  href="/#projects-jump"
-                  onClick={() => handleNavClick("/#projects-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li className="mb-4 pr-10 lg:mb-0">
-                <p
-                  onClick={handleOpen}
-                  className="text-black cursor-pointer hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
+          {/* CENTER: Nav links — desktop only */}
+          <div className="hidden md:flex justify-center items-center">
+            <ul className="flex items-center gap-8">
+              {NAV_LINKS.map(({ label, path }) => (
+                <li key={label}>
+                  <Link
+                    to={path}
+                    onClick={() => handleNavClick(path)}
+                    className={linkClass}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <button
+                  onClick={() => setPhotosOpen(true)}
+                  className={linkClass}
                 >
                   My Photos
-                  </p>
+                </button>
               </li>
             </ul>
-            <LightboxGallery open={open} close={()=>setOpen(false)}/>
+            <LightboxGallery open={photosOpen} close={() => setPhotosOpen(false)} />
           </div>
-          <div className="items-center justify-between">
-            <ul className="right-nav list-style-none flex pl-0 text-xl sm:flex-row">
-              <div>
-                <button
-                  className="navbar-burger flex items-center p-3 font-extrabold text-black dark:text-white sm:hidden"
-                  onClick={(e) => {
-                    toggleMenu();
-                    e.stopPropagation();
-                  }}
-                >
-                  <svg
-                    className="block h-4 w-4 fill-current text-black dark:text-white"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Mobile menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                  </svg>
-                </button>
-              </div>
-              <div className="hidden px-0 sm:flex">
-                <li className="mb-4 pr-2 lg:mb-0">
-                  <a href={resume} target="_blank" rel="noopener noreferrer">
-                    <i className="fa-solid fa-file transform text-black transition-all hover:scale-105 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-300">
-                      {" "}
-                      <span className="transform font-sans text-sm text-black transition-all hover:scale-105 hover:text-gray-400 dark:text-white dark:hover:text-zinc-400">
-                        RESUME
-                      </span>
-                    </i>
-                  </a>
-                </li>
-                <li className="mb-4 pr-2 lg:mb-0">
-                  <a
-                    href="https://github.com/auschanh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-lg fa-github transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
-                  </a>
-                </li>
-                <li className="mb-4 pr-2 lg:mb-0">
-                  <a
-                    href="https://linkedin.com/in/auschanh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-lg fa-linkedin transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/auschanh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-lg fa-square-instagram transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
-                  </a>
-                </li>
-              </div>
-            </ul>
+
+          {/* RIGHT: Actions */}
+          <div className="flex items-center justify-end gap-5">
+
+            {/* Social + Resume — desktop only */}
+            <div className="hidden md:flex items-center gap-5">
+              <a
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-mono font-semibold tracking-widest text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors"
+              >
+                RESUME
+              </a>
+              {SOCIAL_LINKS.map(({ href, icon, label }) => (
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                  <i className={`${icon} text-lg ${iconClass}`} />
+                </a>
+              ))}
+            </div>
+
+            {/* Dark mode toggle — always visible */}
+            <button
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+              className={`text-lg ${iconClass}`}
+            >
+              <i className="fa-regular fa-moon dark:hidden" />
+              <i className="fa-solid fa-sun hidden dark:inline text-yellow-400" />
+            </button>
+
+            {/* Hamburger — mobile only */}
+            <button
+              className={`md:hidden ${iconClass}`}
+              onClick={() => setIsMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <svg className="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+
           </div>
         </div>
       </nav>
 
-      {/* MOBILE */}
+      {/* ── MOBILE DRAWER ── */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 md:hidden" ref={menuRef}>
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setIsMenuOpen(false)}
+          />
 
-      <div
-        className={`navbar-menu relative z-50 ${isMenuOpen ? "" : "hidden"}`}
-        ref={menuRef}
-      >
-        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 dark:bg-white"></div>
-        <nav className="fixed bottom-0 left-0 top-0 flex max-w-full flex-col overflow-y-auto border-r bg-white px-6 py-6 dark:bg-dark-navy dark:text-white">
-          <div className="mb-8 flex items-center">
-            <a
-              className="mr-auto text-3xl font-bold leading-none dark:hidden"
-              href="/"
-            >
-              <img
-                src={logoBlack}
-                className="h-12 transform transition-all hover:scale-110"
-              />
-            </a>
-            <a
-              className="mr-auto hidden transform text-3xl font-bold leading-none dark:block"
-              href="/"
-            >
-              <img
-                src={logoWhite}
-                className="h-12 transform transition-all hover:scale-110"
-              />
-            </a>
-            <button className="navbar-close" onClick={closeMenu}>
-              <svg
-                className="h-6 w-6 cursor-pointer text-black  hover:text-gray-500 dark:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          {/* Drawer panel */}
+          <div className="absolute right-0 top-0 h-full w-72 bg-white dark:bg-dark-navy flex flex-col shadow-2xl">
+
+            {/* Drawer header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-200 dark:border-zinc-800">
+              <a href="/" aria-label="Home">
+                <img src={logoBlack} className="h-9 dark:hidden" alt="Austin Chanhsavang" />
+                <img src={logoWhite} className="h-9 hidden dark:block" alt="Austin Chanhsavang" />
+              </a>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                aria-label="Close menu"
+                className={iconClass}
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Drawer nav links */}
+            <nav className="flex-1 overflow-y-auto px-4 py-6">
+              <ul className="space-y-1">
+                {NAV_LINKS.map(({ label, path }) => (
+                  <li key={label}>
+                    <Link
+                      to={path}
+                      onClick={() => handleNavClick(path)}
+                      className="block rounded-lg px-4 py-3 text-sm font-medium text-black dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <button
+                    onClick={() => { setIsMenuOpen(false); setPhotosOpen(true); }}
+                    className="w-full text-left block rounded-lg px-4 py-3 text-sm font-medium text-black dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  >
+                    My Photos
+                  </button>
+                </li>
+                <li>
+                  <a
+                    href={resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-black dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  >
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            {/* Drawer footer: social icons */}
+            <div className="px-6 py-5 border-t border-zinc-200 dark:border-zinc-800 flex items-center gap-5">
+              {SOCIAL_LINKS.map(({ href, icon, label }) => (
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                  <i className={`${icon} text-xl ${iconClass}`} />
+                </a>
+              ))}
+            </div>
+
           </div>
-
-          <ul className="text-black dark:text-white">
-            <li className="mb-1">
-              <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
-                to="/#about"
-                onClick={() => handleNavClick("/#about-jump")}
-              >
-                About
-              </Link>
-            </li>
-            <li className="mb-1">
-              <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
-                to="/#work"
-                onClick={() => handleNavClick("/#work-jump")}
-              >
-                Work
-              </Link>
-            </li>
-            <li className="mb-1">
-              <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
-                to="/#projects"
-                onClick={() => handleNavClick("/#projects-jump")}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="mb-1">
-              <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
-                to="#/contact"
-                onClick={() => handleNavClick("/#contact-jump")}
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="mb-1">
-                <p
-                  onClick={handleOpen}
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
-                >
-                  My Photos
-                  </p>
-              </li>
-            <br />
-            <br />
-            <li className="mb-1">
-              <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
-                href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-solid fa-file  hover:text-gray-400">
-                  {" "}
-                  <span className="font-sans text-sm text-black dark:text-white">
-                    RESUME
-                  </span>
-                </i>
-              </a>
-            </li>
-            <li className="mb-1">
-              <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
-                href="https://github.com/auschanh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-lg fa-github text-black hover:text-gray-400 dark:text-white"></i>
-                {"  "}
-                Github
-              </a>
-            </li>
-            <li className="mb-1">
-              <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
-                href="https://linkedin.com/in/auschanh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-lg fa-linkedin  text-black hover:text-gray-400 dark:text-white"></i>
-                {"  "}
-                Linkedin
-              </a>
-            </li>
-            <li className="mb-1">
-              <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
-                href="https://instagram.com/auschanh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-lg fa-square-instagram text-black hover:text-gray-400 dark:text-white"></i>
-                {"  "}
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 };
 

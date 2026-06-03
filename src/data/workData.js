@@ -22,7 +22,7 @@ const kw = (text) => (
 export const workExperiences = [
   {
     id: 'psyncopate',
-    company: 'Psyncopate',
+    company: 'Psyncopate Technologies',
     logo: psyncopateLogo,
     logoAlt: 'Psyncopate Logo',
     title: 'ASSOCIATE CONSULTING ENGINEER',

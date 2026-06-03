@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@material-tailwind/react';
 import LightboxGallery from '../components/LightboxGallery';
-import { mePhilly, meMontreal, meVancouver, heroPic } from '../assets/personal';
+import { mePhilly, meMontreal, meVancouver, meChristmas, heroPic } from '../assets/personal';
 import {
   kafkaWhite,
   confluentLogo,
@@ -24,7 +24,7 @@ const skills = [
   { name: 'Power Automate', icon: powerautomateLogo },
 ];
 
-const aboutImages = [meMontreal, mePhilly, meVancouver];
+const aboutImages = [mePhilly, meVancouver, meChristmas];
 
 const HeroText = () => (
   <>
@@ -36,7 +36,7 @@ const HeroText = () => (
     </p>
     <div className="h-6" />
     <p className="text-2xl dark:text-white/90 max-sm:text-xl">
-      I build accessible web experiences.
+      I build accessible web experiences and systems.
     </p>
     <div className="h-4" />
     <p className="text-xl dark:text-white/70">
@@ -160,8 +160,8 @@ const About = () => {
           id="about"
           className="section about sm:px-auto mt-0 pb-16 text-black dark:text-white sm:container dark:bg-navy"
         >
-          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8">
-            / About
+          <h1 className="text-3xl font-bold font-mono mb-8">
+            / ABOUT
           </h1>
 
           <div
