@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@material-tailwind/react';
 import LightboxGallery from '../components/LightboxGallery';
-import { mePhilly, meMontreal, meVancouver, meChristmas, heroPic } from '../assets/personal';
+import { mePhilly, meMontreal, meVancouver, meChristmas, meJapan, heroPic } from '../assets/personal';
 import {
   kafkaWhite,
   confluentLogo,
@@ -25,6 +25,87 @@ const skills = [
 ];
 
 const aboutImages = [mePhilly, meVancouver, meChristmas];
+
+const HOBBIES = [
+  {
+    emoji: '📸',
+    label: 'Photography',
+    image: meJapan,
+    detail: 'Currently shooting on a Fujifilm x100vi, and enjoying the film simulations.',
+  },
+  {
+    emoji: '🎮',
+    label: 'Gaming',
+    detail: 'Been gaming since I could walk, I love JRPGs and Souls like games! Here\'s some favourites:',
+    bullets: [
+      'Elden Ring',
+      'Expedition 33',
+      'Red Dead Redemption 2',
+    ],
+  },
+  {
+    emoji: '📺',
+    label: 'Anime & Manga',
+    detail: 'Been reading a lot more recently, but still enjoying Anime. Here are some favourites of mine:',
+    bullets: [
+      'Attack on Titan',
+      'Steins Gate',
+      'Chainsaw Man',
+    ],
+  },
+  {
+    emoji: '⌨️',
+    label: 'Mechanical Keyboards',
+    detail: 'I like to tinker with my equipment, including keyboards. Big fan of tactiles, and found my end games in Boba U4T and Baby Kangaroos!',
+  },
+  {
+    emoji: '🍵',
+    label: 'Coffee & Matcha',
+    detail: 'Definitely not performative, but I love a good matcha or coffee. I was a barista for a short time and really got into coffee and matcha than.',
+  },
+  {
+    emoji: '✈️',
+    label: 'Travel',
+    detail: 'Would love to travel more, but have been to many places in North America. Looking at Asia next: Vietnam,  South Korea, Singapore, Taiwan and more :)',
+  },
+];
+
+const HobbyCard = ({ emoji, label, detail, image, bullets }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full cursor-pointer text-left rounded-xl border-2 border-teal-500/30 bg-white/60 dark:bg-navy/60 p-4 transition-colors hover:border-teal-500/60 dark:hover:border-teal-green/40"
+    >
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">{emoji}</span>
+          <span className="font-medium text-black dark:text-white">{label}</span>
+        </div>
+        <i className={`fa-solid fa-chevron-down text-xs body-text transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
+      </div>
+      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-72 mt-3' : 'max-h-0'}`}>
+        <div className={`flex gap-3 ${image ? 'items-start' : ''}`}>
+          {image && (
+            <img
+              src={image}
+              alt={label}
+              className="h-27 w-48 flex-shrink-0 rounded-lg object-cover"
+            />
+          )}
+          <div className="flex-1">
+            {detail && <p className="text-sm body-text">{detail}</p>}
+            {bullets && (
+              <ul className={`list-disc list-inside space-y-1 text-sm body-text ${detail ? 'mt-2' : ''}`}>
+                {bullets.map((b, i) => <li key={i}>{b}</li>)}
+              </ul>
+            )}
+          </div>
+        </div>
+      </div>
+    </button>
+  );
+};
 
 const HeroText = () => (
   <>
@@ -199,21 +280,8 @@ const About = () => {
                 Outside of work, I enjoy:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {[
-                  { emoji: '📸', label: 'Photography' },
-                  { emoji: '🎮', label: 'Gaming' },
-                  { emoji: '📺', label: 'Anime & Manga' },
-                  { emoji: '⌨️', label: 'Mechanical Keyboards' },
-                  { emoji: '🍵', label: 'Matcha' },
-                  { emoji: '✈️', label: 'Travel' },
-                ].map(({ emoji, label }) => (
-                  <div
-                    key={label}
-                    className="hover:scale-[1.02] transition-transform flex items-center gap-3 rounded-xl border-2 border-teal-500/30 bg-white/60 p-4 dark:bg-navy/60"
-                  >
-                    <span className="text-2xl">{emoji}</span>
-                    <span className="font-medium">{label}</span>
-                  </div>
+                {HOBBIES.map((hobby) => (
+                  <HobbyCard key={hobby.label} {...hobby} />
                 ))}
               </div>
             </div>
