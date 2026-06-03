@@ -1001,6 +1001,63 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
+.btn {
+  display: inline-flex;
+  height: 3rem;
+  min-height: 3rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded-btn, 0.5rem);
+  border-color: transparent;
+  border-color: oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1em;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration-line: none;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  border-width: var(--border-btn, 1px);
+  animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-color: oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  --tw-border-opacity: 1;
+}
+
+.btn-disabled,
+  .btn[disabled],
+  .btn:disabled {
+  pointer-events: none;
+}
+
+:where(.btn:is(input[type="checkbox"])),
+:where(.btn:is(input[type="radio"])) {
+  width: auto;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.btn:is(input[type="checkbox"]):after,
+.btn:is(input[type="radio"]):after {
+  --tw-content: attr(aria-label);
+  content: var(--tw-content);
+}
+
 .card {
   position: relative;
   display: flex;
@@ -1058,6 +1115,25 @@ input[type="range"]:active::-webkit-slider-thumb {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.carousel-item {
+  box-sizing: content-box;
+  display: flex;
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.carousel-start .carousel-item {
+  scroll-snap-align: start;
+}
+
+.carousel-center .carousel-item {
+  scroll-snap-align: center;
+}
+
+.carousel-end .carousel-item {
+  scroll-snap-align: end;
 }
 
 .chat {
@@ -1246,6 +1322,57 @@ input[type="range"]:active::-webkit-slider-thumb {
     --tw-text-opacity: 0.2;
   }
 
+  .btn:hover {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+  }
+
+  @supports (color: color-mix(in oklab, black, black)) {
+    .btn:hover {
+      background-color: color-mix(
+            in oklab,
+            oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity, 1)) 90%,
+            black
+          );
+      border-color: color-mix(
+            in oklab,
+            oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity, 1)) 90%,
+            black
+          );
+    }
+  }
+
+  @supports not (color: oklch(0 0 0)) {
+    .btn:hover {
+      background-color: var(--btn-color, var(--fallback-b2));
+      border-color: var(--btn-color, var(--fallback-b2));
+    }
+  }
+
+  .btn.glass:hover {
+    --glass-opacity: 25%;
+    --glass-border-opacity: 15%;
+  }
+
+  .btn-disabled:hover,
+    .btn[disabled]:hover,
+    .btn:disabled:hover {
+    --tw-border-opacity: 0;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+    --tw-bg-opacity: 0.2;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+    --tw-text-opacity: 0.2;
+  }
+
+  @supports (color: color-mix(in oklab, black, black)) {
+    .btn:is(input[type="checkbox"]:checked):hover, .btn:is(input[type="radio"]:checked):hover {
+      background-color: color-mix(in oklab, var(--fallback-p,oklch(var(--p)/1)) 90%, black);
+      border-color: color-mix(in oklab, var(--fallback-p,oklch(var(--p)/1)) 90%, black);
+    }
+  }
+
   .dropdown.dropdown-hover:hover .dropdown-content {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -1322,19 +1449,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-right: 0.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.hero {
-  display: grid;
-  width: 100%;
-  place-items: center;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero > * {
-  grid-column-start: 1;
-  grid-row-start: 1;
 }
 
 .indicator {
@@ -1699,6 +1813,46 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 4rem;
 }
 
+.swap {
+  position: relative;
+  display: inline-grid;
+  -webkit-user-select: none;
+          user-select: none;
+  place-content: center;
+  cursor: pointer;
+}
+
+.swap > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.swap input {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.swap .swap-on,
+.swap .swap-indeterminate,
+.swap input:indeterminate ~ .swap-on {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-off,
+.swap-active .swap-off,
+.swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-on,
+.swap-active .swap-on,
+.swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
+
 .tabs {
   display: grid;
   align-items: flex-end;
@@ -1948,6 +2102,61 @@ input.tab:checked + .tab-content,
 [dir="rtl"] .breadcrumbs > ul > li + *:before,
 [dir="rtl"] .breadcrumbs > ol > li + *:before {
   --tw-rotate: -135deg;
+}
+
+.btn:active:hover,
+  .btn:active:focus {
+  animation: button-pop 0s ease-out;
+  transform: scale(var(--btn-focus-scale, 0.97));
+}
+
+@supports not (color: oklch(0 0 0)) {
+  .btn {
+    background-color: var(--btn-color, var(--fallback-b2));
+    border-color: var(--btn-color, var(--fallback-b2));
+  }
+}
+
+.btn:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+.btn.glass {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline-color: currentColor;
+}
+
+.btn.glass.btn-active {
+  --glass-opacity: 25%;
+  --glass-border-opacity: 15%;
+}
+
+.btn.btn-disabled,
+  .btn[disabled],
+  .btn:disabled {
+  --tw-border-opacity: 0;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  --tw-bg-opacity: 0.2;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  --tw-text-opacity: 0.2;
+}
+
+.btn:is(input[type="checkbox"]:checked),
+.btn:is(input[type="radio"]:checked) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+}
+
+.btn:is(input[type="checkbox"]:checked):focus-visible, .btn:is(input[type="radio"]:checked):focus-visible {
+  outline-color: var(--fallback-p,oklch(var(--p)/1));
 }
 
 @keyframes button-pop {
@@ -3669,11 +3878,6 @@ details.collapse summary::-webkit-details-marker {
   inset: 0px;
 }
 
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
-}
-
 .\!right-4 {
   right: 1rem !important;
 }
@@ -4172,10 +4376,6 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 1.5rem;
 }
 
-.ml-\[0\.5px\] {
-  margin-left: 0.5px;
-}
-
 .ml-\[18px\] {
   margin-left: 18px;
 }
@@ -4190,14 +4390,6 @@ details.collapse summary::-webkit-details-marker {
 
 .ml-auto {
   margin-left: auto;
-}
-
-.mr-0 {
-  margin-right: 0px;
-}
-
-.mr-0\.5 {
-  margin-right: 0.125rem;
 }
 
 .mr-1 {
@@ -4544,12 +4736,6 @@ details.collapse summary::-webkit-details-marker {
   height: auto;
 }
 
-.h-fit {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-full {
   height: 100%;
 }
@@ -4593,12 +4779,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
-}
-
-.max-h-fit {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
 }
 
 .max-h-full {
@@ -4837,12 +5017,6 @@ details.collapse summary::-webkit-details-marker {
   width: auto;
 }
 
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full {
   width: 100%;
 }
@@ -4962,12 +5136,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-\[calc\(100\%-1rem\)\] {
   max-width: calc(100% - 1rem);
-}
-
-.max-w-fit {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
 }
 
 .max-w-full {
@@ -5488,10 +5656,6 @@ details.collapse summary::-webkit-details-marker {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -5546,6 +5710,12 @@ details.collapse summary::-webkit-details-marker {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -6369,11 +6539,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(158 158 158 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
-}
-
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 66 66 / var(--tw-bg-opacity));
@@ -6537,11 +6702,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-teal-500\/20 {
   background-color: rgb(0 150 136 / 0.2);
-}
-
-.bg-teal-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 137 123 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -7785,11 +7945,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
-.text-green {
-  --tw-text-opacity: 1;
-  color: rgb(0 229 160 / var(--tw-text-opacity));
-}
-
 .text-indigo-500 {
   --tw-text-opacity: 1;
   color: rgb(63 81 181 / var(--tw-text-opacity));
@@ -7999,6 +8154,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(0 77 64 / var(--tw-text-opacity));
 }
 
+.text-teal-green {
+  --tw-text-opacity: 1;
+  color: rgb(20 230 175 / var(--tw-text-opacity));
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -8035,11 +8195,6 @@ details.collapse summary::-webkit-details-marker {
 .text-zinc-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
-.text-teal-green {
-  --tw-text-opacity: 1;
-  color: rgb(20 230 175 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -8101,10 +8256,6 @@ details.collapse summary::-webkit-details-marker {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.opacity-60 {
-  opacity: 0.6;
 }
 
 .opacity-\[\.53\] {
@@ -8638,51 +8789,51 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  2.1% {
+  1.78% {
     content: "A";
   }
 
-  3.35% {
+  3.69% {
     content: "Au";
   }
 
-  5.37% {
+  5.73% {
     content: "Aus";
   }
 
-  8.1% {
+  7.97% {
     content: "Aust";
   }
 
-  9.14% {
+  9.74% {
     content: "Austi";
   }
 
-  11.72%, 88.64% {
+  11.33%, 88.26% {
     content: "Austin";
   }
 
-  90.56% {
+  90.18% {
     content: "Austi";
   }
 
-  92.49% {
+  92.1% {
     content: "Aust";
   }
 
-  94.41% {
+  94.03% {
     content: "Aus";
   }
 
-  96.33% {
+  95.95% {
     content: "Au";
   }
 
-  98.26% {
+  97.87% {
     content: "A";
   }
 
-  100.18% {
+  99.8% {
     content: "";
   }
 }
@@ -8696,91 +8847,91 @@ details.collapse summary::-webkit-details-marker {
     content: "";
   }
 
-  0.22% {
+  0.64% {
     content: "C";
   }
 
-  0.69% {
+  0.8% {
     content: "CH";
   }
 
-  1.28% {
+  2% {
     content: "CHA";
   }
 
-  2.09% {
+  1.92% {
     content: "CHAN";
   }
 
-  3.17% {
+  2.35% {
     content: "CHANH";
   }
 
-  3.46% {
+  3.23% {
     content: "CHANHS";
   }
 
-  3.76% {
+  3.77% {
     content: "CHANHSA";
   }
 
-  4.83% {
+  4.28% {
     content: "CHANHSAV";
   }
 
-  4.68% {
+  4.78% {
     content: "CHANHSAVA";
   }
 
-  5.19% {
+  5.83% {
     content: "CHANHSAVAN";
   }
 
-  6.38%, 80.05% {
+  6%, 79.66% {
     content: "CHANHSAVANG";
   }
 
-  81.89% {
+  81.5% {
     content: "CHANHSAVAN";
   }
 
-  83.73% {
+  83.35% {
     content: "CHANHSAVA";
   }
 
-  85.57% {
+  85.19% {
     content: "CHANHSAV";
   }
 
-  87.41% {
+  87.03% {
     content: "CHANHSA";
   }
 
-  89.25% {
+  88.87% {
     content: "CHANHS";
   }
 
-  91.1% {
+  90.71% {
     content: "CHANH";
   }
 
-  92.94% {
+  92.55% {
     content: "CHAN";
   }
 
-  94.78% {
+  94.39% {
     content: "CHA";
   }
 
-  96.62% {
+  96.24% {
     content: "CH";
   }
 
-  98.46% {
+  98.08% {
     content: "C";
   }
 
-  100.3% {
+  99.92% {
     content: "";
   }
 }
@@ -8794,311 +8945,311 @@ details.collapse summary::-webkit-details-marker {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 
-  0.52% {
+  0.58% {
     content: "I";
   }
 
-  1.19% {
+  1.15% {
     content: "I'";
   }
 
-  1.97% {
+  1.45% {
     content: "I'm";
   }
 
-  2.33% {
+  2.41% {
     content: "I'm ";
   }
 
-  3.19% {
+  2.47% {
     content: "I'm a";
   }
 
-  3.62% {
+  3.53% {
     content: "I'm a ";
   }
 
-  3.9% {
+  3.69% {
     content: "I'm a s";
   }
 
-  4.14% {
+  4.55% {
     content: "I'm a so";
   }
 
-  5% {
+  4.99% {
     content: "I'm a sof";
   }
 
-  5.93% {
+  6.04% {
     content: "I'm a soft";
   }
 
-  5.96% {
+  5.95% {
     content: "I'm a softw";
   }
 
-  6.88% {
+  6.78% {
     content: "I'm a softwa";
   }
 
-  7.17% {
+  7.61% {
     content: "I'm a softwar";
   }
 
-  7.73% {
+  7.79% {
     content: "I'm a software";
   }
 
-  8.63% {
+  8.02% {
     content: "I'm a software ";
   }
 
-  9.33% {
+  9.36% {
     content: "I'm a software d";
   }
 
-  9.53% {
+  9.18% {
     content: "I'm a software de";
   }
 
-  9.66% {
+  9.69% {
     content: "I'm a software dev";
   }
 
-  11.14% {
+  10.28% {
     content: "I'm a software deve";
   }
 
-  11.5% {
+  10.81% {
     content: "I'm a software devel";
   }
 
-  11.68% {
+  12.2% {
     content: "I'm a software develo";
   }
 
-  12.16% {
+  12% {
     content: "I'm a software develop";
   }
 
-  12.75% {
+  12.72% {
     content: "I'm a software develope";
   }
 
-  13.58% {
+  13.16% {
     content: "I'm a software developer";
   }
 
-  14.26% {
+  13.99% {
     content: "I'm a software developer ";
   }
 
-  14.69% {
+  14.35% {
     content: "I'm a software developer b";
   }
 
-  14.95% {
+  15.53% {
     content: "I'm a software developer ba";
   }
 
-  15.24% {
+  15.43% {
     content: "I'm a software developer bas";
   }
 
-  16.22% {
+  16.19% {
     content: "I'm a software developer base";
   }
 
-  16.93% {
+  16.55% {
     content: "I'm a software developer based";
   }
 
-  17.23% {
+  17.19% {
     content: "I'm a software developer based ";
   }
 
-  18.11% {
+  17.5% {
     content: "I'm a software developer based i";
   }
 
-  18.96% {
+  18.97% {
     content: "I'm a software developer based in";
   }
 
-  18.94% {
+  19.32% {
     content: "I'm a software developer based in ";
   }
 
-  19.26% {
+  19.65% {
     content: "I'm a software developer based in T";
   }
 
-  20.03% {
-    content: "I'm a software developer based in To";
-  }
-
-  20.57% {
+  20.3% {
     content: "I'm a software developer based in Tor";
   }
 
-  21.49% {
+  21% {
     content: "I'm a software developer based in Toro";
   }
 
-  21.48% {
+  22.17% {
     content: "I'm a software developer based in Toron";
   }
 
-  22.28% {
+  22.51% {
     content: "I'm a software developer based in Toront";
   }
 
-  23.4% {
+  23.37% {
     content: "I'm a software developer based in Toronto";
   }
 
-  23.17% {
+  23.62% {
     content: "I'm a software developer based in Toronto,";
   }
 
-  24.52% {
+  24.48% {
     content: "I'm a software developer based in Toronto, ";
   }
 
-  24.85% {
+  25.22% {
     content: "I'm a software developer based in Toronto, w";
   }
 
-  25.55% {
+  25.29% {
     content: "I'm a software developer based in Toronto, wi";
   }
 
-  25.92% {
+  26.18% {
     content: "I'm a software developer based in Toronto, wit";
   }
 
-  26.04% {
+  26.26% {
     content: "I'm a software developer based in Toronto, with";
   }
 
-  27.08% {
+  26.61% {
     content: "I'm a software developer based in Toronto, with ";
   }
 
-  27.09% {
+  27.15% {
     content: "I'm a software developer based in Toronto, with a";
   }
 
-  28.41% {
+  27.85% {
     content: "I'm a software developer based in Toronto, with a ";
   }
 
-  28.78% {
+  28.88% {
+    content: "I'm a software developer based in Toronto, with a p";
+  }
+
+  28.91% {
     content: "I'm a software developer based in Toronto, with a pa";
   }
 
-  30.26% {
+  30.16% {
     content: "I'm a software developer based in Toronto, with a pas";
   }
 
-  29.9% {
+  30.79% {
     content: "I'm a software developer based in Toronto, with a pass";
   }
 
-  30.67% {
+  30.53% {
     content: "I'm a software developer based in Toronto, with a passi";
   }
 
-  31.1% {
+  31.6% {
     content: "I'm a software developer based in Toronto, with a passio";
   }
 
-  32.38% {
+  32.23% {
     content: "I'm a software developer based in Toronto, with a passion";
   }
 
-  32.23% {
+  32.58% {
     content: "I'm a software developer based in Toronto, with a passion ";
   }
 
-  32.88% {
+  33.26% {
     content: "I'm a software developer based in Toronto, with a passion f";
   }
 
-  33.43% {
+  33.97% {
     content: "I'm a software developer based in Toronto, with a passion fo";
   }
 
-  34.4% {
+  33.92% {
     content: "I'm a software developer based in Toronto, with a passion for";
   }
 
-  34.91% {
+  34.51% {
     content: "I'm a software developer based in Toronto, with a passion for ";
   }
 
-  35.27% {
+  35.12% {
     content: "I'm a software developer based in Toronto, with a passion for w";
   }
 
-  35.66% {
+  36.28% {
     content: "I'm a software developer based in Toronto, with a passion for we";
   }
 
-  36.64% {
+  36.6% {
     content: "I'm a software developer based in Toronto, with a passion for web";
   }
 
-  36.81% {
+  37.12% {
     content: "I'm a software developer based in Toronto, with a passion for web ";
   }
 
-  37.48% {
+  37.68% {
     content: "I'm a software developer based in Toronto, with a passion for web d";
   }
 
-  38.7% {
+  38.17% {
     content: "I'm a software developer based in Toronto, with a passion for web de";
   }
 
-  38.73% {
+  38.88% {
     content: "I'm a software developer based in Toronto, with a passion for web dev";
   }
 
-  39.28% {
+  39.2% {
     content: "I'm a software developer based in Toronto, with a passion for web deve";
   }
 
-  40.09% {
+  40.19% {
     content: "I'm a software developer based in Toronto, with a passion for web devel";
   }
 
-  40.85% {
+  40.78% {
     content: "I'm a software developer based in Toronto, with a passion for web develo";
   }
 
-  41% {
+  40.65% {
     content: "I'm a software developer based in Toronto, with a passion for web develop";
   }
 
-  41.58% {
+  41.32% {
     content: "I'm a software developer based in Toronto, with a passion for web developm";
   }
 
-  42.23% {
+  41.73% {
     content: "I'm a software developer based in Toronto, with a passion for web developme";
   }
 
-  43.05% {
+  43.12% {
     content: "I'm a software developer based in Toronto, with a passion for web developmen";
   }
 
-  43.63% {
+  43.35% {
     content: "I'm a software developer based in Toronto, with a passion for web development";
   }
 
-  44.18%, 100.36% {
+  43.48%, 99.66% {
     content: "I'm a software developer based in Toronto, with a passion for web development.";
   }
 }
@@ -10649,11 +10800,6 @@ h2 {
 .hover\:bg-rose-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 113 133 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-teal-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(128 203 196 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-teal-500\/10:hover {
@@ -13105,11 +13251,6 @@ h2 {
   color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-green) {
-  --tw-text-opacity: 1;
-  color: rgb(0 229 160 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:text-indigo-400) {
   --tw-text-opacity: 1;
   color: rgb(129 140 248 / var(--tw-text-opacity));
@@ -13118,11 +13259,6 @@ h2 {
 :is(.dark .dark\:text-neon-pink) {
   --tw-text-opacity: 1;
   color: rgb(255 46 122 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-neon-teal) {
-  --tw-text-opacity: 1;
-  color: rgb(77 233 217 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-neutral-200) {
@@ -13143,6 +13279,11 @@ h2 {
 :is(.dark .dark\:text-teal-600) {
   --tw-text-opacity: 1;
   color: rgb(0 137 123 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-teal-green) {
+  --tw-text-opacity: 1;
+  color: rgb(20 230 175 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-white) {
@@ -13168,27 +13309,14 @@ h2 {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-teal-green) {
-  --tw-text-opacity: 1;
-  color: rgb(20 230 175 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:shadow-\[0_4px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.5\)\]) {
   --tw-shadow: 0 4px 9px -4px rgba(59,113,202,0.5);
   --tw-shadow-colored: 0 4px 9px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .dark\:marker\:text-green *)::marker {
-  color: rgb(0 229 160 );
-}
-
 :is(.dark .dark\:marker\:text-teal-green *)::marker {
   color: rgb(20 230 175 );
-}
-
-:is(.dark .dark\:marker\:text-green)::marker {
-  color: rgb(0 229 160 );
 }
 
 :is(.dark .dark\:marker\:text-teal-green)::marker {
@@ -13394,10 +13522,6 @@ h2 {
 
   .sm\:ml-6 {
     margin-left: 1.5rem;
-  }
-
-  .sm\:mr-10 {
-    margin-right: 2.5rem;
   }
 
   .sm\:mt-0 {
@@ -13606,10 +13730,6 @@ h2 {
 
   .lg\:h-20 {
     height: 5rem;
-  }
-
-  .lg\:h-24 {
-    height: 6rem;
   }
 
   .lg\:w-2\/4 {
@@ -13850,10 +13970,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .max-md\:flex {
-    display: flex;
-  }
-
   .max-md\:hidden {
     display: none;
   }
@@ -13868,11 +13984,6 @@ h2 {
   .max-lg\:px-0\.5 {
     padding-left: 0.125rem;
     padding-right: 0.125rem;
-  }
-
-  .max-lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .max-lg\:text-xs {

@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import About from "./components/About";
+import About from "./sections/About";
 import Navbar from "./components/Navbar";
-import Work from "./components/Work";
-import Certifications from "./components/Certifications";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Work from "./sections/Work";
+import Certifications from "./sections/Certifications";
+import Education from "./sections/Education";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import CallSignsDetails from "./pages/CallSignsDetails";
 import AOS from "aos";

@@ -3,11 +3,9 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
   content: [
-    "*./src/{html,js}",
+    "./src/**/*.{js,jsx}",
+    "./public/index.html",
     "./node_modules/tw-elements/dist/js/**/*.js",
-    "./src/components/*{html,js}",
-    "*./public/{html,js}",
-    "./src/pages/*{html,js}"
   ],
   theme: {
     extend: {
