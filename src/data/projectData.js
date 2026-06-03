@@ -21,7 +21,7 @@ export const projects = [
       { color: 'deep-orange', value: 'CSS' },
     ],
     description: (
-      <div className="text-xs dark:text-zinc-300 font-medium sm:text-lg laptop:text-2xl">
+      <div className="text-xs body-text font-medium sm:text-lg laptop:text-2xl">
         <p>
           Based off of the Just One board game. An online game where a designated player
           is selected to guess a word, and the other players give a one word hint.
@@ -51,7 +51,7 @@ export const projects = [
       { color: 'deep-orange', value: 'CSS' },
     ],
     description: (
-      <div className="text-xs dark:text-zinc-300 font-medium sm:text-lg laptop:text-2xl">
+      <div className="text-xs body-text font-medium sm:text-lg laptop:text-2xl">
         <p>
           A website with a small catalog of books to search from. Users can share a
           written review and rating of books after signing up.

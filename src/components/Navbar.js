@@ -94,7 +94,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 <Link
                   to="/#about-jump"
                   onClick={() => handleNavClick("/#about-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
+                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
                 >
                   About
                 </Link>
@@ -103,7 +103,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 <Link
                   to="/#work-jump"
                   onClick={() => handleNavClick("/#work-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
+                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
                 >
                   Work
                 </Link>
@@ -112,7 +112,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 <Link
                   href="/#projects-jump"
                   onClick={() => handleNavClick("/#projects-jump")}
-                  className="text-black hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
+                  className="text-black hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
                 >
                   Projects
                 </Link>
@@ -120,7 +120,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               <li className="mb-4 pr-10 lg:mb-0">
                 <p
                   onClick={handleOpen}
-                  className="text-black cursor-pointer hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
+                  className="text-black cursor-pointer hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"
                 >
                   My Photos
                   </p>
@@ -151,7 +151,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               <div className="hidden px-0 sm:flex">
                 <li className="mb-4 pr-2 lg:mb-0">
                   <a href={resume} target="_blank" rel="noopener noreferrer">
-                    <i className="fa-solid fa-file transform text-black transition-all hover:scale-105 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-300">
+                    <i className="fa-solid fa-file transform text-black transition-all hover:scale-105 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-300">
                       {" "}
                       <span className="transform font-sans text-sm text-black transition-all hover:scale-105 hover:text-gray-400 dark:text-white dark:hover:text-zinc-400">
                         RESUME
@@ -165,7 +165,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fa-brands fa-lg fa-github transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
+                    <i className="fa-brands fa-lg fa-github transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
                   </a>
                 </li>
                 <li className="mb-4 pr-2 lg:mb-0">
@@ -174,7 +174,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fa-brands fa-lg fa-linkedin transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
+                    <i className="fa-brands fa-lg fa-linkedin transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
                   </a>
                 </li>
                 <li>
@@ -183,7 +183,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fa-brands fa-lg fa-square-instagram transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
+                    <i className="fa-brands fa-lg fa-square-instagram transform text-black transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 dark:hover:decoration-teal-green hover:decoration-2 hover:underline-offset-[6px] dark:text-white dark:hover:text-zinc-400"></i>
                   </a>
                 </li>
               </div>
@@ -240,7 +240,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           <ul className="text-black dark:text-white">
             <li className="mb-1">
               <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
                 to="/#about"
                 onClick={() => handleNavClick("/#about-jump")}
               >
@@ -249,7 +249,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
                 to="/#work"
                 onClick={() => handleNavClick("/#work-jump")}
               >
@@ -258,7 +258,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
                 to="/#projects"
                 onClick={() => handleNavClick("/#projects-jump")}
               >
@@ -267,7 +267,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <Link
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
                 to="#/contact"
                 onClick={() => handleNavClick("/#contact-jump")}
               >
@@ -277,7 +277,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             <li className="mb-1">
                 <p
                   onClick={handleOpen}
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 focus:decoration-teal-500"
                 >
                   My Photos
                   </p>
@@ -286,7 +286,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             <br />
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -301,7 +301,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
                 href="https://github.com/auschanh"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -313,7 +313,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
                 href="https://linkedin.com/in/auschanh"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -325,7 +325,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </li>
             <li className="mb-1">
               <a
-                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-neon-pink"
+                className="block rounded p-4 text-sm font-semibold hover:bg-blue-50 hover:text-gray-400 hover:decoration-teal-500 dark:hover:decoration-teal-green"
                 href="https://instagram.com/auschanh"
                 target="_blank"
                 rel="noopener noreferrer"

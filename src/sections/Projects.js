@@ -9,7 +9,7 @@ const Projects = () => (
     <div id="projects-jump"></div>
     <div className="projects w-screen bg-slate-100 pb-40 pt-32 text-black dark:bg-dark-navy">
       <div id="projects" className="section sm:px-auto row-span-1 mt-10 sm:container">
-        <h1 className="text-3xl font-bold font-mono underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
+        <h1 className="text-3xl font-bold font-mono underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8 dark:text-white">
           / Projects
         </h1>
         <br />
@@ -29,7 +29,7 @@ const Projects = () => (
               <ProjectCard
                 title={
                   <a
-                    className="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-neon-pink"
+                    className="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-teal-green"
                     target="_blank"
                     rel="noopener noreferrer"
                     href={project.url}

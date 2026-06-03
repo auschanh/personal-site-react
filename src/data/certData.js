@@ -7,7 +7,7 @@ export const certs = [
     title: (
       <>
         Confluent Certified Developer for Apache Kafka{' '}
-        <span className="text-black dark:text-zinc-400 font-mono">(July 2025)</span>
+        <span className="text-black dark:date-label font-mono">(July 2025)</span>
       </>
     ),
     certImage: ccdak,
@@ -25,7 +25,7 @@ export const certs = [
     title: (
       <>
         Confluent Certified Administrator for Apache Kafka{' '}
-        <span className="text-black dark:text-zinc-400 font-mono">(December 2024)</span>
+        <span className="text-black dark:date-label font-mono">(December 2024)</span>
       </>
     ),
     certImage: ccaak,

@@ -32,16 +32,16 @@ const HeroText = () => (
       Hi, I'm <span className="text-teal-green type-firstName"></span>
     </p>
     <p className="text-lg font-bold dark:text-white sm:text-2xl">
-      <span className="text-neon-pink type-lastName"></span>
+      <span className="type-lastName"></span>
     </p>
     <div className="h-6" />
     <p className="text-2xl dark:text-white/90 max-sm:text-xl">
-      I'm a Software Engineer based in Toronto.
+      I build accessible web experiences.
     </p>
     <div className="h-4" />
     <p className="text-xl dark:text-white/70">
-      <span className="text-rich-pink font-bold drop-shadow-2xl">
-        Engineer @ Psyncopate Technologies
+      <span className="text-teal-500 dark:text-teal-green font-bold drop-shadow-2xl">
+        Lead Web Accessibility Specialist @ Q4 Inc
       </span>
     </p>
   </>
@@ -50,25 +50,32 @@ const HeroText = () => (
 const AboutText = () => (
   <>
     <p>
-      Originally pursuing healthcare, I discovered a fascination with programming in
-      high school.
+      I like to build things for the web — and I care a lot about making sure
+      everyone can use them.
     </p>
     <br />
     <p>
-      I'm continuously learning and growing my skill set — especially in{' '}
-      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> and{' '}
+      Originally pursuing healthcare, I discovered a fascination with programming in
+      high school. That led me through{' '}
       <strong className="text-teal-500 dark:text-teal-green">
-        distributed event-driven architectures
+        distributed systems and backend engineering
+      </strong>{' '}
+      — and eventually to{' '}
+      <strong className="text-teal-500 dark:text-teal-green">web accessibility</strong>
+      , where I found my specialty.
+    </p>
+    <br />
+    <p>
+      I bring an engineering perspective to building{' '}
+      <strong className="text-teal-500 dark:text-teal-green">
+        inclusive, user-centered web experiences
       </strong>
-      .
+      . I'm also double certified in{' '}
+      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> — a reminder
+      that good systems thinking applies everywhere.
     </p>
     <br />
-    <br />
-    <p className="font-bold">
-      I'm currently double certified for{' '}
-      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong>:
-    </p>
-    <ol className="mt-4 space-y-2 list-disc list-inside marker:text-teal-500 dark:marker:text-teal-green">
+    <ol className="space-y-2 list-disc list-inside marker:text-teal-500 dark:marker:text-teal-green">
       <li className="pl-1">
         <span className="font-medium">Confluent Kafka Developer</span>
       </li>
@@ -76,7 +83,6 @@ const AboutText = () => (
         <span className="font-medium">Confluent Kafka Administrator</span>
       </li>
     </ol>
-    <br />
     <br />
   </>
 );
@@ -114,11 +120,11 @@ const About = () => {
         />
 
         {/* OVERLAY — desktop only */}
-        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/10 from-45% to-black/70 pointer-events-none" />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/30 from-40% to-black/85 pointer-events-none" />
 
         {/* DESKTOP OVERLAY TEXT */}
         <div className="hidden lg:flex absolute inset-0 items-center">
-          <div className="ml-auto w-1/2 pl-10 pr-6 text-left">
+          <div className="ml-auto w-1/2 pl-10 pr-6 text-left [text-shadow:0_2px_12px_rgba(0,0,0,0.85)]">
             <HeroText />
           </div>
         </div>
@@ -154,7 +160,7 @@ const About = () => {
           id="about"
           className="section about sm:px-auto mt-0 pb-16 text-black dark:text-white sm:container dark:bg-navy"
         >
-          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-neon-pink decoration-4 underline-offset-8">
+          <h1 className="text-3xl font-bold font-mono mb-8 underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8">
             / About
           </h1>
 
@@ -174,7 +180,7 @@ const About = () => {
                 />
               </div>
               <div className="flex basis-full lg:basis-2/3 items-center justify-center text-left">
-                <div className="text-lg laptop:text-xl max-sm:text-sm dark:text-zinc-300">
+                <div className="text-lg laptop:text-xl max-sm:text-sm body-text">
                   <AboutText />
                 </div>
               </div>
@@ -189,7 +195,7 @@ const About = () => {
             className="py-10"
           >
             <div className="mt-10">
-              <p className="mb-6 text-lg font-semibold dark:text-zinc-300">
+              <p className="mb-6 text-lg font-semibold body-text">
                 Outside of work, I enjoy:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

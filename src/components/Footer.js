@@ -3,7 +3,7 @@ import acLogo from "../assets/logos/ac-logo-white.png";
 
 const Footer = () => {
   return (
-    <footer className="footer-center block justify-between bg-black p-4 py-2 text-zinc-300 sm:flex sm:py-6">
+    <footer className="footer-center block justify-between bg-black p-4 py-2 text-zinc-400 sm:flex sm:py-6">
       <div id="leftDiv"></div>
       <div className="flex">
         <div className="mx-2 sm:mx-6">
@@ -27,21 +27,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-github mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
+          <i className="icons fa-brands fa-github mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
         <a
           href="https://linkedin.com/in/auschanh"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-linkedin mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
+          <i className="icons fa-brands fa-linkedin mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
         <a
           href="https://instagram.com/auschanh"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="icons fa-brands fa-square-instagram mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-neon-pink hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
+          <i className="icons fa-brands fa-square-instagram mx-1 transform transition-all hover:scale-125 hover:text-gray-400 hover:underline hover:decoration-teal-500 hover:decoration-[3px] hover:underline-offset-[6px] dark:hover:text-zinc-400"></i>
         </a>
       </nav>
     </footer>

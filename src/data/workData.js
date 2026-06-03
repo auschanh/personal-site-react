@@ -127,7 +127,7 @@ export const otherExperiences = [
   {
     id: 'shoppers',
     company: 'Shoppers Drug Mart (Retail)',
-    title: 'ASSISTANT PHARMACIST/CASHIER',
+    title: 'ASSISTANT PHARMACIST',
     period: 'Nov 2014 - Feb 2015 (4mos)',
     description:
       'Stocked inventory of medicines and drugs, filled customer prescriptions with precise instructions (weighing, removing, adding etc) and organized files.',

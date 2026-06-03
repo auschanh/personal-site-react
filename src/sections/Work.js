@@ -54,12 +54,12 @@ const ExperienceCard = ({ job }) => (
               <p className="text-xl font-extrabold text-teal-600 dark:text-teal-green">
                 {job.company}
               </p>
-              <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400">
+              <p className="text-base font-extrabold text-black dark:text-white">
                 {job.title}
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold font-mono text-black dark:text-neon-pink max-sm:ml-4">
+              <p className="date-label text-sm font-bold max-sm:ml-4">
                 {job.period}
               </p>
             </div>
@@ -70,7 +70,7 @@ const ExperienceCard = ({ job }) => (
           <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
             Responsibilities
           </p>
-          <ul className="job-desc ml-3 list-disc text-base laptop:text-lg dark:text-zinc-300">
+          <ul className="job-desc ml-3 list-disc text-base laptop:text-lg body-text">
             {job.responsibilities.map((resp, i) => (
               <li key={i} className="my-2">{resp}</li>
             ))}
@@ -82,7 +82,7 @@ const ExperienceCard = ({ job }) => (
                 Highlights
               </p>
               {job.highlights.map((h, i) => (
-                <p key={i} className="my-2 text-base laptop:text-lg dark:text-zinc-300">
+                <p key={i} className="my-2 text-base laptop:text-lg body-text">
                   ▶ {h}
                 </p>
               ))}
@@ -107,7 +107,7 @@ const Work = () => (
     <div id="work-jump"></div>
     <div className="work bg-slate-200 py-40 dark:bg-dark-navy">
       <div id="work" className="section sm:px-auto row-span-1 mt-10 sm:container">
-        <h1 className="text-3xl font-bold font-mono text-black underline decoration-neon-pink decoration-4 underline-offset-8 dark:text-white">
+        <h1 className="text-3xl font-bold font-mono text-black underline decoration-teal-500 dark:decoration-teal-green decoration-4 underline-offset-8 dark:text-white">
           / Work Experiences
         </h1>
         <br />
@@ -139,17 +139,17 @@ const Work = () => (
                       <p className="text-xl font-extrabold text-teal-600 dark:text-teal-green">
                         {job.company}
                       </p>
-                      <p className="text-base font-bold text-indigo-600 dark:text-indigo-400">
+                      <p className="text-base font-bold text-black dark:text-white">
                         {job.title}
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm font-extrabold font-mono text-black dark:text-zinc-300">
+                      <p className="date-label text-sm font-extrabold">
                         {job.period}
                       </p>
                     </div>
                   </div>
-                  <p className="dark:text-zinc-300 laptop:text-lg mt-2">{job.description}</p>
+                  <p className="body-text laptop:text-lg mt-2">{job.description}</p>
                 </div>
               ))}
             </div>

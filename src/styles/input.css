@@ -104,6 +104,20 @@ h2 {
   @apply 3xl:px-96 xl:px-32 px-10;
 }
 
+@layer components {
+  .date-label {
+    @apply font-mono text-teal-600;
+  }
+}
+
+.dark .date-label {
+  @apply text-teal-green;
+}
+
+.dark .body-text {
+  @apply text-zinc-400;
+}
+
 .section-desc {
   @apply text-xl;
 }
