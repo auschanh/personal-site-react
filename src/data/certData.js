@@ -12,13 +12,13 @@ export const certs = [
     ),
     certImage: ccdak,
     description:
-      'Obtained CCDAK, validating skills with Confluent, Confluent Platform and Apache Kafka. Demonstrates an understanding of:',
-    points: [
-      'Kafka and Confluent fundamentals',
-      'Publishing and subscribing data within Kafka clusters',
-      'Kafka Streams applications',
-      'Architectural concepts and components with Kafka Dev APIs',
-    ],
+      'Validates skills in Confluent Platform and Apache Kafka development, including Kafka Streams, the Dev APIs, and publishing and subscribing within Kafka clusters.',
+    // points: [
+    //   'Kafka and Confluent fundamentals',
+    //   'Publishing and subscribing data within Kafka clusters',
+    //   'Kafka Streams applications',
+    //   'Architectural concepts and components with Kafka Dev APIs',
+    // ],
     link: 'https://certificates.confluent.io/6055316c-028b-4838-a747-1a7dd4f78005#acc.ygetuNUf',
   },
   {
@@ -30,13 +30,13 @@ export const certs = [
     ),
     certImage: ccaak,
     description:
-      'Obtained CCAAK, showcasing administrating abilities with Confluent and Apache Kafka. Demonstrates an understanding of:',
-    points: [
-      'Kafka and Confluent fundamentals',
-      'Configuring and deploying brokers, topics, partitions',
-      'Monitoring Kafka clusters',
-      'Managing authorization, authentication and basic security principles of clusters and clients',
-    ],
+      'Validates skills in administering Confluent Platform and Apache Kafka, including cluster configuration, monitoring, and managing authorization and security.',
+    // points: [
+    //   'Kafka and Confluent fundamentals',
+    //   'Configuring and deploying brokers, topics, partitions',
+    //   'Monitoring Kafka clusters',
+    //   'Managing authorization, authentication and basic security principles of clusters and clients',
+    // ],
     link: 'https://certificates.confluent.io/16f1034f-aa22-40c5-ad14-db3a7cbea5bb#acc.7Mcymg3r',
   },
 ];

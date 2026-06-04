@@ -1,72 +1,83 @@
 import React from 'react';
 import { Chip } from '@material-tailwind/react';
-import ProjectCard from '../components/ProjectCard';
-import CarouselProject from '../components/CarouselProject';
 import { projects } from '../data/projectData';
 
 const Projects = () => (
   <div>
     <div id="projects-jump"></div>
-    <div className="projects w-screen bg-slate-200 pb-40 pt-32 text-black dark:bg-dark-navy">
+    <div className="projects w-screen bg-slate-200 pb-20 pt-32 text-black dark:bg-dark-navy">
       <div id="projects" className="section sm:px-auto row-span-1 mt-10 sm:container">
-        <h1 className="text-3xl font-bold font-mono dark:text-white">
+        <h1 className="text-3xl font-bold font-mono dark:text-white mb-10">
           / projects
         </h1>
-        <br />
-        <br />
 
-        <div className="section-desc space-y-56 max-2xl:space-y-32">
-          {projects.map((project) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {projects.map((project, i) => (
             <div
               key={project.id}
-              data-aos="fade-zoom-in-down"
-              data-aos-duration="2000"
-              data-aos-offset="200"
-              data-aos-easing="ease-out-cubic"
-              data-aos-once="true"
-              className="mt-20 xl:w-[52rem] laptop:w-full w-full mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay={i * 100}
+              className="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-navy shadow-md hover:shadow-lg transition-shadow"
             >
-              <ProjectCard
-                title={
+              {/* Screenshot */}
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.images[0]}
+                  alt={project.title}
+                  className="w-full h-52 object-cover object-top"
+                />
+              </a>
+
+              {/* Content */}
+              <div className="flex flex-col flex-1 p-5 gap-3">
+
+                {/* Title + type chip */}
+                <div className="flex items-center gap-2 flex-wrap">
                   <a
-                    className="text-2xl hover:text-gray-400 hover:underline hover:decoration-2 hover:underline-offset-2 dark:text-white dark:hover:text-gray-600 dark:hover:decoration-teal-green"
+                    href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={project.url}
+                    className="text-lg font-bold dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors"
                   >
                     {project.title}
                   </a>
-                }
-                github={project.github}
-                linkURL={project.url}
-                chips={
                   <Chip
-                    key="type"
                     color={project.typeChip.color}
                     value={project.typeChip.value}
                     size="sm"
                     className="rounded-full"
                   />
-                }
-                chipsFooter={project.techChips.map((chip, i) => (
-                  <Chip
-                    key={i}
-                    className="rounded-full"
-                    color={chip.color}
-                    value={chip.value}
-                    size="sm"
-                    variant="outlined"
-                  />
-                ))}
-                desc={project.description}
-                figure={
-                  <CarouselProject
-                    images={project.images}
-                    arrowColor={project.carouselProps.arrowColor}
-                    delay={project.carouselProps.delay}
-                  />
-                }
-              />
+                </div>
+
+                {/* Description */}
+                <div className="text-sm">{project.description}</div>
+
+                {/* Tech chips + links */}
+                <div className="flex items-center justify-between mt-auto pt-2 flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1">
+                    {project.techChips.map((chip, j) => (
+                      <Chip
+                        key={j}
+                        color={chip.color}
+                        value={chip.value}
+                        size="sm"
+                        className="rounded-full"
+                        variant="outlined"
+                      />
+                    ))}
+                  </div>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <i className="fa-brands fa-lg fa-github dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors" />
+                  </a>
+                </div>
+
+              </div>
             </div>
           ))}
         </div>

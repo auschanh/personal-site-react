@@ -17,7 +17,7 @@ const Footer = () => (
         </a>
         <div>
           <p className="text-white font-semibold">Thanks for visiting!</p>
-          <p className="text-zinc-500 text-xs mt-0.5">Austin Chanhsavang © 2025 — All rights reserved</p>
+          <p className="text-zinc-500 text-xs mt-0.5">Austin Chanhsavang © 2026 — All rights reserved</p>
         </div>
       </div>
 
@@ -29,7 +29,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="text-zinc-400 text-xl hover:text-white transition-colors"
+            className="text-zinc-400 text-xl transition-colors hover:text-teal-green"
           >
             <i className={icon} />
           </a>

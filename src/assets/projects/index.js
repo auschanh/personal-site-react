@@ -24,12 +24,13 @@ export const bookReviewImages = [
 ];
 
 export const callSignsImages = [
+  eliminateHint,
   homepage,
   settings,
   lobby,
   hint,
   chat,
-  eliminateHint,
+  // eliminateHint,
   guess,
   failscreen,
 ];

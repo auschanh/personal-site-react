@@ -62,8 +62,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           {/* LEFT: Logo + nav links */}
           <div className="flex items-center gap-6 lg:gap-8">
             <a href="/" aria-label="Home">
-              <img src={logoBlack} className="h-10 dark:hidden" alt="Austin Chanhsavang" />
-              <img src={logoWhite} className="h-10 hidden dark:block" alt="Austin Chanhsavang" />
+              <img src={logoBlack} className="h-10 dark:hidden hover:scale-110" alt="Austin Chanhsavang" />
+              <img src={logoWhite} className="h-10 hidden dark:block hover:scale-110" alt="Austin Chanhsavang" />
             </a>
             <ul className="hidden md:flex items-center gap-5 lg:gap-7">
               {NAV_LINKS.map(({ label, path }) => (
