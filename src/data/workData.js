@@ -98,31 +98,21 @@ export const workExperiences = [
     period: 'May 2021 - Aug 2022',
     responsibilities: [
       <>
-        Created and maintained {kw('SharePoint')} sites based on client tickets and
-        requirements
+        Developed a customized {kw('SharePoint')} site using {kw('SharePoint Framework (SPFx)')}, and {kw('React')} ensuring compliance with {kw('Web Content Accessibility Guideline (WCAG)')}, enhancing site
+        accessibility through a three tiered testing methodology - utilized WAVE, screen reader tools like NVDA, keyboard navigation and focus order for manual testing
+      </>,
+      <>
+        Modernized team tracking ticket system using {kw('Power Automate')}, MS Forms and {kw('SharePoint')}, substantially reducing task assignment and data input time by over half
       </>,
       <>
         Automated tasks with {kw('Power Automate')} to track files, populate
-        lists/tables, email and notify clients
-      </>,
-      <>
-        Utilized {kw('ReactJS')} and {kw('SharePoint Framework (SPFx)')} to uniquely
-        customize and develop client {kw('SharePoint site')}
+        lists/tables, email and notify clients for solo client project
       </>,
     ],
     highlights: [
       <>
-        {kw('Selected as a speaker for CYSSC Learning and Engagement Conference')} among
-        multiple co-op students - spoke to over 300+ employees about a solo project on
-        building a Sharepoint site and workflow for client, dramatically reducing time to
-        populate, sort and filter data from applicants.
-      </>,
-      <>
-        Developed a workflow that {kw('automated ticket requests')} from clients onto team
-        task list, removing manual insertion of data and significantly improving requests
-        to assigned ticket times. The workflow involved automated emailing, assigning
-        priority and inserting into ticket list.
-      </>,
+        Selected as a speaker to 300+ coworkers, delivering insights on daily client engagement and website creation, highlighting effective communication and project development abilities
+      </>
     ],
     skills: [
       { name: 'React', icon: reactLogo },
