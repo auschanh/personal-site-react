@@ -30,7 +30,7 @@ const Photography = () => {
 
         {/* Heading */}
         <h1 className="text-3xl font-bold font-mono dark:text-white mb-2">
-          / Photography
+          / photography
         </h1>
         <p className="text-sm body-text mb-12">
           A collection of photos from my travels and everyday life. Click any photo to expand.

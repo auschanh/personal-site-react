@@ -18,6 +18,8 @@ import {
   socketioLogo,
   sharepointLogo,
   powerautomateLogo,
+  prometheusLogo,
+  helmLogo,
 } from '../assets/icons';
 
 const skills = [
@@ -28,6 +30,8 @@ const skills = [
   { name: 'Terraform', icon: terraformLogo },
   { name: 'Python', icon: pythonLogo },
   { name: 'Grafana', icon: grafanaLogo },
+  { name: 'Prometheus', icon: prometheusLogo },
+  { name: 'Helm', icon: helmLogo },
   { name: 'Docker', icon: dockerLogo },
   { name: 'React', icon: reactLogo },
   { name: 'TypeScript', icon: typescriptLogo },
@@ -146,17 +150,16 @@ const HeroText = () => (
 const AboutText = () => (
   <>
     <p>
-      I like to build things for the web — and I care a lot about making sure
+      I like to build things for the web. I care a lot about making sure
       everyone can use them.
     </p>
     <br />
     <p>
-      Originally pursuing healthcare, I discovered a fascination with programming in
-      high school. That led me through{' '}
+      Previously dived into the world of {' '}
       <strong className="text-teal-500 dark:text-teal-green">
         distributed systems and backend engineering
       </strong>{' '}
-      — and eventually to{' '}
+       and eventually lead back to{' '}
       <strong className="text-teal-500 dark:text-teal-green">web accessibility</strong>
       , where I found my specialty.
     </p>
@@ -167,7 +170,7 @@ const AboutText = () => (
         inclusive, user-centered web experiences
       </strong>
       . I'm also double certified in{' '}
-      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> — a reminder
+      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> - a reminder
       that good systems thinking applies everywhere.
     </p>
     <br />

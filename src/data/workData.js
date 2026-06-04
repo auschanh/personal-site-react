@@ -17,6 +17,13 @@ import {
   pythonLogo,
   grafanaLogo,
   mysqlLogo,
+  q4Logo,
+  html5Logo,
+  css3Logo,
+  javascriptLogo,
+  lighthouseLogo,
+  prometheusLogo,
+  helmLogo,
 } from '../assets/icons';
 import opsLogo from '../assets/logos/ops-logo.png';
 
@@ -25,12 +32,35 @@ const kw = (text) => (
 );
 
 export const workExperiences = [
+    {
+    id: 'q4 inc',
+    company: 'Q4 Inc',
+    logo: q4Logo,
+    logoAlt: 'Q4 inc logo',
+    title: 'Lead Web Accessibility Specialist',
+    period: 'June 2026 - Present',
+    responsibilities: [
+      <>
+        TBD 🙂
+      </>,
+    ],
+    skills: [
+      { name: 'HTML5',         icon: html5Logo },
+      { name: 'CSS',           icon: css3Logo },
+      { name: 'JavaScript',    icon: javascriptLogo },
+      { name: 'Lighthouse',    icon: lighthouseLogo },
+      { name: 'WAVE' },
+      { name: 'NVDA' },
+      { name: 'JAWS' },
+      { name: 'Level Access' },
+    ]
+  },
   {
     id: 'psyncopate',
     company: 'Psyncopate Technologies',
     logo: psyncopateLogo,
     logoAlt: 'Psyncopate Logo',
-    title: 'ASSOCIATE CONSULTING ENGINEER',
+    title: 'Associate Consulting Engineer',
     period: 'Jan 2025 - May 2026',
     responsibilities: [
       <>
@@ -54,6 +84,8 @@ export const workExperiences = [
       { name: 'Terraform', icon: terraformLogo },
       { name: 'Python', icon: pythonLogo },
       { name: 'Grafana', icon: grafanaLogo },
+      { name: 'Prometheus', icon: prometheusLogo },
+      { name: 'Helm', icon: helmLogo },
       { name: 'Docker', icon: dockerLogo },
     ],
   },
@@ -62,7 +94,7 @@ export const workExperiences = [
     company: 'Ontario Ministry of Children and Community Services',
     logo: opsLogo,
     logoAlt: 'Ontario Public Service Logo',
-    title: 'SOFTWARE DEVELOPER',
+    title: 'Software Developer',
     period: 'May 2021 - Aug 2022',
     responsibilities: [
       <>

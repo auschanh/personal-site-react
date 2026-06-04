@@ -21,6 +21,13 @@ import mysqlLogo from './mysql.svg';
 import nodejsLogo from './nodejs.svg';
 import tailwindLogo from './tailwindcss.svg';
 import socketioLogo from './socketio.svg';
+import q4Logo from './q4.png';
+import html5Logo from './html5.svg';
+import css3Logo from './css3.svg';
+import javascriptLogo from './javascript.svg';
+import lighthouseLogo from './lighthouse.svg';
+import prometheusLogo from './prometheus.svg';
+import helmLogo from './helm.svg';
 
 export {
   kafkaWhite,
@@ -46,4 +53,11 @@ export {
   nodejsLogo,
   tailwindLogo,
   socketioLogo,
+  q4Logo,
+  html5Logo,
+  css3Logo,
+  javascriptLogo,
+  lighthouseLogo,
+  prometheusLogo,
+  helmLogo,
 };
