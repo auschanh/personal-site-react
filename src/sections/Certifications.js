@@ -5,8 +5,8 @@ import { certs } from '../data/certData';
 const Certifications = () => (
   <div id="certifications" className="bg-slate-100 py-40 dark:bg-navy">
     <div className="certifications section sm:px-auto row-span-1 text-black sm:container">
-      <h1 className="text-3xl font-bold font-mono  dark:text-white">
-        / CERTIFICATIONS
+      <h1 className="text-3xl font-bold font-mono dark:text-white">
+        / certifications
       </h1>
       <br />
       <br />

@@ -9,6 +9,7 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import CallSignsDetails from "./pages/CallSignsDetails";
+import Photography from "./pages/Photography";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -76,6 +77,7 @@ function App() {
                 } />
 
                 <Route path="/callsigns" element={<CallSignsDetails/>} />
+                <Route path="/photos" element={<Photography />} />
 
               </Routes>
               

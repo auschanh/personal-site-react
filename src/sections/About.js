@@ -1,25 +1,40 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Button } from '@material-tailwind/react';
-import LightboxGallery from '../components/LightboxGallery';
+import { Link } from 'react-router-dom';
 import { mePhilly, meMontreal, meVancouver, meChristmas, meJapan, heroPic } from '../assets/personal';
 import {
   kafkaWhite,
-  confluentLogo,
-  javaLogo,
-  reactLogo,
+  confluentTealLogo,
+  ansibleLogo,
+  kubernetesLogo,
+  terraformLogo,
+  pythonLogo,
+  grafanaLogo,
   dockerLogo,
-  sqlLogo,
+  reactLogo,
+  typescriptLogo,
+  postgresqlLogo,
+  nodejsLogo,
+  tailwindLogo,
+  socketioLogo,
   sharepointLogo,
   powerautomateLogo,
 } from '../assets/icons';
 
 const skills = [
   { name: 'Kafka', icon: kafkaWhite },
-  { name: 'Confluent', icon: confluentLogo },
-  { name: 'Java', icon: javaLogo },
-  { name: 'React', icon: reactLogo },
+  { name: 'Confluent', icon: confluentTealLogo },
+  { name: 'Kubernetes', icon: kubernetesLogo },
+  { name: 'Ansible', icon: ansibleLogo },
+  { name: 'Terraform', icon: terraformLogo },
+  { name: 'Python', icon: pythonLogo },
+  { name: 'Grafana', icon: grafanaLogo },
   { name: 'Docker', icon: dockerLogo },
-  { name: 'SQL', icon: sqlLogo },
+  { name: 'React', icon: reactLogo },
+  { name: 'TypeScript', icon: typescriptLogo },
+  { name: 'Node.js', icon: nodejsLogo },
+  { name: 'Tailwind', icon: tailwindLogo },
+  { name: 'Socket.IO', icon: socketioLogo },
+  { name: 'PostgreSQL', icon: postgresqlLogo },
   { name: 'SharePoint', icon: sharepointLogo },
   { name: 'Power Automate', icon: powerautomateLogo },
 ];
@@ -109,19 +124,19 @@ const HobbyCard = ({ emoji, label, detail, image, bullets }) => {
 
 const HeroText = () => (
   <>
-    <p className="text-3xl font-bold dark:text-white md:text-5xl lg:text-7xl">
+    <p className="text-3xl font-bold text-black dark:text-white lg:text-white md:text-5xl lg:text-7xl">
       Hi, I'm <span className="text-teal-green type-firstName"></span>
     </p>
-    <p className="text-lg font-bold dark:text-white sm:text-2xl">
+    <p className="text-lg font-bold text-black dark:text-white lg:text-white sm:text-2xl">
       <span className="type-lastName"></span>
     </p>
     <div className="h-6" />
-    <p className="text-2xl dark:text-white/90 max-sm:text-xl">
+    <p className="text-2xl text-gray-700 dark:text-white/90 lg:text-white/90 max-sm:text-xl">
       I build accessible web experiences and systems.
     </p>
     <div className="h-4" />
-    <p className="text-xl dark:text-white/70">
-      <span className="text-teal-500 dark:text-teal-green font-bold drop-shadow-2xl">
+    <p className="text-xl">
+      <span className="text-teal-600 dark:text-teal-green lg:text-teal-green font-bold">
         Lead Web Accessibility Specialist @ Q4 Inc
       </span>
     </p>
@@ -169,39 +184,39 @@ const AboutText = () => (
 );
 
 const About = () => {
-  const [open, setOpen] = useState(false);
-  const buttonRef = useRef(null);
   const aboutRef = useRef(null);
   const aboutIndexRef = useRef(0);
 
   useEffect(() => {
+    let timeoutId;
     const interval = setInterval(() => {
+      if (!aboutRef.current) return;
       aboutRef.current.classList.add('opacity-0');
-      setTimeout(() => {
+      timeoutId = setTimeout(() => {
+        if (!aboutRef.current) return;
         aboutIndexRef.current = (aboutIndexRef.current + 1) % aboutImages.length;
         aboutRef.current.src = aboutImages[aboutIndexRef.current];
         aboutRef.current.classList.remove('opacity-0');
       }, 750);
     }, 5000);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeoutId);
+    };
   }, []);
-
-  useEffect(() => {
-    if (!open) buttonRef.current?.focus();
-  }, [open]);
 
   return (
     <>
       {/* HERO SECTION */}
-      <div className="relative w-screen pt-32 pb-4 bg-slate-200 dark:bg-dark-navy overflow-hidden">
+      <div className="relative w-screen pt-32 bg-slate-100 dark:bg-dark-navy overflow-hidden">
         <img
           src={heroPic}
           alt="Hero"
-          className="w-full max-h-[90vh] object-cover"
+          className="block w-full max-h-[90vh] object-cover"
         />
 
         {/* OVERLAY — desktop only */}
-        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/30 from-40% to-black/85 pointer-events-none" />
+        <div className="hidden lg:block absolute inset-x-0 top-32 bottom-0 bg-gradient-to-r from-black/30 from-40% to-black/85 pointer-events-none" />
 
         {/* DESKTOP OVERLAY TEXT */}
         <div className="hidden lg:flex absolute inset-0 items-center">
@@ -209,26 +224,30 @@ const About = () => {
             <HeroText />
           </div>
         </div>
-        <div className="lg:hidden bg-slate-200 dark:bg-dark-navy px-6 py-12 text-center">
+        <div className="lg:hidden bg-slate-100 dark:bg-dark-navy px-6 py-12 text-center">
           <HeroText />
         </div>
+      </div>
 
-        {/* SKILLS STRIP */}
-        <div className="py-12 overflow-hidden group">
-          <div className="marquee-track flex w-max gap-12 px-8 animate-marquee">
-            {[...skills, ...skills].map((skill, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-3 text-white/80 hover:text-white transition"
-              >
-                <img
-                  src={skill.icon}
-                  alt={skill.name}
-                  className="h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 object-contain"
-                />
-              </div>
-            ))}
-          </div>
+      {/* SKILLS BELT */}
+      <div className="py-10 overflow-hidden bg-zinc-800 dark:bg-dark-navy">
+        <div className="marquee-track flex w-max animate-marquee">
+          {[0, 1, 2, 3].map((setIndex) => (
+            <div key={setIndex} className="flex shrink-0 gap-10 pr-10">
+              {skills.map((skill) => (
+                <div key={skill.name} className="flex flex-col items-center gap-2 w-16">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="h-10 w-10 object-contain"
+                  />
+                  <span className="text-center text-[10px] font-medium text-white/50 leading-tight">
+                    {skill.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -242,7 +261,7 @@ const About = () => {
           className="section about sm:px-auto mt-0 pb-16 text-black dark:text-white sm:container dark:bg-navy"
         >
           <h1 className="text-3xl font-bold font-mono mb-8">
-            / ABOUT
+            / about
           </h1>
 
           <div
@@ -287,18 +306,15 @@ const About = () => {
             </div>
           </div>
 
-          {/* PHOTO GALLERY BUTTON */}
+          {/* PHOTO GALLERY LINK */}
           <div className="flex justify-center pt-10">
-            <Button
-              ref={buttonRef}
-              onClick={() => setOpen(true)}
-              className="rounded bg-rose-600 px-12 py-4 text-xl font-bold text-white shadow hover:scale-110 hover:bg-rose-400"
+            <Link
+              to="/photos"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-teal-500 dark:border-teal-green px-8 py-3 text-base font-medium text-teal-600 dark:text-teal-green hover:bg-teal-500 dark:hover:bg-teal-green hover:text-white dark:hover:text-dark-navy transition-colors"
             >
-              📸 My Photos
-            </Button>
+              📸 View My Photos
+            </Link>
           </div>
-
-          <LightboxGallery open={open} close={() => setOpen(false)} />
         </div>
       </div>
     </>

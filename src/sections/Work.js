@@ -7,17 +7,17 @@ const SkillIcon = ({ skill, delay }) => (
     data-aos-duration="500"
     data-aos-offset="150"
     data-aos-delay={delay}
-    className="flex flex-col items-center gap-2 w-14 sm:w-16"
+    className="flex flex-col items-center gap-2 w-14 sm:w-16 hover:scale-125"
   >
     {skill.iconDark ? (
       <>
-        <img src={skill.iconDark} alt={skill.name} className="hidden h-8 sm:h-10 object-contain dark:block" />
-        <img src={skill.iconLight} alt={skill.name} className="h-8 sm:h-10 object-contain dark:hidden" />
+        <img src={skill.iconDark} alt={skill.name} className="hidden h-8 sm:h-10 object-contain dark:block hover:scale-125" />
+        <img src={skill.iconLight} alt={skill.name} className="h-8 sm:h-10 object-contain dark:hidden hover:scale-125" />
       </>
     ) : (
-      <img src={skill.icon} alt={skill.name} className="h-8 sm:h-10 object-contain" />
+      <img src={skill.icon} alt={skill.name} className="h-8 sm:h-10 object-contain hover:scale-125" />
     )}
-    <span className="text-center text-xs leading-tight body-text">
+    <span className="text-center text-xs text-black leading-tight body-text hover:scale-125 hover:text-teal-green">
       {skill.name.replace('\n', ' ')}
     </span>
   </div>
@@ -97,7 +97,7 @@ const Work = () => (
     <div className="work bg-slate-200 py-40 dark:bg-dark-navy">
       <div id="work" className="section sm:px-auto row-span-1 mt-10 sm:container">
         <h1 className="text-3xl font-bold font-mono text-black dark:text-white">
-          / WORK EXPERIENCES
+          / work experiences
         </h1>
         <br />
         <br />

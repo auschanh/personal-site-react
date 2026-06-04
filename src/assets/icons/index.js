@@ -11,6 +11,16 @@ import typescriptLogo from './typescript-official-svgrepo-com.svg';
 import sharepointLogo from './sharepoint.svg';
 import powerautomateLogo from './icons8-microsoft-power-automate-2020.svg';
 import psyncopateLogo from './Psyncopate.webp';
+import ansibleLogo from './ansible.svg';
+import kubernetesLogo from './kubernetes.svg';
+import terraformLogo from './terraform.svg';
+import pythonLogo from './python.svg';
+import grafanaLogo from './grafana.svg';
+import postgresqlLogo from './postgresql.svg';
+import mysqlLogo from './mysql.svg';
+import nodejsLogo from './nodejs.svg';
+import tailwindLogo from './tailwindcss.svg';
+import socketioLogo from './socketio.svg';
 
 export {
   kafkaWhite,
@@ -26,4 +36,14 @@ export {
   sharepointLogo,
   powerautomateLogo,
   psyncopateLogo,
+  ansibleLogo,
+  kubernetesLogo,
+  terraformLogo,
+  pythonLogo,
+  grafanaLogo,
+  postgresqlLogo,
+  mysqlLogo,
+  nodejsLogo,
+  tailwindLogo,
+  socketioLogo,
 };

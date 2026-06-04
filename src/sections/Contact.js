@@ -22,10 +22,10 @@ const Contact = () => {
 
   return (
     <div id="contact-jump">
-      <div id="contact" className="pb-12 pt-40 dark:bg-navy bg-slate-200">
+      <div id="contact" className="pb-12 pt-40 dark:bg-navy bg-slate-100">
         <div className="contact sm:container max-sm:px-10">
           <div className="section row-span-1 text-center">
-            <div className="text-4xl font-extrabold dark:text-white">Say Hi!</div>
+            <div className="text-4xl font-extrabold text-black dark:text-white">Say Hi!</div>
             <br />
             <div
               className="text-xl text-gray-700 body-text"

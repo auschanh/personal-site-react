@@ -3,7 +3,7 @@ import logoBlack from "../assets/logos/ac-logo-black.png";
 import logoWhite from "../assets/logos/ac-logo-white.png";
 import resume from "../assets/docs/Austin_Chanhsavang_Resume_2025.pdf";
 import { Link, useNavigate } from "react-router-dom";
-import LightboxGallery from "./LightboxGallery";
+// LightboxGallery removed from Navbar — photos now live at /photos
 
 const NAV_LINKS = [
   { label: "About",    path: "/#about-jump" },
@@ -19,14 +19,13 @@ const SOCIAL_LINKS = [
 ];
 
 const linkClass =
-  "text-sm font-medium text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors";
+  "text-base font-medium text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors";
 
 const iconClass =
   "text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [photosOpen, setPhotosOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
 
@@ -58,19 +57,15 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     <>
       {/* ── MAIN NAVBAR ── */}
       <nav className="fixed top-0 z-50 w-full bg-white/95 dark:bg-black shadow-sm backdrop-blur-sm">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center w-full px-6 lg:px-16 py-3">
+        <div className="flex items-center justify-between w-full px-6 lg:px-16 py-3">
 
-          {/* LEFT: Logo */}
-          <div>
+          {/* LEFT: Logo + nav links */}
+          <div className="flex items-center gap-6 lg:gap-8">
             <a href="/" aria-label="Home">
               <img src={logoBlack} className="h-10 dark:hidden" alt="Austin Chanhsavang" />
               <img src={logoWhite} className="h-10 hidden dark:block" alt="Austin Chanhsavang" />
             </a>
-          </div>
-
-          {/* CENTER: Nav links — desktop only */}
-          <div className="hidden md:flex justify-center items-center">
-            <ul className="flex items-center gap-8">
+            <ul className="hidden md:flex items-center gap-5 lg:gap-7">
               {NAV_LINKS.map(({ label, path }) => (
                 <li key={label}>
                   <Link
@@ -83,29 +78,20 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                 </li>
               ))}
               <li>
-                <button
-                  onClick={() => setPhotosOpen(true)}
-                  className={linkClass}
-                >
+                <Link to="/photos" className={linkClass}>
                   My Photos
-                </button>
+                </Link>
               </li>
             </ul>
-            <LightboxGallery open={photosOpen} close={() => setPhotosOpen(false)} />
           </div>
 
           {/* RIGHT: Actions */}
-          <div className="flex items-center justify-end gap-5">
+          <div className="flex items-center gap-4 lg:gap-5">
 
-            {/* Social + Resume — desktop only */}
-            <div className="hidden md:flex items-center gap-5">
-              <a
-                href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-mono font-semibold tracking-widest text-black dark:text-white hover:text-teal-600 dark:hover:text-teal-green transition-colors"
-              >
-                RESUME
+            {/* Resume + socials — desktop only */}
+            <div className="hidden md:flex items-center gap-4 lg:gap-5">
+              <a href={resume} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                Resume
               </a>
               {SOCIAL_LINKS.map(({ href, icon, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
@@ -115,21 +101,13 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </div>
 
             {/* Dark mode toggle — always visible */}
-            <button
-              onClick={toggleDarkMode}
-              aria-label="Toggle dark mode"
-              className={`text-lg ${iconClass}`}
-            >
+            <button onClick={toggleDarkMode} aria-label="Toggle dark mode" className={`text-lg ${iconClass}`}>
               <i className="fa-regular fa-moon dark:hidden" />
               <i className="fa-solid fa-sun hidden dark:inline text-yellow-400" />
             </button>
 
             {/* Hamburger — mobile only */}
-            <button
-              className={`md:hidden ${iconClass}`}
-              onClick={() => setIsMenuOpen(true)}
-              aria-label="Open menu"
-            >
+            <button className={`md:hidden ${iconClass}`} onClick={() => setIsMenuOpen(true)} aria-label="Open menu">
               <svg className="h-5 w-5 fill-current" viewBox="0 0 20 20">
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
@@ -183,12 +161,13 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
                   </li>
                 ))}
                 <li>
-                  <button
-                    onClick={() => { setIsMenuOpen(false); setPhotosOpen(true); }}
-                    className="w-full text-left block rounded-lg px-4 py-3 text-sm font-medium text-black dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  <Link
+                    to="/photos"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-black dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
                   >
                     My Photos
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <a

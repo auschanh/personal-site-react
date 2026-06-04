@@ -3,7 +3,6 @@ import {
   kafkaWhite,
   kafkaBlack,
   confluentTealLogo,
-  javaLogo,
   dockerLogo,
   sqlLogo,
   sqlLogoBlack,
@@ -12,6 +11,12 @@ import {
   sharepointLogo,
   powerautomateLogo,
   psyncopateLogo,
+  ansibleLogo,
+  kubernetesLogo,
+  terraformLogo,
+  pythonLogo,
+  grafanaLogo,
+  mysqlLogo,
 } from '../assets/icons';
 import opsLogo from '../assets/logos/ops-logo.png';
 
@@ -26,29 +31,30 @@ export const workExperiences = [
     logo: psyncopateLogo,
     logoAlt: 'Psyncopate Logo',
     title: 'ASSOCIATE CONSULTING ENGINEER',
-    period: 'Jan 2025 - Present',
+    period: 'Jan 2025 - May 2026',
     responsibilities: [
       <>
-        Resolved P1/P2 incidents for a low-latency, multi-AZ on-premises {kw('Kafka')}{' '}
-        cluster, conducting root cause analysis (RCA) for broker performance,{' '}
-        {kw('Zookeeper')} coordination, and security misconfigurations to ensure 99.9% SLA
+        Deployed and designed TIBCO Rendezvous Network Service on {kw('Kubernetes')} including a high level diagram and Operator based Custom Resources to support on-premises to cloud communications
       </>,
       <>
-        Streamlined troubleshooting and knowledge-sharing by documenting{' '}
-        {kw('Kafka Broker/Zookeeper')} configurations, and security protocols for
-        multi-AZ deployments
+        Built out custom dashboards with {kw('Grafana')} for network service on {kw('Kubernetes')}, including detailed analysis on metrics, and scripted runbook of deployment with dashboards as config maps - providing observability and monitoring needs
       </>,
       <>
-        Developed serializing avro {kw('Producer and Consumer')}, for a customized
-        Confluent library according to customer's needs.
+        Supported on-call operations for a low-latency, on-premises Multi-Region {kw('Kafka')} Cluster (MRC), participating in {kw('Confluent')} Platform upgrades via {kw('Ansible')} and providing P1/P2 incident triage, including broker performance, and misconfigurations ensuring 99.9% SLA
+      </>,
+      <>
+        Developed serializing avro {kw('Producer and Consumer')}, for a customized {kw('Confluent')} library according to customer's needs
       </>,
     ],
     skills: [
-      { name: 'Apache\nKafka', iconDark: kafkaWhite, iconLight: kafkaBlack },
+      { name: 'Kafka', iconDark: kafkaWhite, iconLight: kafkaBlack },
       { name: 'Confluent', icon: confluentTealLogo },
-      { name: 'Java', icon: javaLogo },
+      { name: 'Ansible', icon: ansibleLogo },
+      { name: 'Kubernetes', icon: kubernetesLogo },
+      { name: 'Terraform', icon: terraformLogo },
+      { name: 'Python', icon: pythonLogo },
+      { name: 'Grafana', icon: grafanaLogo },
       { name: 'Docker', icon: dockerLogo },
-      { name: 'KSQL', iconDark: sqlLogo, iconLight: sqlLogoBlack },
     ],
   },
   {
@@ -57,7 +63,7 @@ export const workExperiences = [
     logo: opsLogo,
     logoAlt: 'Ontario Public Service Logo',
     title: 'SOFTWARE DEVELOPER',
-    period: 'May 2021 - Aug 2022 (1yrs 4mos)',
+    period: 'May 2021 - Aug 2022',
     responsibilities: [
       <>
         Created and maintained {kw('SharePoint')} sites based on client tickets and
@@ -89,7 +95,7 @@ export const workExperiences = [
     skills: [
       { name: 'React', icon: reactLogo },
       { name: 'TypeScript', icon: typescriptLogo },
-      { name: 'SQL', iconDark: sqlLogo, iconLight: sqlLogoBlack },
+      { name: 'MySQL', icon: mysqlLogo },
       { name: 'SharePoint', icon: sharepointLogo },
       { name: 'Power\nAutomate', icon: powerautomateLogo },
     ],
