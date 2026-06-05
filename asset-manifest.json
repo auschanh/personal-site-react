@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fab498c2.css",
+    "main.css": "/static/css/main.0edfef28.css",
     "main.js": "/static/js/main.677ccfaf.js",
     "static/media/DSCF2608.JPG": "/static/media/DSCF2608.512d49e43c7e35681045.JPG",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
@@ -103,11 +103,11 @@
     "static/media/html5.svg": "/static/media/html5.74577817dde8fee285d3c8af53312ca6.svg",
     "static/media/terraform.svg": "/static/media/terraform.f5f0909d20c562c8bc84a3d572e8516c.svg",
     "static/media/lighthouse.svg": "/static/media/lighthouse.09af9e1057ce5146ccd197375fd38798.svg",
-    "main.fab498c2.css.map": "/static/css/main.fab498c2.css.map",
+    "main.0edfef28.css.map": "/static/css/main.0edfef28.css.map",
     "main.677ccfaf.js.map": "/static/js/main.677ccfaf.js.map"
   },
   "entrypoints": [
-    "static/css/main.fab498c2.css",
+    "static/css/main.0edfef28.css",
     "static/js/main.677ccfaf.js"
   ]
 }
