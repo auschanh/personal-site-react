@@ -126,7 +126,7 @@ const OtherExperiences = () => {
         <div className="px-4 pb-4 text-black">
           {otherExperiences.map((job, i) => (
             <div key={job.id} className={i > 0 ? 'mt-8' : ''}>
-              <div className="flex justify-between w-full gap-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-0.5 sm:gap-2">
                 <div className="min-w-0">
                   <p className="text-base sm:text-xl font-extrabold text-teal-600 dark:text-teal-green">
                     {job.company}
@@ -135,11 +135,9 @@ const OtherExperiences = () => {
                     {job.title}
                   </p>
                 </div>
-                <div className="shrink-0">
-                  <p className="date-label text-xs sm:text-sm font-extrabold whitespace-nowrap">
-                    {job.period}
-                  </p>
-                </div>
+                <p className="date-label text-xs sm:text-sm font-extrabold whitespace-nowrap sm:shrink-0 sm:pt-0.5">
+                  {job.period}
+                </p>
               </div>
               <p className="body-text text-sm sm:text-base laptop:text-lg mt-2">{job.description}</p>
             </div>

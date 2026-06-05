@@ -47,7 +47,9 @@ const Photography = () => {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className="w-full block transition-transform duration-300 group-hover:scale-[1.02]"
+                loading="lazy"
+                className="w-full block opacity-0 transition-[opacity,transform] duration-500 group-hover:scale-[1.02]"
+                onLoad={(e) => e.currentTarget.classList.replace('opacity-0', 'opacity-100')}
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 rounded-lg" />
               <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
