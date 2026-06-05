@@ -29,8 +29,7 @@ const Contact = () => {
   return (
     <div id="contact-jump">
       <div id="contact" className="pb-16 pt-20 dark:bg-navy bg-slate-100">
-        <div className="contact sm:container max-sm:px-10">
-          <div className="section row-span-1">
+        <div className="section sm:container row-span-1">
 
             <h1 className="text-3xl font-bold font-mono dark:text-white mb-2">
               / contact
@@ -120,7 +119,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

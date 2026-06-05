@@ -23,13 +23,12 @@ export const projects = [
     description: (
       <div className="body-text text-sm space-y-2">
         <p>
-          Based off of the Just One board game. An online game where a designated player
-          is selected to guess a word, and the other players give a one word hint.
+          Based off the <strong><em>Just One</em></strong> board game. A player is selected to guess a word, other players give a one word hint.
           Similar hints are eliminated.
         </p>
         <p>
-          Includes {kw('sockets')} for game sessions, game lobby settings, chat
-          messaging, and basic NLP comparing word hints, verifying the guesser's guess.
+          Includes {kw('sockets')} for sessions, lobby settings, chat
+          messaging, and verification for guesses.
         </p>
       </div>
     ),
@@ -57,7 +56,7 @@ export const projects = [
           written review and rating of books after signing up.
         </p>
         <p>
-          Includes implementing, searching, registering, logging in and out with a{' '}
+          Includes searching, registering, logging in and out with a{' '}
           {kw('database')} and utilizing {kw('API')} calls.
         </p>
       </div>

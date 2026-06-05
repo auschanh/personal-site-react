@@ -37,21 +37,21 @@ const ExperienceCard = ({ job }) => (
         className="collapse collapse-arrow transform text-black transition-all !duration-300 hover:scale-105 hover:duration-150 dark:bg-navy bg-slate-100"
       >
         <input type="checkbox" className="dark:text-white" />
-        <div className="work-header collapse-title flex dark:text-white">
-          <div>
-            <img src={job.logo} alt={job.logoAlt} className="w-16 md:w-10" />
+        <div className="work-header collapse-title flex items-center min-h-[64px] dark:text-white">
+          <div className="shrink-0">
+            <img src={job.logo} alt={job.logoAlt} className="w-10" />
           </div>
-          <div className="ml-3 flex justify-between w-full">
-            <div>
-              <p className="text-xl font-extrabold text-teal-600 dark:text-teal-green">
+          <div className="ml-3 flex justify-between w-full min-w-0">
+            <div className="min-w-0 pr-2">
+              <p className="text-base sm:text-xl font-extrabold text-teal-600 dark:text-teal-green">
                 {job.company}
               </p>
-              <p className="text-base font-extrabold text-black dark:text-white">
+              <p className="text-sm sm:text-base font-extrabold text-black dark:text-white">
                 {job.title}
               </p>
             </div>
-            <div>
-              <p className="date-label text-sm font-bold max-sm:ml-4">
+            <div className="shrink-0">
+              <p className="date-label text-xs sm:text-sm font-bold">
                 {job.period}
               </p>
             </div>
@@ -62,7 +62,7 @@ const ExperienceCard = ({ job }) => (
           <p className="mt-3 text-lg font-extrabold dark:text-white text-black">
             Responsibilities
           </p>
-          <ul className="job-desc ml-3 list-disc text-base laptop:text-lg body-text">
+          <ul className="job-desc ml-3 list-disc text-sm sm:text-base laptop:text-lg body-text">
             {job.responsibilities.map((resp, i) => (
               <li key={i} className="my-2">{resp}</li>
             ))}
@@ -74,7 +74,7 @@ const ExperienceCard = ({ job }) => (
                 Highlights
               </p>
               {job.highlights.map((h, i) => (
-                <p key={i} className="my-2 text-base laptop:text-lg body-text">
+                <p key={i} className="my-2 text-sm sm:text-base laptop:text-lg body-text">
                   ▶ {h}
                 </p>
               ))}
@@ -123,28 +123,28 @@ const Work = () => (
             className="collapse collapse-arrow mt-4 transform transition-all !duration-300 hover:scale-105 hover:duration-150 bg-slate-100 dark:bg-navy sm:mt-14"
           >
             <input type="checkbox" />
-            <div className="collapse-title text-xl font-bold text-black dark:text-white">
+            <div className="collapse-title text-base sm:text-xl font-bold text-black dark:text-white min-h-[56px] flex items-center">
               Other Experiences (Retail)
             </div>
             <div className="collapse-content text-black">
               {otherExperiences.map((job, i) => (
                 <div key={job.id} className={i > 0 ? 'mt-8' : ''}>
-                  <div className="flex justify-between w-full">
-                    <div>
-                      <p className="text-xl font-extrabold text-teal-600 dark:text-teal-green">
+                  <div className="flex justify-between w-full gap-2">
+                    <div className="min-w-0">
+                      <p className="text-base sm:text-xl font-extrabold text-teal-600 dark:text-teal-green">
                         {job.company}
                       </p>
-                      <p className="text-base font-bold text-black dark:text-white">
+                      <p className="text-sm sm:text-base font-bold text-black dark:text-white">
                         {job.title}
                       </p>
                     </div>
-                    <div>
-                      <p className="date-label text-sm font-extrabold">
+                    <div className="shrink-0">
+                      <p className="date-label text-xs sm:text-sm font-extrabold">
                         {job.period}
                       </p>
                     </div>
                   </div>
-                  <p className="body-text laptop:text-lg mt-2">{job.description}</p>
+                  <p className="body-text text-sm sm:text-base laptop:text-lg mt-2">{job.description}</p>
                 </div>
               ))}
             </div>

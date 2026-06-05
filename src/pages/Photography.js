@@ -21,7 +21,7 @@ const Photography = () => {
         <div className="mb-10">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm body-text hover:text-teal-600 dark:hover:text-teal-green transition-colors"
+            className="inline-flex items-center gap-2 text-sm body-text text-black hover:text-teal-600 dark:hover:text-teal-green transition-colors"
           >
             <i className="fa-solid fa-arrow-left text-xs" />
             Portfolio
@@ -29,10 +29,10 @@ const Photography = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-3xl font-bold font-mono dark:text-white mb-2">
+        <h1 className="text-3xl font-bold font-mono text-black dark:text-white mb-2">
           / photography
         </h1>
-        <p className="text-sm body-text mb-12">
+        <p className="text-sm body-text mb-12 text-black">
           A collection of photos from my travels and everyday life. Click any photo to expand.
         </p>
 

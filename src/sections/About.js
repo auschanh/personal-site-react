@@ -155,11 +155,11 @@ const AboutText = () => (
     </p>
     <br />
     <p>
-      Previously dived into the world of {' '}
+      My path through programming led through {' '}
       <strong className="text-teal-500 dark:text-teal-green">
         distributed systems and backend engineering
       </strong>{' '}
-       and eventually lead back to{' '}
+       and eventually back to familiar territory with{' '}
       <strong className="text-teal-500 dark:text-teal-green">web accessibility</strong>
       , where I found my specialty.
     </p>
@@ -169,9 +169,7 @@ const AboutText = () => (
       <strong className="text-teal-500 dark:text-teal-green">
         inclusive, user-centered web experiences
       </strong>
-      . I'm also double certified in{' '}
-      <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> - a reminder
-      that good systems thinking applies everywhere.
+      . I'm also double certified in both <strong className="text-teal-500 dark:text-teal-green">Kafka</strong> development and administration — the engineering roots that shape how I think about solutions.
     </p>
     <br />
     <ol className="space-y-2 list-disc list-inside marker:text-teal-500 dark:marker:text-teal-green">
