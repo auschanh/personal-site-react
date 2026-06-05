@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e51f5aad.css",
-    "main.js": "/static/js/main.66dee926.js",
+    "main.css": "/static/css/main.c7957b2e.css",
+    "main.js": "/static/js/main.e28a7d38.js",
     "static/media/DSCF2608.JPG": "/static/media/DSCF2608.512d49e43c7e35681045.JPG",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
@@ -103,11 +103,11 @@
     "static/media/html5.svg": "/static/media/html5.74577817dde8fee285d3c8af53312ca6.svg",
     "static/media/terraform.svg": "/static/media/terraform.f5f0909d20c562c8bc84a3d572e8516c.svg",
     "static/media/lighthouse.svg": "/static/media/lighthouse.09af9e1057ce5146ccd197375fd38798.svg",
-    "main.e51f5aad.css.map": "/static/css/main.e51f5aad.css.map",
-    "main.66dee926.js.map": "/static/js/main.66dee926.js.map"
+    "main.c7957b2e.css.map": "/static/css/main.c7957b2e.css.map",
+    "main.e28a7d38.js.map": "/static/js/main.e28a7d38.js.map"
   },
   "entrypoints": [
-    "static/css/main.e51f5aad.css",
-    "static/js/main.66dee926.js"
+    "static/css/main.c7957b2e.css",
+    "static/js/main.e28a7d38.js"
   ]
 }
