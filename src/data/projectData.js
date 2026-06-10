@@ -1,5 +1,5 @@
 import React from 'react';
-import { callSignsImages, bookReviewImages } from '../assets/projects';
+import { callSignsImages, bookReviewImages, pokemonImages } from '../assets/projects';
 
 const kw = (text) => (
   <span className="font-bold dark:text-teal-green text-teal-300">{text}</span>
@@ -8,27 +8,23 @@ const kw = (text) => (
 export const projects = [
   {
     id: 'callsigns',
-    title: '🔗 CallSigns Website',
+    title: 'CallSigns Website',
     url: 'https://callsigns-oulv.vercel.app/',
     github: 'https://github.com/auschanh/callsigns',
-    typeChip: { color: 'blue', value: 'Website' },
+    // typeChip: { color: 'blue', value: 'Website' },
     techChips: [
       { color: 'amber', value: 'Socket.IO' },
       { color: 'teal', value: 'React' },
       { color: 'light-blue', value: 'Tailwind' },
       { color: 'pink', value: 'API' },
-      { color: 'deep-orange', value: 'HTML' },
-      { color: 'deep-orange', value: 'CSS' },
+      // { color: 'deep-orange', value: 'HTML' },
+      // { color: 'deep-orange', value: 'CSS' },
     ],
     description: (
-      <div className="body-text text-sm space-y-2">
+      <div className="body-text text-base">
         <p>
-          Based off the <strong><em>Just One</em></strong> board game. A player is selected to guess a word, other players give a one word hint.
-          Similar hints are eliminated.
-        </p>
-        <p>
-          Includes {kw('sockets')} for sessions, lobby settings, chat
-          messaging, and verification for guesses.
+          Based off the <strong><em>Just One</em></strong> board game — players guess a word from one-word
+          hints, with {kw('sockets')} powering live sessions, lobbies, and chat.
         </p>
       </div>
     ),
@@ -36,11 +32,35 @@ export const projects = [
     carouselProps: { arrowColor: 'white', delay: 5000 },
   },
   {
+    id: 'pokemon-team-builder',
+    title: 'Pokemon Team Builder',
+    url: 'https://pokemon-team-builder-wheat.vercel.app/',
+    github: 'https://github.com/auschanh/pokemon-team-builder',
+    // typeChip: { color: 'blue', value: 'Website' },
+    techChips: [
+      { color: 'teal', value: 'React' },
+      { color: 'light-blue', value: 'Tailwind' },
+      { color: 'pink', value: 'API' },
+      // { color: 'deep-orange', value: 'HTML' },
+      // { color: 'deep-orange', value: 'CSS' },
+    ],
+    description: (
+      <div className="body-text text-base">
+        <p>
+          A team builder for Pokémon games, with {kw('API')}-driven analysis of team strengths
+          and weaknesses.
+        </p>
+      </div>
+    ),
+    images: pokemonImages,
+    carouselProps: { arrowColor: 'white', delay: 5000 },
+  },
+  {
     id: 'book-reviews',
-    title: '🔗 Book Review Website',
+    title: 'Book Review Website',
     url: 'https://bookreviews-app.fly.dev/',
     github: 'https://github.com/auschanh/Book-Reviews',
-    typeChip: { color: 'blue', value: 'Website' },
+    // typeChip: { color: 'blue', value: 'Website' },
     techChips: [
       { color: 'light-blue', value: 'Python' },
       { color: 'light-blue', value: 'Flask' },
@@ -50,14 +70,10 @@ export const projects = [
       { color: 'deep-orange', value: 'CSS' },
     ],
     description: (
-      <div className="body-text text-sm space-y-2">
+      <div className="body-text text-base">
         <p>
-          A website with a small catalog of books to search from. Users can share a
-          written review and rating of books after signing up.
-        </p>
-        <p>
-          Includes searching, registering, logging in and out with a{' '}
-          {kw('database')} and utilizing {kw('API')} calls.
+          A small book catalog where users can register, log in, and share written reviews and
+          ratings, backed by a {kw('database')} and {kw('API')} calls.
         </p>
       </div>
     ),

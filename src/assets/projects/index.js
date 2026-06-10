@@ -14,6 +14,7 @@ import homepage from './callsigns/homepage.jpg';
 import lobby from './callsigns/lobby.jpg';
 import settings from './callsigns/settings.jpg';
 import guess from './callsigns/voteHint.jpg';
+import demo1 from './pokemon-team-builder/pokemonteambuilder1-speed.gif'
 
 export const bookReviewImages = [
   bookReviewAccReviews,
@@ -35,8 +36,13 @@ export const callSignsImages = [
   failscreen,
 ];
 
+export const pokemonImages = [
+  demo1
+]
+
+
 export {
   bookReviewAccReviews, bookReviewLogin, bookReviewReview, bookReviewSearch, bookReviewSort,
   blackJackGif, blackJackLogo, justOneLogo,
-  chat, eliminateHint, failscreen, hint, homepage, lobby, settings, guess,
+  chat, eliminateHint, failscreen, hint, homepage, lobby, settings, guess, demo1
 };
