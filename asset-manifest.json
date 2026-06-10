@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.db720283.css",
-    "main.js": "/static/js/main.2d599ef9.js",
+    "main.css": "/static/css/main.0ed270b6.css",
+    "main.js": "/static/js/main.efb07ed8.js",
     "static/media/DSCF2608.JPG": "/static/media/DSCF2608.512d49e43c7e35681045.JPG",
     "static/media/review-caption.gif": "/static/media/review-caption.25759b5e25f44a50ade9.gif",
     "static/media/search-caption.gif": "/static/media/search-caption.74276848ca3d66ccb0aa.gif",
@@ -14,6 +14,7 @@
     "static/media/20250701-DSCF0224.jpg": "/static/media/20250701-DSCF0224.d34449e23715e2696f16.jpg",
     "static/media/20250701-DSCF0220.jpg": "/static/media/20250701-DSCF0220.8381bf2d40b7d38f6081.jpg",
     "static/media/20250809-DSCF0643.jpg": "/static/media/20250809-DSCF0643.c9efb97bab16f5bdaa0c.jpg",
+    "static/media/pokemonteambuilder1-speed.gif": "/static/media/pokemonteambuilder1-speed.2c490560531e7c9920dd.gif",
     "static/media/20250803-DSCF0470.jpg": "/static/media/20250803-DSCF0470.195b01c9a0108a4c6461.jpg",
     "static/media/20251130-DSCF2719.jpg": "/static/media/20251130-DSCF2719.2c82e35dd48b25d22968.jpg",
     "static/media/20250727-DSCF0257.jpg": "/static/media/20250727-DSCF0257.acf185f57b22ed0f721a.jpg",
@@ -103,11 +104,11 @@
     "static/media/html5.svg": "/static/media/html5.74577817dde8fee285d3c8af53312ca6.svg",
     "static/media/terraform.svg": "/static/media/terraform.f5f0909d20c562c8bc84a3d572e8516c.svg",
     "static/media/lighthouse.svg": "/static/media/lighthouse.09af9e1057ce5146ccd197375fd38798.svg",
-    "main.db720283.css.map": "/static/css/main.db720283.css.map",
-    "main.2d599ef9.js.map": "/static/js/main.2d599ef9.js.map"
+    "main.0ed270b6.css.map": "/static/css/main.0ed270b6.css.map",
+    "main.efb07ed8.js.map": "/static/js/main.efb07ed8.js.map"
   },
   "entrypoints": [
-    "static/css/main.db720283.css",
-    "static/js/main.2d599ef9.js"
+    "static/css/main.0ed270b6.css",
+    "static/js/main.efb07ed8.js"
   ]
 }
